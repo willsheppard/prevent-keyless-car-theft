@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## How to prevent keyless car theft
 
-You can use the [editor on GitHub](https://github.com/willsheppard/prevent-keyless-car-theft/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+There are many products on the market intended to block thieves from stealing your car, by preventing relay attacks. But car manufacturers have already provided this feature. See instructions below for which buttons to press on your key fob.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Mercedes
 
-### Markdown
+- Lock car as usual
+- Press lock button again twice quickly
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Lexus
 
-```markdown
-Syntax highlighted code block
+- Hold the lock button
+- Press unlock button twice
 
-# Header 1
-## Header 2
-### Header 3
+### Range Rover
 
-- Bulleted
-- List
+- With the key inside car and door open,
+- Press headlight button 3 times, then unlock button
+- Then just lock car with fob as normal
 
-1. Numbered
-2. List
+### BMW
 
-**Bold** and _Italic_ and `Code` text
+- TODO (submissions welcome)
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/willsheppard/prevent-keyless-car-theft/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Please create a pull request for additions or corrections.

@@ -18,6 +18,18 @@ or
 
 - Disable "Passive entry" in the car's menu (Fiesta 2016, Focus 2017 onwards)
 
+### Volkswagen
+
+- Lock the car with the key fob
+- then press the little indented area on the door handle
+- keyless entry is now disabled until you unlock the car again (T-roc 7 onwards?)
+
+or
+
+- Automatic. Key fob goes to sleep after 15 minutes inactivity (T-Cross)
+
+Note: VW keyless entry feature is called "KESSY"
+
 ### Mercedes
 
 - Lock car as usual
@@ -78,6 +90,28 @@ or
 
 - Unknown
 
+### Vauxhall
+
+### Kia
+
+### Nissan
+
+- To disable keyless entry completely (Qashqai)
+  - Settings -> vehicle -> locking
+  - Change the i-key setting to "off"
+
+or
+
+- Automatic. Latest key fobs turn off after a period of inactivity (J12 onwards?)
+
+Feature is called "i-key" (intelligent key).
+
+### Hyundai
+
+### Peugeot
+
+### Škoda
+
 ### Other cars
 
 - [Submissions welcome](https://github.com/willsheppard/prevent-keyless-car-theft)
@@ -85,9 +119,9 @@ or
 
 ## Explanation
 
-Most of us leave our keys in the hallway of our house, which is a short distance away from our car. Thieves use special equipment to boost the signal from your car's keyless entry fob so it can reach your car and unlock it. They can even do this if you keep your keys in a room on the opposite side of your house.
+Most of us leave our car keys in the hallway of our house which is a short distance away from our car. Thieves use special equipment to boost the signal from your car's keyless entry fob so the signal can reach all the way to your car and unlock it. They can even do this if you keep your keys in a room on the opposite side of your house.
 
-A common solution to this problem is to keep your keys in a specially designed "Faraday box" or pouch which blocks the signal, but this doesn't work well for many. You could forget to put the keys there, or not want to spend the time and money. Pouches can also fail to work after some time. People may also use tin foil, but it's still a bit of a faff.
+A common solution is to keep your keys in a specially designed "Faraday box" or pouch which blocks the signal, but this doesn't work well for many. You could forget to put the keys there, or not want to spend the time and money. Pouches can also fail to work after some time. People have tried using tin foil instead, but it's still a bit of a faff.
 
 There are other more elaborate devices to solve the problem, but they often carry a significant cost.
 
@@ -100,5 +134,13 @@ This page explains the official methods that your car manufacturer designed to p
 - Put your keys in the microwave (Not tested. Has anyone tried this?)
 - Permanently disable keyless entry (AKA passive entry). Often possible from the car's on-board touch-screen computer. Check the manual or ask your car dealer.
 - Electronic immobiliser. All cars since 1998 already have a factory-fitted electronic immobiliser([*](https://www.mustard.co.uk/car-insurance/guides/what-is-an-immobiliser/)), but these are ineffective against relay attacks because the car's system has been tricked into thinking the correct key is present.
+- [Ghost immobiliser](https://ghostinstallations.co.uk/). May protect against keyless car theft by providing an extra layer of security. Significant cost of installation.
 - Thatcham mechanical wheel lock. A good idea if you can tolerate the inconvenience. Will definitely make your car more difficult to steal, whether by relay attack or any other method.
 - Disable or lock the [data port](https://revolar.com/what-is-a-data-port-lock). Modern cars have electronic systems which are accessed via an "On-Board Diagnostics" (OBD) port. After gaining physical access to the vehicle, it is possible for thieves to plug equipment into the ODB port and hack the information neeed to start the car.
+- Fit a tracker. Does not actually prevent the car being stolen, it's more of a deterrent (if the thieves are aware of it). Not ideal as you might have to travel quite a distance to reach the car's new location. It could be still be inaccessible or dangerous to approach. And a shipping container or even a car park might block the tracker signal.
+
+## Reassurances
+
+- Even when "keyless" or "passive" entry is disabled, it's still common to press a button on they key fob to unlock the door. You probably **don't** need to worry about the risk of thieves capturing **that** signal and replaying it later to steal your car. Firstly the signal is different for locking and unlocking the car. When you lock the car and leave, copying that signal would only help someone **lock** the car again! And when you **unlock** the car it's because you're about to get into it and drive off, so any potential thieves would need to follow your car. That is a lot of effort to go to, and presumably car theft most commonly occurs in low-effort, low-risk scenarios.
+- A number of manufacturers have introduced preventative measures aimed at curbing keyless car theft. Fobs provided by car companies such as BMW, Audi, Ford and Mercedes now come fitted with a motion sensor that deactivates the signal when the key is resting; this reduces the chances of the key being cloned when the key is hanging up overnight, for example. Jaguar and Land Rover, meanwhile, use ultra wide-band radio technology, which stops thieves being able to isolate the signal to your car. ([read more](https://www.carwow.co.uk/blog/keyless-car-theft-prevention))
+

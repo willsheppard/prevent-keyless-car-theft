@@ -13,8 +13,9 @@ See instructions below for which buttons to press on your key fob, in order to d
 
 ### Lexus
 
-- Hold the lock button
-- While still holding the lock button down, press unlock button twice
+- Press lock button and keep it pressed
+- At the same time, press unlock button twice
+- After 1 second, the light on the key fob will flash an extra time
 
 ### Range Rover
 
@@ -24,7 +25,43 @@ See instructions below for which buttons to press on your key fob, in order to d
 
 ### BMW
 
-- TODO ([submissions welcome](https://github.com/willsheppard/prevent-keyless-car-theft))
+- Press the "lock" button on the digital key/remote control key fob
+- From the manual:
+  - ▷ If the vehicle was locked with the remote control, it cannot be unlocked touchless.
+  - ▷ If the vehicle has been in the idle state for several days, touchless unlocking and locking is not possible until after the vehicle has been driven.
+
+### Tesla
+
+- Press the "lock" button once (to be confirmed)
+
+or
+
+- To disable keyless entry completely (Model S):
+  - Go to the Settings tab on the center touchscreen
+  - Then to the Doors & Locks menu
+  - Toggle the 'Passive Entry' switch
+
+### Porsche
+
+- Press lock button and keep it pressed.
+- At the same time, press the unlock button within 1 second
+- Keep both buttons pressed until the indicator light on the vehicle key lights up continuously
+
+### Audi
+
+- Unknown
+
+### Bentley
+
+- Unknown
+
+### Ferrari
+
+- Unknown
+
+### Other cars
+
+- [Submissions welcome](https://github.com/willsheppard/prevent-keyless-car-theft)
 
 
 ## Explanation

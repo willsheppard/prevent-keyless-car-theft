@@ -93,9 +93,12 @@ There are other more elaborate devices to solve the problem, but they often carr
 
 This page explains the official methods that your car manufacturer designed to prevent thieves carrying out signal boosting to steal your car.
 
-## Other methods of preventing signal booster car theft
+## Other methods of preventing car theft
 
-- Put your keys in a "Farady pouch". Not recommended because these degrade over time and become ineffective.
+- Put your keys in a "Faraday pouch". Not recommended because these degrade over time and become ineffective.
 - Keep the keys on the other side of the house, far away from the car. Not recommended because the signal can still be relayed with the right equipment.
 - Put your keys in the microwave (Not tested. Has anyone tried this?)
-- Permanently disable keyless entry (AKA passive entry). Might be more inconvenient, but this is often possible from the car's on-board touch-screen computer. Check the manual or ask your car dealer.
+- Permanently disable keyless entry (AKA passive entry). Often possible from the car's on-board touch-screen computer. Check the manual or ask your car dealer.
+- Electronic immobiliser. All cars since 1998 already have a factory-fitted electronic immobiliser([*](https://www.mustard.co.uk/car-insurance/guides/what-is-an-immobiliser/)), but these are ineffective against relay attacks because the car's system has been tricked into thinking the correct key is present.
+- Thatcham mechanical wheel lock. A good idea if you can tolerate the inconvenience. Will definitely make your car more difficult to steal, whether by relay attack or any other method.
+- Disable or lock the [data port](https://revolar.com/what-is-a-data-port-lock). Modern cars have electronic systems which are accessed via an "On-Board Diagnostics" (OBD) port. After gaining physical access to the vehicle, it is possible for thieves to plug equipment into the ODB port and hack the information neeed to start the car.

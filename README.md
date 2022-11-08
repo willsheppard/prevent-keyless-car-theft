@@ -144,3 +144,8 @@ This page explains the official methods that your car manufacturer designed to p
 - Even when "keyless" or "passive" entry is disabled, it's still common to press a button on they key fob to unlock the door. You probably **don't** need to worry about the risk of thieves capturing **that** signal and replaying it later to steal your car. Firstly the signal is different for locking and unlocking the car. When you lock the car and leave, copying that signal would only help someone **lock** the car again! And when you **unlock** the car it's because you're about to get into it and drive off, so any potential thieves would need to follow your car. That is a lot of effort to go to, and presumably car theft most commonly occurs in low-effort, low-risk scenarios.
 - A number of manufacturers have introduced preventative measures aimed at curbing keyless car theft. Fobs provided by car companies such as BMW, Audi, Ford and Mercedes now come fitted with a motion sensor that deactivates the signal when the key is resting; this reduces the chances of the key being cloned when the key is hanging up overnight, for example. Jaguar and Land Rover, meanwhile, use ultra wide-band radio technology, which stops thieves being able to isolate the signal to your car. ([read more](https://www.carwow.co.uk/blog/keyless-car-theft-prevention))
 
+## Donations
+
+If this information has helped you, consider supporting me so I can help more people in future.
+
+![btn donate_LG.gif](https://www.paypal.com/donate/?hosted_button_id=LRE8FY2BEMXUE)

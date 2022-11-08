@@ -148,4 +148,4 @@ This page explains the official methods that your car manufacturer designed to p
 
 If this information has helped you, consider supporting me so I can help more people in future.
 
-![btn donate_LG.gif](https://www.paypal.com/donate/?hosted_button_id=LRE8FY2BEMXUE)
+[![donate with paypal](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=LRE8FY2BEMXUE)

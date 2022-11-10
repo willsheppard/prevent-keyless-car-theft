@@ -137,6 +137,22 @@ Notes:
 
 ([source](https://www.ftypeforums.co.uk/viewtopic.php?t=2226), [source](https://www.jaginfo.org/threads/how-to-disable-keyless-entry.98122/), [source](https://www.fpaceforums.co.uk/threads/turning-off-keyless-entry.3612/))
 
+### Mazda
+
+- Unknown
+
+### Mini
+
+- Unknown
+
+### MG
+
+- Unknown
+
+### Subaru
+
+- Unknown
+
 ### Other cars
 
 - [Submissions welcome](https://github.com/willsheppard/prevent-keyless-car-theft)

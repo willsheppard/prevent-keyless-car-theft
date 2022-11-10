@@ -2,7 +2,7 @@
 
 You don't need any expensive or awkward-to-use products to stop theives stealing your car!
 
-Car manufacturers have already provided a way for owners to easily prevent signal relay attacks.
+Car manufacturers have already provided a "secret switch" for owners to easily prevent signal relay attacks.
 
 See instructions below for which buttons to press on your key fob, in order to disable keyless entry overnight or whenever you choose.
 
@@ -108,23 +108,30 @@ Feature is called "i-key" (intelligent key).
 
 ### Hyundai
 
+- Unknown
+
 ### Peugeot
+
+- Unknown
 
 ### Škoda
 
-### Jaguar
+- Unknown
+
+### Jaguar
 
 (2013 F-Type, Discovery Sport)
 
-- 1. Open driver's door (using fob)
-- 2. Key fob inside car
-- 3. Press headlamp button on the key fob 3 times
-- 4. Press unlock button on the key fob once
-- 5. Keys outside car
-- 6. Close driver's door
-- 7. Lock car using the fob
-- 8. Unlock car using the fob 
-- Notes:
+1. Open driver's door (using fob)
+2. Key fob inside car
+3. Press headlamp button on the key fob 3 times
+4. Press unlock button on the key fob once
+5. Keys outside car
+6. Close driver's door
+7. Lock car using the fob
+8. Unlock car using the fob 
+
+Notes:
   - Same procedure again to re-enable it, except press the lock button at step 4.
   - You have to make sure you first unlock and then re-lock the car with the fob, not the keyless button on the door.
 

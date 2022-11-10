@@ -112,6 +112,24 @@ Feature is called "i-key" (intelligent key).
 
 ### Škoda
 
+### Jaguar
+
+(2013 F-Type, Discovery Sport)
+
+- 1. Open driver's door (using fob)
+- 2. Key fob inside car
+- 3. Press headlamp button on the key fob 3 times
+- 4. Press unlock button on the key fob once
+- 5. Keys outside car
+- 6. Close driver's door
+- 7. Lock car using the fob
+- 8. Unlock car using the fob 
+- Notes:
+  - Same procedure again to re-enable it, except press the lock button at step 4.
+  - You have to make sure you first unlock and then re-lock the car with the fob, not the keyless button on the door.
+
+([source](https://www.ftypeforums.co.uk/viewtopic.php?t=2226), [source](https://www.jaginfo.org/threads/how-to-disable-keyless-entry.98122/), [source](https://www.fpaceforums.co.uk/threads/turning-off-keyless-entry.3612/))
+
 ### Other cars
 
 - [Submissions welcome](https://github.com/willsheppard/prevent-keyless-car-theft)

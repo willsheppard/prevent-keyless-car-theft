@@ -120,7 +120,7 @@ Feature is called "i-key" (intelligent key).
 
 ### Jaguar
 
-(2013 F-Type, Discovery Sport)
+To disable keyless entry completely (2013 F-Type, Discovery Sport):
 
 1. Open driver's door (using fob)
 2. Key fob inside car

@@ -8,53 +8,53 @@ See instructions below for which buttons to press on your key fob, in order to d
 
 ### Ford
 
-- Lock the car by pressing the button on the remote control key (to be confirmed)
+- [Temporary] Lock the car by pressing the button on the remote control key (to be confirmed)
 
-or
+- [Automatic] "Sleeping key fob" feature deactivates transmitter if key fob has not moved for 40 seconds (Fiesta/Focus, 2019 onwards)
 
-- Automatic. "Sleeping key fob" feature deactivates transmitter if key fob has not moved for 40 seconds (Fiesta/Focus, 2019 onwards)
-
-or
-
-- Disable "Passive entry" in the car's menu (Fiesta 2016, Focus 2017 onwards)
+- [Permanent] Disable "Passive entry" in the car's menu (Fiesta 2016, Focus 2017 onwards)
 
 ### Volkswagen
 
+[Temporary]
 - Lock the car with the key fob
 - then press the little indented area on the door handle
 - keyless entry is now disabled until you unlock the car again (T-roc 7 onwards?)
 
-or
-
-- Automatic. Key fob goes to sleep after 15 minutes inactivity (T-Cross)
+[Automatic]
+- Key fob goes to sleep after 15 minutes inactivity (T-Cross)
 
 Note: VW keyless entry feature is called "KESSY"
 
 ### Mercedes
 
+[Temporary]
 - Lock car as usual
 - Press lock button again twice quickly
 
 ### Toyota
 
-(Tacoma)
+[Temporary]
 - Press lock button and keep it pressed
-- At the same time, press unlock button twice
+- At the same time, press unlock button twice (Tacoma)
 
 ### Lexus
 
+[Temporary]
 - Press lock button and keep it pressed
 - At the same time, press unlock button twice
 - After 1 second, the light on the key fob will flash an extra time
 
 ### Range Rover
 
+[Temporary]
 - With the key inside car and door open,
 - Press headlight button 3 times, then unlock button
 - Then just lock car with fob as normal
 
 ### BMW
 
+[Temporary]
 - Press the "lock" button on the digital key/remote control key fob
 - From the manual:
   - ▷ If the vehicle was locked with the remote control, it cannot be unlocked touchless.
@@ -62,10 +62,10 @@ Note: VW keyless entry feature is called "KESSY"
 
 ### Tesla
 
+[Temporary]
 - Press the "lock" button once (to be confirmed)
 
-or
-
+[Permanent]
 - To disable keyless entry completely (Model S):
   - Go to the Settings tab on the center touchscreen
   - Then to the Doors & Locks menu
@@ -73,12 +73,14 @@ or
 
 ### Porsche
 
+[Temporary]
 - Press lock button and keep it pressed.
 - At the same time, press the unlock button within 1 second
 - Keep both buttons pressed until the indicator light on the vehicle key lights up continuously
 
 ### Audi
 
+[Temporary]
 - Press "lock" button once (to be confirmed)
   - See [manual](https://manual-directory.com/view-manual-pdf/?mid=29412), page 40
 
@@ -96,13 +98,12 @@ or
 
 ### Nissan
 
-- To disable keyless entry completely (Qashqai)
-  - Settings -> vehicle -> locking
-  - Change the i-key setting to "off"
+[Permanent] (Qashqai)
+- Settings -> vehicle -> locking
+- Change the i-key setting to "off"
 
-or
-
-- Automatic. Latest key fobs turn off after a period of inactivity (J12 onwards?)
+[Automatic]
+- Latest key fobs turn off after a period of inactivity (J12 onwards?)
 
 Feature is called "i-key" (intelligent key).
 
@@ -120,8 +121,7 @@ Feature is called "i-key" (intelligent key).
 
 ### Jaguar
 
-To disable keyless entry completely (2013 F-Type, Discovery Sport):
-
+[Permanent] (2013 F-Type, Discovery Sport)
 1. Open driver's door (using fob)
 2. Key fob inside car
 3. Press headlamp button on the key fob 3 times
@@ -168,6 +168,14 @@ There are other more elaborate devices to solve the problem, but they often carr
 
 This page explains the official methods that your car manufacturer designed to prevent thieves carrying out signal boosting to steal your car.
 
+### Types of disabling
+
+This page describes, for each car type, up to three different ways to disable the keyless entry feature:
+
+1. **Temporarily disable**. This is most useful if you want to use the keyless entry when convenient to you, but turn it off overnight or when you go on holiday. You have to remember to do it each evening. Keyless entry will stay deactivated until you next unlock the car by pressing the button on the key fob.
+2. **Automatically disable**. This is the best option, because you don't need to do anything different to keep your car safe. They key fob turns itself off after you put it down. When you pick it up and put in your pocket, it reactivates. Unfortunately not all car manufacturers have provided this feature.
+3. **Permanently disable**. Follow these instructions if you never want to use keyless entry. It makes the car 100% safe from _this specific type_ of keyless entry theft.
+
 ## Other methods of preventing car theft
 
 - Put your keys in a "Faraday pouch". Not recommended because these degrade over time and become ineffective.
@@ -183,7 +191,7 @@ This page explains the official methods that your car manufacturer designed to p
 ## Reassurances
 
 - Even when "keyless" or "passive" entry is disabled, it's still common to press a button on they key fob to unlock the door. You probably **don't** need to worry about the risk of thieves capturing **that** signal and replaying it later to steal your car. Firstly the signal is different for locking and unlocking the car. When you lock the car and leave, copying that signal would only help someone **lock** the car again! And when you **unlock** the car it's because you're about to get into it and drive off, so any potential thieves would need to follow your car. That is a lot of effort to go to, and presumably car theft most commonly occurs in low-effort, low-risk scenarios.
-- A number of manufacturers have introduced preventative measures aimed at curbing keyless car theft. Fobs provided by car companies such as BMW, Audi, Ford and Mercedes now come fitted with a motion sensor that deactivates the signal when the key is resting; this reduces the chances of the key being cloned when the key is hanging up overnight, for example. Jaguar and Land Rover, meanwhile, use ultra wide-band radio technology, which stops thieves being able to isolate the signal to your car. ([read more](https://www.carwow.co.uk/blog/keyless-car-theft-prevention))
+- A number of manufacturers have introduced preventative measures aimed at curbing keyless car theft. Fobs provided by car companies such as BMW, Audi, Ford and Mercedes now come fitted with a motion sensor that automatically deactivates the signal when the key is not moving; this prevents the signal being relayed when the key is left overnight, for example. Jaguar and Land Rover, meanwhile, use ultra wide-band radio technology, which stops thieves being able to isolate the signal to your car. ([read more](https://www.carwow.co.uk/blog/keyless-car-theft-prevention))
 
 ## Donations
 

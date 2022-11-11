@@ -6,51 +6,18 @@ Car manufacturers have already provided a "secret switch" for owners to easily p
 
 See instructions below for which buttons to press on your key fob, in order to disable keyless entry overnight or whenever you choose.
 
-### Ford
 
-- [Temporary] Lock the car by pressing the button on the remote control key (to be confirmed)
-
-- [Automatic] "Sleeping key fob" feature deactivates transmitter if key fob has not moved for 40 seconds (Fiesta/Focus, 2019 onwards)
-
-- [Permanent] Disable "Passive entry" in the car's menu (Fiesta 2016, Focus 2017 onwards)
-
-### Volkswagen
+### Audi
 
 [Temporary]
-- Lock the car with the key fob
-- then press the little indented area on the door handle
-- keyless entry is now disabled until you unlock the car again (T-roc 7 onwards?)
+- Press "lock" button once (to be confirmed)
+  - See [manual](https://manual-directory.com/view-manual-pdf/?mid=29412), page 40
 
-[Automatic]
-- Key fob goes to sleep after 15 minutes inactivity (T-Cross)
 
-Note: VW keyless entry feature is called "KESSY"
+### Bentley
 
-### Mercedes
+- Unknown
 
-[Temporary]
-- Lock car as usual
-- Press lock button again twice quickly
-
-### Toyota
-
-[Temporary]
-- Press lock button and keep it pressed
-- At the same time, press unlock button twice (Tacoma)
-
-### Lexus
-
-[Temporary]
-- Press lock button and keep it pressed
-- At the same time, press unlock button twice
-- After 1 second, the light on the key fob will flash an extra time
-
-### Range Rover
-
-[Temporary]
-- With the key inside car and door open,
-- Press headlight button 3 times, then unlock button
-- Then just lock car with fob as normal
 
 ### BMW
 
@@ -60,64 +27,25 @@ Note: VW keyless entry feature is called "KESSY"
   - ▷ If the vehicle was locked with the remote control, it cannot be unlocked touchless.
   - ▷ If the vehicle has been in the idle state for several days, touchless unlocking and locking is not possible until after the vehicle has been driven.
 
-### Tesla
-
-[Temporary]
-- Press the "lock" button once (to be confirmed)
-
-[Permanent]
-- To disable keyless entry completely (Model S):
-  - Go to the Settings tab on the center touchscreen
-  - Then to the Doors & Locks menu
-  - Switch 'Passive Entry' OFF (must press brake pedal)
-
-### Porsche
-
-[Temporary]
-- Press lock button and keep it pressed.
-- At the same time, press the unlock button within 1 second
-- Keep both buttons pressed until the indicator light on the vehicle key lights up continuously
-
-### Audi
-
-[Temporary]
-- Press "lock" button once (to be confirmed)
-  - See [manual](https://manual-directory.com/view-manual-pdf/?mid=29412), page 40
-
-### Bentley
-
-- Unknown
 
 ### Ferrari
 
 - Unknown
 
-### Vauxhall
 
-### Kia
+### Ford
 
-### Nissan
+- [Temporary] Lock the car by pressing the button on the remote control key (to be confirmed)
 
-[Permanent] (Qashqai)
-- Settings -> vehicle -> locking
-- Change the i-key setting to "off"
+- [Automatic] "Sleeping key fob" feature deactivates transmitter if key fob has not moved for 40 seconds (Fiesta/Focus, 2019 onwards)
 
-[Automatic]
-- Latest key fobs turn off after a period of inactivity (J12 onwards?)
+- [Permanent] Disable "Passive entry" in the car's menu (Fiesta 2016, Focus 2017 onwards)
 
-Feature is called "i-key" (intelligent key).
 
 ### Hyundai
 
 - Unknown
 
-### Peugeot
-
-- Unknown
-
-### Škoda
-
-- Unknown
 
 ### Jaguar
 
@@ -137,21 +65,121 @@ Notes:
 
 ([source](https://www.ftypeforums.co.uk/viewtopic.php?t=2226), [source](https://www.jaginfo.org/threads/how-to-disable-keyless-entry.98122/), [source](https://www.fpaceforums.co.uk/threads/turning-off-keyless-entry.3612/))
 
+
+### Kia
+
+- Unknown
+
+
+### Lexus
+
+[Temporary]
+- Press lock button and keep it pressed
+- At the same time, press unlock button twice
+- After 1 second, the light on the key fob will flash an extra time
+
+
 ### Mazda
 
 - Unknown
+
+
+### Mercedes
+
+[Temporary]
+- Lock car as usual
+- Press lock button again twice quickly
+
 
 ### Mini
 
 - Unknown
 
+
 ### MG
 
 - Unknown
 
+
+### Nissan
+
+[Permanent] (Qashqai)
+- Settings -> vehicle -> locking
+- Change the i-key setting to "off"
+
+[Automatic]
+- Latest key fobs turn off after a period of inactivity (J12 onwards?)
+
+Feature is called "i-key" (intelligent key).
+
+
+### Peugeot
+
+- Unknown
+
+
+### Porsche
+
+[Temporary]
+- Press lock button and keep it pressed.
+- At the same time, press the unlock button within 1 second
+- Keep both buttons pressed until the indicator light on the vehicle key lights up continuously
+
+
+### Range Rover
+
+[Temporary]
+- With the key inside car and door open,
+- Press headlight button 3 times, then unlock button
+- Then just lock car with fob as normal
+
+
+### Škoda
+
+- Unknown
+
+
 ### Subaru
 
 - Unknown
+
+
+### Tesla
+
+[Temporary]
+- Press the "lock" button once (to be confirmed)
+
+[Permanent]
+- To disable keyless entry completely (Model S):
+  - Go to the Settings tab on the center touchscreen
+  - Then to the Doors & Locks menu
+  - Switch 'Passive Entry' OFF (must press brake pedal)
+
+
+### Toyota
+
+[Temporary]
+- Press lock button and keep it pressed
+- At the same time, press unlock button twice (Tacoma)
+
+
+### Vauxhall
+
+- Unknown
+
+
+### Volkswagen
+
+[Temporary]
+- Lock the car with the key fob
+- then press the little indented area on the door handle
+- keyless entry is now disabled until you unlock the car again (T-roc 7 onwards?)
+
+[Automatic]
+- Key fob goes to sleep after 15 minutes inactivity (T-Cross)
+
+Note: VW keyless entry feature is called "KESSY"
+
 
 ### Other cars
 

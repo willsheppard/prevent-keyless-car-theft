@@ -200,14 +200,14 @@ This page explains the official methods that your car manufacturer designed to p
 
 This page describes, for each car type, up to three different ways to disable the keyless entry feature:
 
-1. **Temporarily disable**. This is most useful if you want to use the keyless entry when convenient to you, but turn it off overnight or when you go on holiday. You have to remember to do it each evening. Keyless entry will stay deactivated until you next unlock the car by pressing the button on the key fob.
+1. **Temporarily disable**. This is most useful if you want to use the keyless entry when convenient to you, but turn it off overnight or when you go on holiday. You have to remember to do it each evening. Keyless entry will stay deactivated until you next unlock the car by physically pressing the button on the key fob.
 2. **Automatically disable**. This is the best option, because you don't need to do anything different to keep your car safe. They key fob turns itself off after you put it down. When you pick it up and put in your pocket, it reactivates. Unfortunately not all car manufacturers have provided this feature.
-3. **Permanently disable**. Follow these instructions if you never want to use keyless entry. It makes the car 100% safe from _this specific type_ of keyless entry theft.
+3. **Permanently disable**. Follow these instructions if you never want to use keyless entry. It protects the vehicle from _this specific type_ of keyless entry theft.
 
 ## Other methods of preventing car theft
 
-- Put your keys in a "Faraday pouch". Not recommended because these degrade over time and become ineffective.
-- Keep the keys on the other side of the house, far away from the car. Not recommended because the signal can still be relayed with the right equipment.
+- Put your keys in a little bag that blocks the signals called a "[Faraday pouch](https://www.google.com/search?q=Faraday+Pouch)". Not recommended, because in my experience these degrade over time and let signals through.
+- Keep the keys on the other side of the house, far away from the car. Not recommended, because the signal can still be relayed with the right equipment.
 - Put your keys in the microwave (Not tested. Has anyone tried this?)
 - Permanently disable keyless entry (AKA passive entry). Often possible from the car's on-board touch-screen computer. Check the manual or ask your car dealer.
 - Electronic immobiliser. All cars since 1998 already have a factory-fitted electronic immobiliser([*](https://www.mustard.co.uk/car-insurance/guides/what-is-an-immobiliser/)), but these are ineffective against relay attacks because the car's system has been tricked into thinking the correct key is present.

@@ -228,3 +228,5 @@ If this information has helped you, I would appreciate any support you can give.
 [![donate with paypal](btn_donate_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=LRE8FY2BEMXUE)
 
 [![free web stats](https://c.statcounter.com/12814957/0/a8f80a61/1/)](https://statcounter.com/)
+
+This project is tested with BrowserStack.

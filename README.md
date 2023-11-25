@@ -81,8 +81,25 @@ Notes:
 
 ### Mazda
 
-- Unknown
+[Permanent] (2021+)
 
+By turning on the transmitter power saving function, the advanced keyless entry and push button start system functions turn off and the battery power consumption of the transmitter is restricted.
+
+**Turning on the power saving function:**
+
+- Press the lock button on the transmitter 4 times within 3 seconds to turn on the operation indicator light.
+- Press the lock button continuously for 1.5 seconds or longer while the operation indicator light turns on (for 5 seconds).
+- Press any of the buttons on the transmitter to make sure that the operation indicator light does not turn on/flash.
+
+
+**Turning off the power saving function:**
+
+- Press the lock button on the transmitter 4 times within 3 seconds to turn on the operation indicator light.
+- Press the lock button continuously for 1.5 seconds or longer while the operation indicator light turns on (for 5 seconds).
+
+NOTE: Once you turn this on, the car will not start with the key until you either turn the power save mode off, or place the key against the start/stop button while pressing it.
+
+Source: Owner's Manual
 
 ### Mercedes
 

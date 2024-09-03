@@ -6,6 +6,7 @@ Car manufacturers have already provided a "secret switch" for owners to easily p
 
 See instructions below for which buttons to press on your key fob, in order to disable keyless entry overnight or whenever you choose.
 
+If you have more than one remote key fob, you'll need to do this for each of them.
 
 ### Audi
 

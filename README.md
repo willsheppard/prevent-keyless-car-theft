@@ -1,3 +1,10 @@
+> **🌐 Live website:** https://willsheppard.github.io/prevent-keyless-car-theft/
+>
+> The website is built from [`index.html`](index.html) — a searchable, mobile-friendly page where
+> drivers can look up their car make and follow step-by-step instructions. **To add or correct a
+> car's instructions, edit the `CARS` data near the bottom of [`index.html`](index.html).** This
+> README is kept as a plain-text reference of the same information.
+
 ## How to protect your car for free
 
 You don't need any expensive or awkward-to-use products to stop theives stealing your car!

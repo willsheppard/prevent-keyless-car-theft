@@ -1,4 +1,4 @@
-# data/cars.js field reference
+# data/cars.json field reference
 
 ## Car entry
 

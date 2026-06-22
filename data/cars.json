@@ -42,8 +42,16 @@
   },
   {
     "name": "Bentley",
-    "methods": [],
-    "unknown": true,
+    "methods": [
+      {
+        "type": "auto",
+        "unverified": true,
+        "text": "Bentley uses VW Group (Audi) electronics. Recent fobs sleep after a period without movement (KESSY), blocking relay attacks overnight; check the car's keyless menu for options.",
+        "notes": [
+          "To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+        ]
+      }
+    ],
     "aliases": [
       "continental",
       "continental gt",
@@ -101,8 +109,13 @@
   },
   {
     "name": "Ferrari",
-    "methods": [],
-    "unknown": true,
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "Keyless models (e.g. Roma, Purosangue) have no widely documented on/off switch. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+      }
+    ],
     "aliases": [
       "roma",
       "portofino",
@@ -439,8 +452,16 @@
       "electric",
       "aceman"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "auto",
+        "unverified": true,
+        "text": "Mini uses BMW key technology; recent Comfort Access fobs have a motion sensor that puts the key to sleep when left still, blocking relay attacks overnight.",
+        "notes": [
+          "Locking the car with the fob also disables touchless unlocking, as on BMW."
+        ]
+      }
+    ]
   },
   {
     "name": "MG",
@@ -454,8 +475,13 @@
       "marvel r",
       "zt"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "No simple keyless on/off is widely documented for MG. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+      }
+    ]
   },
   {
     "name": "Nissan",
@@ -513,8 +539,20 @@
       "e-2008",
       "partner"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry / hands-free keyless entry."
+        ],
+        "notes": [
+          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+        ]
+      }
+    ]
   },
   {
     "name": "Porsche",
@@ -577,8 +615,25 @@
       "kamiq",
       "citigo"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the small indented area on the door handle.",
+          "Keyless entry is now disabled until you next unlock the car with the fob."
+        ],
+        "notes": [
+          "This mirrors Volkswagen's KESSY system used across the VW Group."
+        ]
+      },
+      {
+        "type": "auto",
+        "unverified": true,
+        "text": "Newer VW Group fobs go to sleep after about 15 minutes without movement, which blocks relay attacks overnight."
+      }
+    ]
   },
   {
     "name": "Subaru",
@@ -595,8 +650,19 @@
       "levorg",
       "solterra"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "In the vehicle settings (centre display or instrument menu), open the keyless access settings.",
+          "Turn off Keyless Access / passive entry where available."
+        ],
+        "notes": [
+          "To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+        ]
+      }
+    ]
   },
   {
     "name": "Tesla",
@@ -694,8 +760,20 @@
       "zafira",
       "adam"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry / hands-free keyless entry."
+        ],
+        "notes": [
+          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+        ]
+      }
+    ]
   },
   {
     "name": "Volkswagen",

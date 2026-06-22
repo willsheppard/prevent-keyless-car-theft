@@ -742,5 +742,382 @@
         "text": "Volkswagen calls its keyless entry feature \"KESSY\"."
       }
     ]
+  },
+  {
+    "name": "Chevrolet",
+    "aliases": [
+      "chevy",
+      "silverado",
+      "equinox",
+      "malibu",
+      "tahoe",
+      "suburban",
+      "traverse",
+      "blazer",
+      "trailblazer",
+      "colorado",
+      "camaro",
+      "corvette",
+      "bolt",
+      "trax",
+      "spark",
+      "impala"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the centre touchscreen, go to Settings > Vehicle.",
+          "Open Remote Lock/Unlock/Start (or Power Door Locks).",
+          "Turn off Passive Unlocking (and Passive Locking)."
+        ],
+        "notes": [
+          "This stops the car unlocking when you touch the handle with the fob nearby."
+        ],
+        "sources": [
+          [
+            "Chevrolet Support",
+            "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
+          ],
+          [
+            "GMC Support",
+            "https://www.gmc.com/support/vehicle/security/keyless-open-start"
+          ]
+        ]
+      },
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
+          "This toggles keyless (passive) entry off. Repeat to turn it back on."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GMC",
+    "aliases": [
+      "sierra",
+      "yukon",
+      "acadia",
+      "terrain",
+      "canyon",
+      "hummer ev",
+      "savana"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the centre touchscreen, go to Settings > Vehicle.",
+          "Open Remote Lock/Unlock/Start (or Power Door Locks).",
+          "Turn off Passive Unlocking (and Passive Locking)."
+        ],
+        "notes": [
+          "This stops the car unlocking when you touch the handle with the fob nearby."
+        ],
+        "sources": [
+          [
+            "Chevrolet Support",
+            "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
+          ],
+          [
+            "GMC Support",
+            "https://www.gmc.com/support/vehicle/security/keyless-open-start"
+          ]
+        ]
+      },
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
+          "This toggles keyless (passive) entry off. Repeat to turn it back on."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cadillac",
+    "aliases": [
+      "escalade",
+      "xt4",
+      "xt5",
+      "xt6",
+      "ct4",
+      "ct5",
+      "lyriq",
+      "ats",
+      "cts",
+      "srx"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the centre touchscreen, go to Settings > Vehicle.",
+          "Open Remote Lock/Unlock/Start (or Power Door Locks).",
+          "Turn off Passive Unlocking (and Passive Locking)."
+        ],
+        "notes": [
+          "This stops the car unlocking when you touch the handle with the fob nearby."
+        ],
+        "sources": [
+          [
+            "Chevrolet Support",
+            "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
+          ],
+          [
+            "GMC Support",
+            "https://www.gmc.com/support/vehicle/security/keyless-open-start"
+          ]
+        ]
+      },
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
+          "This toggles keyless (passive) entry off. Repeat to turn it back on."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Buick",
+    "aliases": [
+      "enclave",
+      "encore",
+      "encore gx",
+      "envision",
+      "envista"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the centre touchscreen, go to Settings > Vehicle.",
+          "Open Remote Lock/Unlock/Start (or Power Door Locks).",
+          "Turn off Passive Unlocking (and Passive Locking)."
+        ],
+        "notes": [
+          "This stops the car unlocking when you touch the handle with the fob nearby."
+        ],
+        "sources": [
+          [
+            "Chevrolet Support",
+            "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
+          ],
+          [
+            "GMC Support",
+            "https://www.gmc.com/support/vehicle/security/keyless-open-start"
+          ]
+        ]
+      },
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
+          "This toggles keyless (passive) entry off. Repeat to turn it back on."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jeep",
+    "aliases": [
+      "wrangler",
+      "grand cherokee",
+      "cherokee",
+      "compass",
+      "renegade",
+      "gladiator",
+      "wagoneer",
+      "grand wagoneer",
+      "avenger"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry (Keyless Enter-N-Go)."
+        ],
+        "notes": [
+          "You can still lock/unlock with the fob buttons; only the touch-the-handle feature is disabled."
+        ],
+        "sources": [
+          [
+            "Mopar owner's manual",
+            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dodge",
+    "aliases": [
+      "charger",
+      "challenger",
+      "durango",
+      "hornet",
+      "journey"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry (Keyless Enter-N-Go)."
+        ],
+        "notes": [
+          "You can still lock/unlock with the fob buttons; only the touch-the-handle feature is disabled."
+        ],
+        "sources": [
+          [
+            "Mopar owner's manual",
+            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chrysler",
+    "aliases": [
+      "300",
+      "300c",
+      "pacifica",
+      "voyager"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry (Keyless Enter-N-Go)."
+        ],
+        "notes": [
+          "You can still lock/unlock with the fob buttons; only the touch-the-handle feature is disabled."
+        ],
+        "sources": [
+          [
+            "Mopar owner's manual",
+            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ram",
+    "aliases": [
+      "1500",
+      "2500",
+      "3500",
+      "ram 1500",
+      "promaster"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry (Keyless Enter-N-Go)."
+        ],
+        "notes": [
+          "You can still lock/unlock with the fob buttons; only the touch-the-handle feature is disabled."
+        ],
+        "sources": [
+          [
+            "Mopar owner's manual",
+            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lincoln",
+    "aliases": [
+      "navigator",
+      "aviator",
+      "corsair",
+      "nautilus",
+      "continental",
+      "mkz",
+      "mkc",
+      "mkx"
+    ],
+    "methods": [
+      {
+        "type": "auto",
+        "unverified": true,
+        "text": "Like Ford, recent Lincoln intelligent-access fobs go to sleep after a period without movement, which blocks relay attacks overnight."
+      },
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "In the SYNC settings, open the door/lock settings.",
+          "Turn off \"Intelligent Access\" / passive entry."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rivian",
+    "aliases": [
+      "r1t",
+      "r1s",
+      "r2",
+      "r3"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "In the centre screen, open Settings.",
+          "Under the locks/keys section, turn off passive (proximity) entry so the car only unlocks from the app or key fob button."
+        ],
+        "notes": [
+          "If you use the phone as a key, also consider turning off passive unlock for the phone."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lucid",
+    "aliases": [
+      "air",
+      "gravity",
+      "lucid air"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "In the centre display, open Settings.",
+          "Under doors/locks, turn off passive (walk-up) unlocking."
+        ]
+      }
+    ]
   }
 ]

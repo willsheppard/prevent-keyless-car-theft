@@ -1,0 +1,487 @@
+[
+  {
+    "name": "Audi",
+    "aliases": [
+      "a1",
+      "a3",
+      "a4",
+      "a5",
+      "a6",
+      "q3",
+      "q5",
+      "q7",
+      "e-tron"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "confirm": true,
+        "steps": [
+          "Press the \"lock\" button once <em>(to be confirmed)</em>."
+        ],
+        "sources": [
+          [
+            "Manual (page 40)",
+            "https://manual-directory.com/view-manual-pdf/?mid=29412"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bentley",
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "BMW",
+    "aliases": [
+      "1 series",
+      "2 series",
+      "3 series",
+      "5 series",
+      "x1",
+      "x3",
+      "x5",
+      "i3",
+      "i4",
+      "digital key"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "confirm": true,
+        "steps": [
+          "Press the \"lock\" button on the digital key or remote control key fob."
+        ],
+        "notes": [
+          "If the vehicle was locked with the remote control, it cannot be unlocked touchless.",
+          "If the vehicle has been idle for several days, touchless unlocking and locking is not possible until after the vehicle has been driven again."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ferrari",
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Ford",
+    "aliases": [
+      "fiesta",
+      "focus",
+      "kuga",
+      "puma",
+      "mondeo",
+      "ranger"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "confirm": true,
+        "steps": [
+          "Lock the car by pressing the button on the remote control key <em>(to be confirmed)</em>."
+        ]
+      },
+      {
+        "type": "auto",
+        "models": "Fiesta / Focus, 2019 onwards",
+        "text": "The \"sleeping key fob\" feature automatically deactivates the transmitter when the key fob has not moved for 40 seconds."
+      },
+      {
+        "type": "perm",
+        "models": "Fiesta 2016, Focus 2017 onwards",
+        "text": "Disable \"Passive entry\" in the car's menu."
+      }
+    ]
+  },
+  {
+    "name": "Hyundai",
+    "aliases": [
+      "i10",
+      "i20",
+      "i30",
+      "tucson",
+      "kona",
+      "santa fe"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Jaguar",
+    "aliases": [
+      "f-type",
+      "f type",
+      "xe",
+      "xf",
+      "e-pace",
+      "f-pace",
+      "i-pace"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "models": "2013 F-Type, Discovery Sport",
+        "steps": [
+          "Open the driver's door (using the fob).",
+          "Place the key fob inside the car.",
+          "Press the headlamp button on the key fob 3 times.",
+          "Press the unlock button on the key fob once.",
+          "Take the keys outside the car.",
+          "Close the driver's door.",
+          "Lock the car using the fob.",
+          "Unlock the car using the fob."
+        ],
+        "notes": [
+          "To re-enable it, follow the same procedure but press the lock button at step 4.",
+          "You must first unlock and then re-lock the car with the fob — not the keyless button on the door handle."
+        ],
+        "sources": [
+          [
+            "F-Type forum",
+            "https://www.ftypeforums.co.uk/viewtopic.php?t=2226"
+          ],
+          [
+            "Jaguar forum",
+            "https://www.jaginfo.org/threads/how-to-disable-keyless-entry.98122/"
+          ],
+          [
+            "F-Pace forum",
+            "https://www.fpaceforums.co.uk/threads/turning-off-keyless-entry.3612/"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kia",
+    "aliases": [
+      "picanto",
+      "rio",
+      "ceed",
+      "sportage",
+      "niro",
+      "sorento"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Lexus",
+    "aliases": [
+      "is",
+      "es",
+      "rx",
+      "nx",
+      "ux"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "steps": [
+          "Press and hold the \"lock\" button.",
+          "While still holding it, press the \"unlock\" button twice.",
+          "After about 1 second, the light on the key fob will flash an extra time to confirm."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mazda",
+    "aliases": [
+      "2",
+      "3",
+      "6",
+      "cx-3",
+      "cx-5",
+      "cx-30",
+      "mx-5"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "models": "2021 onwards",
+        "text": "Turning on the \"transmitter power saving function\" switches off the advanced keyless entry and push-button start, and limits the fob's battery use.",
+        "sub": [
+          {
+            "label": "To turn the power saving function ON",
+            "steps": [
+              "Press the lock button on the fob 4 times within 3 seconds — the indicator light turns on.",
+              "While the indicator light is on (about 5 seconds), press and hold the lock button for 1.5 seconds or longer.",
+              "Press any button on the fob to check the indicator light does not turn on or flash — this confirms it's off."
+            ]
+          },
+          {
+            "label": "To turn the power saving function OFF",
+            "steps": [
+              "Press the lock button on the fob 4 times within 3 seconds — the indicator light turns on.",
+              "While the indicator light is on (about 5 seconds), press and hold the lock button for 1.5 seconds or longer."
+            ]
+          }
+        ],
+        "notes": [
+          "Once this is on, the car won't start with the key until you either turn power-save mode off, or hold the key against the start/stop button while pressing it."
+        ],
+        "sources": [
+          [
+            "Owner's Manual",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mercedes",
+    "aliases": [
+      "mercedes-benz",
+      "a-class",
+      "c-class",
+      "e-class",
+      "s-class",
+      "gla",
+      "glc",
+      "gle"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "steps": [
+          "Lock the car as usual.",
+          "Press the lock button again twice, quickly."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mini",
+    "aliases": [
+      "cooper",
+      "countryman",
+      "clubman"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "MG",
+    "aliases": [
+      "zs",
+      "hs",
+      "mg4",
+      "mg5"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Nissan",
+    "aliases": [
+      "qashqai",
+      "juke",
+      "leaf",
+      "micra",
+      "x-trail"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "models": "Qashqai",
+        "steps": [
+          "Go to Settings → Vehicle → Locking.",
+          "Change the i-key setting to \"off\"."
+        ]
+      },
+      {
+        "type": "auto",
+        "models": "J12 onwards?",
+        "text": "The latest key fobs turn themselves off after a period of inactivity."
+      },
+      {
+        "type": "info",
+        "text": "Nissan calls this feature \"i-key\" (intelligent key)."
+      }
+    ]
+  },
+  {
+    "name": "Peugeot",
+    "aliases": [
+      "108",
+      "208",
+      "308",
+      "2008",
+      "3008",
+      "5008"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Porsche",
+    "aliases": [
+      "911",
+      "cayenne",
+      "macan",
+      "panamera",
+      "taycan",
+      "boxster",
+      "cayman"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "steps": [
+          "Press and hold the lock button.",
+          "At the same time, press the unlock button within 1 second.",
+          "Keep both buttons pressed until the indicator light on the key lights up continuously."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Range Rover",
+    "aliases": [
+      "land rover",
+      "landrover",
+      "evoque",
+      "velar",
+      "sport",
+      "discovery",
+      "defender"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "steps": [
+          "With the key inside the car and the door open,",
+          "press the headlight button 3 times, then the unlock button.",
+          "Then lock the car with the fob as normal."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Škoda",
+    "aliases": [
+      "skoda",
+      "fabia",
+      "octavia",
+      "superb",
+      "kodiaq",
+      "karoq",
+      "scala"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Subaru",
+    "aliases": [
+      "impreza",
+      "forester",
+      "outback",
+      "xv"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Tesla",
+    "aliases": [
+      "model 3",
+      "model s",
+      "model x",
+      "model y"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "confirm": true,
+        "steps": [
+          "Press the \"lock\" button once <em>(to be confirmed)</em>."
+        ]
+      },
+      {
+        "type": "perm",
+        "models": "Model S",
+        "steps": [
+          "On the centre touchscreen, go to the Settings tab.",
+          "Open the Doors & Locks menu.",
+          "Switch 'Passive Entry' OFF (you must press the brake pedal)."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Toyota",
+    "aliases": [
+      "yaris",
+      "corolla",
+      "rav4",
+      "aygo",
+      "c-hr",
+      "prius",
+      "tacoma"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "models": "e.g. Tacoma",
+        "steps": [
+          "Press and hold the lock button.",
+          "At the same time, press the unlock button twice."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vauxhall",
+    "aliases": [
+      "opel",
+      "corsa",
+      "astra",
+      "mokka",
+      "grandland",
+      "crossland"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Volkswagen",
+    "aliases": [
+      "vw",
+      "golf",
+      "polo",
+      "passat",
+      "tiguan",
+      "t-roc",
+      "t-cross",
+      "id.3",
+      "id.4",
+      "kessy"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "models": "T-Roc 7 onwards?",
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the little indented area on the door handle.",
+          "Keyless entry is now disabled until you next unlock the car."
+        ]
+      },
+      {
+        "type": "auto",
+        "models": "T-Cross",
+        "text": "The key fob goes to sleep after 15 minutes of inactivity."
+      },
+      {
+        "type": "info",
+        "text": "Volkswagen calls its keyless entry feature \"KESSY\"."
+      }
+    ]
+  }
+]

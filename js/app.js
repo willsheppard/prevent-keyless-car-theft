@@ -1,3 +1,5 @@
+const TYPE_LABEL = { temp: "Temporary", auto: "Automatic", perm: "Permanent", info: "Note" };
+
 const grid = document.getElementById("grid");
 const meta = document.getElementById("meta");
 const noresults = document.getElementById("noresults");
@@ -76,9 +78,9 @@ function matches(car, q) {
   return q.split(/\s+/).every(term => hay.includes(term));
 }
 
-function render(q = "") {
+function render(cars, q = "") {
   q = q.trim().toLowerCase();
-  const sorted = [...CARS].sort((a, b) => a.name.localeCompare(b.name));
+  const sorted = [...cars].sort((a, b) => a.name.localeCompare(b.name));
   const visible = sorted.filter(c => matches(c, q));
 
   if (visible.length === 0) {
@@ -89,7 +91,7 @@ function render(q = "") {
     return;
   }
   noresults.hidden = true;
-  grid.innerHTML = visible.map((c) => cardHTML(c, CARS.indexOf(c))).join("");
+  grid.innerHTML = visible.map((c) => cardHTML(c, cars.indexOf(c))).join("");
 
   if (q) {
     meta.textContent = `${visible.length} match${visible.length === 1 ? "" : "es"} for "${q}"`;
@@ -115,18 +117,22 @@ grid.addEventListener("click", (e) => {
   head.setAttribute("aria-expanded", isOpen ? "true" : "false");
 });
 
-let t;
-input.addEventListener("input", () => {
-  clearBtn.style.display = input.value ? "flex" : "none";
-  clearTimeout(t);
-  t = setTimeout(() => render(input.value), 120);
-});
+fetch("data/cars.json")
+  .then(r => r.json())
+  .then(cars => {
+    let t;
+    input.addEventListener("input", () => {
+      clearBtn.style.display = input.value ? "flex" : "none";
+      clearTimeout(t);
+      t = setTimeout(() => render(cars, input.value), 120);
+    });
 
-clearBtn.addEventListener("click", () => {
-  input.value = "";
-  clearBtn.style.display = "none";
-  render("");
-  input.focus();
-});
+    clearBtn.addEventListener("click", () => {
+      input.value = "";
+      clearBtn.style.display = "none";
+      render(cars, "");
+      input.focus();
+    });
 
-render("");
+    render(cars, "");
+  });

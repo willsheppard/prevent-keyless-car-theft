@@ -37,7 +37,7 @@ a { color: var(--green); }
 header.hero {
   background: linear-gradient(160deg, var(--green) 0%, var(--green-dark) 100%);
   color: #fff;
-  padding: 56px 0 48px;
+  padding: 32px 0 28px;
   text-align: center;
 }
 header.hero .badge {
@@ -51,17 +51,17 @@ header.hero .badge {
   text-transform: uppercase;
   padding: 6px 14px;
   border-radius: 999px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 header.hero h1 {
-  font-size: clamp(28px, 5vw, 44px);
+  font-size: clamp(24px, 4vw, 36px);
   line-height: 1.15;
-  margin: 0 0 14px;
+  margin: 0 0 8px;
   font-weight: 800;
   letter-spacing: -.02em;
 }
 header.hero p.lede {
-  font-size: clamp(16px, 2.4vw, 20px);
+  font-size: clamp(14px, 2vw, 17px);
   max-width: 640px;
   margin: 0 auto;
   color: rgba(255,255,255,.92);
@@ -69,7 +69,7 @@ header.hero p.lede {
 
 /* ---------- Search ---------- */
 .search-zone {
-  margin-top: 30px;
+  margin-top: 16px;
   max-width: 560px;
   margin-left: auto;
   margin-right: auto;
@@ -107,13 +107,13 @@ header.hero p.lede {
 }
 .search-clear:hover { background: #d4e9e2; }
 .search-hint {
-  margin-top: 12px;
+  margin-top: 8px;
   font-size: 14px;
   color: rgba(255,255,255,.85);
 }
 
 /* ---------- Main ---------- */
-main { padding: 40px 0 20px; }
+main { padding: 20px 0 20px; }
 
 .results-meta {
   font-size: 14px;
@@ -366,7 +366,7 @@ footer a { color: #fff; }
 .skip-link:focus { left: 0; }
 
 @media (max-width: 600px) {
-  header.hero { padding: 40px 0 36px; }
+  header.hero { padding: 24px 0 20px; }
   section.content { padding: 22px 18px; }
   .legend { padding: 18px; }
 }

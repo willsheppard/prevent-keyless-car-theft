@@ -15,7 +15,7 @@
     "methods": [
       {
         "type": "temp",
-        "confirm": true,
+        "unverified": true,
         "steps": [
           "Press the \"lock\" button once <em>(to be confirmed)</em>."
         ],
@@ -50,7 +50,7 @@
     "methods": [
       {
         "type": "temp",
-        "confirm": true,
+        "unverified": true,
         "steps": [
           "Press the \"lock\" button on the digital key or remote control key fob."
         ],
@@ -79,7 +79,7 @@
     "methods": [
       {
         "type": "temp",
-        "confirm": true,
+        "unverified": true,
         "steps": [
           "Lock the car by pressing the button on the remote control key <em>(to be confirmed)</em>."
         ]
@@ -398,7 +398,7 @@
     "methods": [
       {
         "type": "temp",
-        "confirm": true,
+        "unverified": true,
         "steps": [
           "Press the \"lock\" button once <em>(to be confirmed)</em>."
         ]

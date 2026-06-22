@@ -14,7 +14,7 @@
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `type` | string | yes | One of `"temp"`, `"auto"`, `"perm"`, `"info"` — see below. |
-| `confirm` | boolean | no | Editorial flag: the steps have not been personally verified by a contributor. Not currently rendered differently by the UI, but signals that the entry needs checking. Often paired with `(to be confirmed)` text inside the step string itself. |
+| `unverified` | boolean | no | Editorial flag: the steps have not been personally verified by a contributor. Not currently rendered differently by the UI, but signals that the entry needs checking. Often paired with `(to be confirmed)` text inside the step string itself. |
 | `models` | string | no | Which specific models or years this method applies to (e.g. `"Fiesta 2016, Focus 2017 onwards"`). Displayed in muted text next to the type tag. |
 | `text` | string | no | Prose description of the method, used when there are no discrete steps or as a preamble before `steps`. |
 | `steps` | string[] | no | Ordered list of steps. HTML is allowed (e.g. `<em>`). Rendered as `<ol>` for permanent methods or when there are more than two steps, otherwise `<ul>`. |

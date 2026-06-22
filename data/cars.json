@@ -1291,5 +1291,451 @@
         "text": "Suzuki's keyless push-start system has no widely documented on/off switch. Until one is confirmed for your model, keep the fob in a Faraday pouch overnight to block relay attacks, and check your owner's manual under \"keyless start\"."
       }
     ]
+  },
+  {
+    "name": "Volvo",
+    "aliases": [
+      "xc40",
+      "xc60",
+      "xc90",
+      "v60",
+      "v90",
+      "s60",
+      "s90",
+      "c40",
+      "ex30",
+      "ex90",
+      "v40"
+    ],
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "Volvo's keyless entry cannot be fully switched off from the car's menus -- the settings only let you choose which doors unlock. To block relay attacks, keep the fob in a Faraday pouch, or ask a Volvo dealer about disabling Keyless Drive.",
+        "sources": [
+          [
+            "Volvo Support",
+            "https://www.volvocars.com/uk/support/car/v90/article/cfacf58aa03188edc0a80151739ef5d0/"
+          ],
+          [
+            "Volvo owners (SwedeSpeed)",
+            "https://www.swedespeed.com/threads/can-the-keyless-drive-feature-be-disabled.233500/"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Polestar",
+    "aliases": [
+      "polestar 2",
+      "polestar 3",
+      "polestar 4",
+      "2",
+      "3",
+      "4"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "In the centre display, open Settings.",
+          "Under locking, turn off keyless/passive unlock if your model offers it."
+        ],
+        "notes": [
+          "Polestar shares Volvo's platform; on models where it can't be turned off, keep the fob in a Faraday pouch.",
+          "Polestar's phone-as-key feature should also be reviewed if you use it."
+        ],
+        "sources": [
+          [
+            "Polestar Forum",
+            "https://www.polestar-forum.com/threads/disable-keyless-unlocking-entry.12915/"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fiat",
+    "aliases": [
+      "500",
+      "500e",
+      "500x",
+      "500l",
+      "panda",
+      "tipo",
+      "punto",
+      "600",
+      "doblo"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry / hands-free keyless entry."
+        ],
+        "notes": [
+          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Abarth",
+    "aliases": [
+      "595",
+      "695",
+      "500e",
+      "abarth 500"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry / hands-free keyless entry."
+        ],
+        "notes": [
+          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alfa Romeo",
+    "aliases": [
+      "giulia",
+      "stelvio",
+      "tonale",
+      "giulietta",
+      "mito",
+      "junior"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry / hands-free keyless entry."
+        ],
+        "notes": [
+          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Maserati",
+    "aliases": [
+      "ghibli",
+      "levante",
+      "quattroporte",
+      "grecale",
+      "mc20",
+      "granturismo"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the touchscreen (MTC), open Settings.",
+          "Under doors/locks, turn off passive keyless entry where available."
+        ],
+        "notes": [
+          "To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Citroen",
+    "aliases": [
+      "citroen",
+      "c1",
+      "c3",
+      "c4",
+      "c5",
+      "c5 aircross",
+      "c5 x",
+      "berlingo",
+      "ds3",
+      "e-c4",
+      "ami"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry / hands-free keyless entry."
+        ],
+        "notes": [
+          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DS",
+    "aliases": [
+      "ds3",
+      "ds4",
+      "ds7",
+      "ds9",
+      "ds 3 crossback",
+      "ds 7 crossback"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the touchscreen, open Settings.",
+          "Go to Doors & Locks (or Personal Settings).",
+          "Turn off Passive Entry / hands-free keyless entry."
+        ],
+        "notes": [
+          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SEAT",
+    "aliases": [
+      "seat",
+      "ibiza",
+      "leon",
+      "arona",
+      "ateca",
+      "tarraco",
+      "alhambra",
+      "mii"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the small indented area on the door handle.",
+          "Keyless entry is now disabled until you next unlock the car with the fob."
+        ],
+        "notes": [
+          "This mirrors Volkswagen's KESSY system used across the VW Group."
+        ]
+      },
+      {
+        "type": "auto",
+        "unverified": true,
+        "text": "Newer VW Group fobs go to sleep after about 15 minutes without movement, which blocks relay attacks overnight."
+      }
+    ]
+  },
+  {
+    "name": "Cupra",
+    "aliases": [
+      "cupra",
+      "formentor",
+      "born",
+      "leon",
+      "ateca",
+      "tavascan",
+      "terramar"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the small indented area on the door handle.",
+          "Keyless entry is now disabled until you next unlock the car with the fob."
+        ],
+        "notes": [
+          "This mirrors Volkswagen's KESSY system used across the VW Group."
+        ]
+      },
+      {
+        "type": "auto",
+        "unverified": true,
+        "text": "Newer VW Group fobs go to sleep after about 15 minutes without movement, which blocks relay attacks overnight."
+      }
+    ]
+  },
+  {
+    "name": "Renault",
+    "aliases": [
+      "clio",
+      "captur",
+      "megane",
+      "scenic",
+      "kadjar",
+      "arkana",
+      "austral",
+      "zoe",
+      "twingo",
+      "espace",
+      "koleos",
+      "megane e-tech"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "In the vehicle settings menu, open the access/locking options.",
+          "Turn off the hands-free keyless card (\"mains libres\") proximity unlocking where available."
+        ],
+        "notes": [
+          "Renault uses a hands-free key card. On models without a menu option, keep the card in a Faraday pouch overnight."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dacia",
+    "aliases": [
+      "sandero",
+      "duster",
+      "jogger",
+      "spring",
+      "logan",
+      "stepway"
+    ],
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "Most Dacia models use a conventional remote (press to unlock), not proximity keyless, so they are generally not vulnerable to relay attacks. If your Dacia has hands-free keyless entry, To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+      }
+    ]
+  },
+  {
+    "name": "Smart",
+    "aliases": [
+      "fortwo",
+      "forfour",
+      "smart #1",
+      "smart #3",
+      "eq fortwo"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car as usual.",
+          "Press the lock button again twice, quickly."
+        ],
+        "notes": [
+          "Older Smart cars share Mercedes' keyless system. Newer Smart #1/#3 are built with Geely -- check the car's menu instead."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lotus",
+    "aliases": [
+      "emira",
+      "eletre",
+      "emeya",
+      "evora",
+      "exige",
+      "elise"
+    ],
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "For keyless Lotus models (e.g. Emira, Eletre), no simple on/off is widely documented. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+      }
+    ]
+  },
+  {
+    "name": "Aston Martin",
+    "aliases": [
+      "db11",
+      "db12",
+      "dbx",
+      "vantage",
+      "dbs",
+      "vanquish",
+      "rapide"
+    ],
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "No simple keyless on/off is widely documented for Aston Martin. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+      }
+    ]
+  },
+  {
+    "name": "McLaren",
+    "aliases": [
+      "720s",
+      "750s",
+      "570s",
+      "gt",
+      "artura",
+      "765lt"
+    ],
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "No simple keyless on/off is widely documented for McLaren. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+      }
+    ]
+  },
+  {
+    "name": "Rolls-Royce",
+    "aliases": [
+      "rolls royce",
+      "phantom",
+      "ghost",
+      "cullinan",
+      "wraith",
+      "dawn",
+      "spectre"
+    ],
+    "methods": [
+      {
+        "type": "auto",
+        "unverified": true,
+        "text": "Rolls-Royce uses BMW key technology; recent fobs have a motion sensor that puts the key to sleep when left still, blocking relay attacks overnight.",
+        "notes": [
+          "Locking the car with the fob also disables touchless unlocking, as on BMW."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lamborghini",
+    "aliases": [
+      "urus",
+      "huracan",
+      "aventador",
+      "revuelto"
+    ],
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "Lamborghini uses VW Group (Audi) electronics. The Urus may offer KESSY-style behaviour similar to Audi; otherwise To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+      }
+    ]
   }
 ]

@@ -1,7 +1,7 @@
 > **🌐 Live website:** https://willsheppard.github.io/prevent-keyless-car-theft/
 >
 > The website is built from [`index.html`](index.html). **To add or correct a car's instructions,
-> edit [`data/cars.js`](data/cars.js).**
+> edit [`data/cars.json`](data/cars.json).**
 
 ## How to protect your car for free
 
@@ -11,7 +11,7 @@ Car manufacturers have already provided a "secret switch" for owners to easily p
 
 If you have more than one remote key fob, you'll need to do this for each of them.
 
-Car-by-car instructions are in [`data/cars.js`](data/cars.js) and on the [live website](https://willsheppard.github.io/prevent-keyless-car-theft/).
+Car-by-car instructions are in [`data/cars.json`](data/cars.json) and on the [live website](https://willsheppard.github.io/prevent-keyless-car-theft/).
 
 ## Explanation
 

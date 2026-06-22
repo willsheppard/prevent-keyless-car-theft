@@ -73,7 +73,7 @@ function cardHTML(car, idx) {
 function matches(car, q) {
   if (!q) return true;
   const hay = (car.name + " " + (car.aliases || []).join(" ")).toLowerCase();
-  return hay.includes(q);
+  return q.split(/\s+/).every(term => hay.includes(term));
 }
 
 function render(q = "") {

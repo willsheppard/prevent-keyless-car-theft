@@ -136,7 +136,7 @@
         ],
         "notes": [
           "To re-enable it, follow the same procedure but press the lock button at step 4.",
-          "You must first unlock and then re-lock the car with the fob — not the keyless button on the door handle."
+          "You must first unlock and then re-lock the car with the fob -- not the keyless button on the door handle."
         ],
         "sources": [
           [
@@ -208,15 +208,15 @@
           {
             "label": "To turn the power saving function ON",
             "steps": [
-              "Press the lock button on the fob 4 times within 3 seconds — the indicator light turns on.",
+              "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
               "While the indicator light is on (about 5 seconds), press and hold the lock button for 1.5 seconds or longer.",
-              "Press any button on the fob to check the indicator light does not turn on or flash — this confirms it's off."
+              "Press any button on the fob to check the indicator light does not turn on or flash -- this confirms it's off."
             ]
           },
           {
             "label": "To turn the power saving function OFF",
             "steps": [
-              "Press the lock button on the fob 4 times within 3 seconds — the indicator light turns on.",
+              "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
               "While the indicator light is on (about 5 seconds), press and hold the lock button for 1.5 seconds or longer."
             ]
           }
@@ -290,7 +290,7 @@
         "type": "perm",
         "models": "Qashqai",
         "steps": [
-          "Go to Settings → Vehicle → Locking.",
+          "Go to Settings | Vehicle | Locking.",
           "Change the i-key setting to \"off\"."
         ]
       },
@@ -363,7 +363,7 @@
     ]
   },
   {
-    "name": "Škoda",
+    "name": "Skoda",
     "aliases": [
       "skoda",
       "fabia",

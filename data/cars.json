@@ -1119,5 +1119,177 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Honda",
+    "aliases": [
+      "civic",
+      "accord",
+      "cr-v",
+      "crv",
+      "hr-v",
+      "hrv",
+      "jazz",
+      "fit",
+      "pilot",
+      "passport",
+      "ridgeline",
+      "odyssey",
+      "e:ny1",
+      "zr-v",
+      "insight",
+      "prologue"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "text": "Honda's Smart Entry proximity unlock has no simple fob on/off button. You can switch off \"Walk Away Auto Lock\" in the vehicle settings menu, but fully disabling proximity unlocking usually needs a Honda dealer or an OBD tool (e.g. Carista).",
+        "notes": [
+          "Until disabled, keep the fob in a Faraday pouch overnight to block relay attacks.",
+          "Locking/unlocking with the fob buttons and push-button start are unaffected."
+        ],
+        "sources": [
+          [
+            "Honda owners forum (CivicX)",
+            "https://www.civicx.com/forum/threads/disabling-smart-entry.21788/"
+          ]
+        ]
+      },
+      {
+        "type": "info",
+        "text": "Honda calls this \"Smart Entry with Walk Away Auto Lock\"."
+      }
+    ]
+  },
+  {
+    "name": "Acura",
+    "aliases": [
+      "mdx",
+      "rdx",
+      "tlx",
+      "ilx",
+      "integra",
+      "nsx",
+      "zdx"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "text": "Acura uses Honda's Smart Entry system. There is no simple fob on/off; \"Walk Away Auto Lock\" can be turned off in settings, but fully disabling proximity unlock generally needs a dealer or OBD tool.",
+        "notes": [
+          "Until disabled, keep the fob in a Faraday pouch overnight to block relay attacks."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Infiniti",
+    "aliases": [
+      "q50",
+      "q60",
+      "qx50",
+      "qx55",
+      "qx60",
+      "qx80",
+      "q70",
+      "qx30"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "In the vehicle settings menu, open the lock/Intelligent Key settings.",
+          "Turn the Intelligent Key (i-Key) proximity feature off."
+        ],
+        "notes": [
+          "Infiniti uses Nissan's Intelligent Key system, so the menu is similar to Nissan's."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Genesis",
+    "aliases": [
+      "g70",
+      "g80",
+      "g90",
+      "gv60",
+      "gv70",
+      "gv80",
+      "electrified g80"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car.",
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
+          "The hazard lights flash to confirm the fob is disabled."
+        ],
+        "notes": [
+          "Genesis uses Hyundai's smart-key system. Press any fob button to re-enable.",
+          "Availability varies by model and year."
+        ]
+      },
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the infotainment screen, go to Settings > Vehicle > Door.",
+          "Turn \"Approach unlock\" off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mitsubishi",
+    "aliases": [
+      "outlander",
+      "outlander phev",
+      "eclipse cross",
+      "asx",
+      "mirage",
+      "l200",
+      "shogun",
+      "colt"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "In the vehicle settings, open the keyless/locking options.",
+          "Turn off the keyless operation (proximity) function where available."
+        ],
+        "notes": [
+          "Mitsubishi calls this the \"Keyless Operation System\" (KOS / FAST key). On models without a menu option, keep the fob in a Faraday pouch overnight."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Suzuki",
+    "aliases": [
+      "swift",
+      "vitara",
+      "s-cross",
+      "jimny",
+      "ignis",
+      "swace",
+      "across",
+      "baleno",
+      "celerio"
+    ],
+    "methods": [
+      {
+        "type": "info",
+        "unverified": true,
+        "text": "Suzuki's keyless push-start system has no widely documented on/off switch. Until one is confirmed for your model, keep the fob in a Faraday pouch overnight to block relay attacks, and check your owner's manual under \"keyless start\"."
+      }
+    ]
   }
 ]

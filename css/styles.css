@@ -183,6 +183,7 @@ main { padding: 20px 0 20px; }
 .tag.auto { background: var(--auto); }
 .tag.perm { background: var(--perm); }
 .tag.none { background: #94a3b8; }
+.tag.unverified { background: transparent; border: 1.5px solid #d97706; color: #d97706; }
 
 .chev {
   flex: 0 0 auto;

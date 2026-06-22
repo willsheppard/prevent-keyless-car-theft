@@ -31,6 +31,7 @@ function methodHTML(m) {
   }
   let h = `<div class="method"><div class="method-head">`;
   h += `<span class="tag ${m.type}">${TYPE_LABEL[m.type]}</span>`;
+  if (m.unverified) h += `<span class="tag unverified">Unverified</span>`;
   if (m.models) h += `<span class="method-models">${m.models}</span>`;
   h += `</div>`;
   if (m.text) h += `<p>${m.text}</p>`;

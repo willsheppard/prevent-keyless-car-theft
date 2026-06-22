@@ -7,10 +7,22 @@
       "a4",
       "a5",
       "a6",
+      "a7",
+      "a8",
+      "q2",
       "q3",
+      "q4",
+      "q4 e-tron",
       "q5",
       "q7",
-      "e-tron"
+      "q8",
+      "tt",
+      "r8",
+      "e-tron",
+      "e-tron gt",
+      "s3",
+      "rs3",
+      "rs6"
     ],
     "methods": [
       {
@@ -31,7 +43,14 @@
   {
     "name": "Bentley",
     "methods": [],
-    "unknown": true
+    "unknown": true,
+    "aliases": [
+      "continental",
+      "continental gt",
+      "flying spur",
+      "bentayga",
+      "mulsanne"
+    ]
   },
   {
     "name": "BMW",
@@ -39,13 +58,32 @@
       "1 series",
       "2 series",
       "3 series",
+      "4 series",
       "5 series",
+      "6 series",
+      "7 series",
+      "8 series",
       "x1",
+      "x2",
       "x3",
+      "x4",
       "x5",
+      "x6",
+      "x7",
+      "z4",
       "i3",
       "i4",
-      "digital key"
+      "i5",
+      "i7",
+      "ix",
+      "ix1",
+      "ix3",
+      "m2",
+      "m3",
+      "m4",
+      "m5",
+      "digital key",
+      "comfort access"
     ],
     "methods": [
       {
@@ -64,7 +102,16 @@
   {
     "name": "Ferrari",
     "methods": [],
-    "unknown": true
+    "unknown": true,
+    "aliases": [
+      "roma",
+      "portofino",
+      "296",
+      "sf90",
+      "f8",
+      "812",
+      "purosangue"
+    ]
   },
   {
     "name": "Ford",
@@ -74,7 +121,24 @@
       "kuga",
       "puma",
       "mondeo",
-      "ranger"
+      "ranger",
+      "mustang",
+      "mustang mach-e",
+      "mach-e",
+      "explorer",
+      "f-150",
+      "f150",
+      "escape",
+      "edge",
+      "bronco",
+      "bronco sport",
+      "ecosport",
+      "galaxy",
+      "s-max",
+      "transit",
+      "maverick",
+      "focus active",
+      "tourneo"
     ],
     "methods": [
       {
@@ -102,12 +166,54 @@
       "i10",
       "i20",
       "i30",
+      "i40",
       "tucson",
       "kona",
-      "santa fe"
+      "santa fe",
+      "ioniq",
+      "ioniq 5",
+      "ioniq 6",
+      "bayon",
+      "santa cruz",
+      "palisade",
+      "elantra",
+      "sonata",
+      "venue",
+      "nexo"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car.",
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
+          "The hazard lights flash 4 times to confirm the fob is disabled."
+        ],
+        "notes": [
+          "While disabled, touching the door handle will not unlock the car. Press any fob button to re-enable.",
+          "Wording and availability vary by model and year -- check your owner's manual."
+        ]
+      },
+      {
+        "type": "perm",
+        "unverified": true,
+        "models": "Models with this menu (e.g. Ioniq, Kona, Tucson)",
+        "steps": [
+          "On the infotainment screen, go to Settings > Vehicle > Door.",
+          "Turn \"Approach unlock\" (walk-up unlock) off."
+        ],
+        "notes": [
+          "This stops the car unlocking automatically as you approach, but the door-handle button may still work."
+        ],
+        "sources": [
+          [
+            "Hyundai owner's manual",
+            "https://ownersmanual.hyundai.com/docview/webhelp/doc/8bf31204-4eb5-48f8-a3be-f1c555de698f/id3276ff2952d.html"
+          ]
+        ]
+      }
+    ]
   },
   {
     "name": "Jaguar",
@@ -116,6 +222,7 @@
       "f type",
       "xe",
       "xf",
+      "xj",
       "e-pace",
       "f-pace",
       "i-pace"
@@ -161,21 +268,67 @@
       "picanto",
       "rio",
       "ceed",
+      "proceed",
       "sportage",
       "niro",
-      "sorento"
+      "sorento",
+      "stonic",
+      "xceed",
+      "ev6",
+      "ev9",
+      "soul",
+      "stinger",
+      "telluride",
+      "seltos",
+      "carnival",
+      "forte"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car using the button on the door handle.",
+          "On the key fob, press and hold the lock and unlock buttons together.",
+          "The car's indicators flash once, pause, then flash 4 times -- the fob is now disabled."
+        ],
+        "notes": [
+          "While disabled, the car will not open from the door-handle button. Press any fob button to re-enable.",
+          "Availability varies by model and year."
+        ],
+        "sources": [
+          [
+            "Kia Owners Club",
+            "https://www.kiaownersclub.co.uk/threads/deactivate-keyless-entry-fob-on-some-models.77826/"
+          ]
+        ]
+      },
+      {
+        "type": "perm",
+        "unverified": true,
+        "models": "Models with this menu (e.g. EV6, Sportage, Niro)",
+        "steps": [
+          "On the infotainment screen, go to Settings > Vehicle > Door.",
+          "Turn \"Approach unlock\" off."
+        ]
+      }
+    ]
   },
   {
     "name": "Lexus",
     "aliases": [
       "is",
       "es",
+      "ls",
       "rx",
       "nx",
-      "ux"
+      "ux",
+      "gx",
+      "lx",
+      "rz",
+      "rc",
+      "lc",
+      "ct"
     ],
     "methods": [
       {
@@ -183,7 +336,11 @@
         "steps": [
           "Press and hold the \"lock\" button.",
           "While still holding it, press the \"unlock\" button twice.",
-          "After about 1 second, the light on the key fob will flash an extra time to confirm."
+          "The light on the fob flashes 4 times to confirm keyless entry is now disabled."
+        ],
+        "notes": [
+          "To turn keyless entry back on, press any button on the fob.",
+          "This is the same battery-saving sleep used by Toyota; it also blocks relay attacks while active."
         ]
       }
     ]
@@ -195,9 +352,13 @@
       "3",
       "6",
       "cx-3",
-      "cx-5",
       "cx-30",
-      "mx-5"
+      "cx-5",
+      "cx-60",
+      "cx-9",
+      "cx-90",
+      "mx-5",
+      "mx-30"
     ],
     "methods": [
       {
@@ -238,12 +399,24 @@
     "aliases": [
       "mercedes-benz",
       "a-class",
+      "b-class",
       "c-class",
       "e-class",
       "s-class",
+      "cla",
       "gla",
+      "glb",
       "glc",
-      "gle"
+      "gle",
+      "gls",
+      "eqa",
+      "eqb",
+      "eqc",
+      "eqe",
+      "eqs",
+      "amg",
+      "g-class",
+      "g-wagon"
     ],
     "methods": [
       {
@@ -260,7 +433,11 @@
     "aliases": [
       "cooper",
       "countryman",
-      "clubman"
+      "clubman",
+      "hatch",
+      "convertible",
+      "electric",
+      "aceman"
     ],
     "methods": [],
     "unknown": true
@@ -270,8 +447,12 @@
     "aliases": [
       "zs",
       "hs",
+      "mg3",
       "mg4",
-      "mg5"
+      "mg5",
+      "mg7",
+      "marvel r",
+      "zt"
     ],
     "methods": [],
     "unknown": true
@@ -283,14 +464,25 @@
       "juke",
       "leaf",
       "micra",
-      "x-trail"
+      "x-trail",
+      "note",
+      "ariya",
+      "navara",
+      "pathfinder",
+      "murano",
+      "rogue",
+      "sentra",
+      "altima",
+      "maxima",
+      "kicks",
+      "townstar"
     ],
     "methods": [
       {
         "type": "perm",
         "models": "Qashqai",
         "steps": [
-          "Go to Settings | Vehicle | Locking.",
+          "Go to Settings > Vehicle > Locking.",
           "Change the i-key setting to \"off\"."
         ]
       },
@@ -311,9 +503,15 @@
       "108",
       "208",
       "308",
+      "408",
+      "508",
       "2008",
       "3008",
-      "5008"
+      "5008",
+      "rifter",
+      "e-208",
+      "e-2008",
+      "partner"
     ],
     "methods": [],
     "unknown": true
@@ -322,6 +520,7 @@
     "name": "Porsche",
     "aliases": [
       "911",
+      "718",
       "cayenne",
       "macan",
       "panamera",
@@ -345,10 +544,12 @@
     "aliases": [
       "land rover",
       "landrover",
+      "range rover",
       "evoque",
       "velar",
       "sport",
       "discovery",
+      "discovery sport",
       "defender"
     ],
     "methods": [
@@ -371,7 +572,10 @@
       "superb",
       "kodiaq",
       "karoq",
-      "scala"
+      "scala",
+      "enyaq",
+      "kamiq",
+      "citigo"
     ],
     "methods": [],
     "unknown": true
@@ -382,7 +586,14 @@
       "impreza",
       "forester",
       "outback",
-      "xv"
+      "xv",
+      "crosstrek",
+      "legacy",
+      "ascent",
+      "wrx",
+      "brz",
+      "levorg",
+      "solterra"
     ],
     "methods": [],
     "unknown": true
@@ -393,7 +604,8 @@
       "model 3",
       "model s",
       "model x",
-      "model y"
+      "model y",
+      "cybertruck"
     ],
     "methods": [
       {
@@ -418,20 +630,50 @@
     "name": "Toyota",
     "aliases": [
       "yaris",
+      "yaris cross",
       "corolla",
       "rav4",
       "aygo",
+      "aygo x",
       "c-hr",
       "prius",
-      "tacoma"
+      "tacoma",
+      "camry",
+      "highlander",
+      "supra",
+      "land cruiser",
+      "hilux",
+      "proace",
+      "gr86",
+      "bz4x",
+      "sienna",
+      "tundra",
+      "4runner",
+      "avalon"
     ],
     "methods": [
       {
         "type": "temp",
-        "models": "e.g. Tacoma",
+        "models": "Most models with Smart Key (push-button start)",
         "steps": [
-          "Press and hold the lock button.",
-          "At the same time, press the unlock button twice."
+          "Press and hold the lock button on the key fob.",
+          "While still holding lock, press the unlock button twice.",
+          "The light on the fob flashes 4 times to confirm keyless entry is now disabled."
+        ],
+        "notes": [
+          "To turn keyless entry back on, press any button on the fob.",
+          "This puts the fob into a battery-saving sleep that also blocks relay attacks: touching the door handle or pressing start will not work until you wake the fob.",
+          "A Toyota dealer can disable the Smart Key system permanently if you prefer."
+        ],
+        "sources": [
+          [
+            "Toyota Support",
+            "https://support.toyota.com/s/article/How-do-I-operate-the-7875"
+          ],
+          [
+            "Toyota owners forum",
+            "https://www.toyotanation.com/threads/how-to-disable-toyota-smart-key-push-to-start.1706312/"
+          ]
         ]
       }
     ]
@@ -441,10 +683,16 @@
     "aliases": [
       "opel",
       "corsa",
+      "corsa-e",
       "astra",
       "mokka",
       "grandland",
-      "crossland"
+      "crossland",
+      "insignia",
+      "combo",
+      "vivaro",
+      "zafira",
+      "adam"
     ],
     "methods": [],
     "unknown": true
@@ -459,8 +707,19 @@
       "tiguan",
       "t-roc",
       "t-cross",
+      "touareg",
+      "arteon",
       "id.3",
       "id.4",
+      "id.5",
+      "id. buzz",
+      "id buzz",
+      "jetta",
+      "atlas",
+      "taos",
+      "up",
+      "touran",
+      "caddy",
       "kessy"
     ],
     "methods": [

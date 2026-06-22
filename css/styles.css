@@ -94,6 +94,7 @@ header.hero p.lede {
   min-width: 0;
 }
 .search-box input::placeholder { color: #9aa8a3; }
+.search-box input::-webkit-search-cancel-button { display: none; }
 .search-clear {
   border: 0;
   background: var(--green-light);

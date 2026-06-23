@@ -42,12 +42,6 @@ function methodHTML(m) {
     });
   }
   if (m.notes) m.notes.forEach(n => { h += `<p class="note">${n}</p>`; });
-  if (m.sources) {
-    const links = m.sources.filter(s => s[1]).map(s => `<a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a>`);
-    const plain = m.sources.filter(s => !s[1]).map(s => s[0]);
-    if (links.length || plain.length)
-      h += `<p class="sources">Source: ${links.join(" ")} ${plain.join(", ")}</p>`;
-  }
   h += `</div>`;
   return h;
 }

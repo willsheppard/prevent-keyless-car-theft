@@ -7,31 +7,54 @@
       "a4",
       "a5",
       "a6",
+      "a7",
+      "a8",
+      "q2",
       "q3",
+      "q4",
+      "q4 e-tron",
       "q5",
       "q7",
-      "e-tron"
+      "q8",
+      "tt",
+      "r8",
+      "e-tron",
+      "e-tron gt",
+      "s3",
+      "rs3",
+      "rs6"
     ],
     "methods": [
       {
         "type": "temp",
         "unverified": true,
         "steps": [
-          "Press the \"lock\" button once <em>(to be confirmed)</em>."
-        ],
-        "sources": [
-          [
-            "Manual (page 40)",
-            "https://manual-directory.com/view-manual-pdf/?mid=29412"
-          ]
+          "Press the \"lock\" button once."
         ]
       }
     ]
   },
   {
     "name": "Bentley",
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
+        ],
+        "models": "Bentayga"
+      }
+    ],
+    "aliases": [
+      "continental",
+      "continental gt",
+      "flying spur",
+      "bentayga",
+      "mulsanne"
+    ]
   },
   {
     "name": "BMW",
@@ -39,13 +62,32 @@
       "1 series",
       "2 series",
       "3 series",
+      "4 series",
       "5 series",
+      "6 series",
+      "7 series",
+      "8 series",
       "x1",
+      "x2",
       "x3",
+      "x4",
       "x5",
+      "x6",
+      "x7",
+      "z4",
       "i3",
       "i4",
-      "digital key"
+      "i5",
+      "i7",
+      "ix",
+      "ix1",
+      "ix3",
+      "m2",
+      "m3",
+      "m4",
+      "m5",
+      "digital key",
+      "comfort access"
     ],
     "methods": [
       {
@@ -64,6 +106,15 @@
   {
     "name": "Ferrari",
     "methods": [],
+    "aliases": [
+      "roma",
+      "portofino",
+      "296",
+      "sf90",
+      "f8",
+      "812",
+      "purosangue"
+    ],
     "unknown": true
   },
   {
@@ -74,14 +125,31 @@
       "kuga",
       "puma",
       "mondeo",
-      "ranger"
+      "ranger",
+      "mustang",
+      "mustang mach-e",
+      "mach-e",
+      "explorer",
+      "f-150",
+      "f150",
+      "escape",
+      "edge",
+      "bronco",
+      "bronco sport",
+      "ecosport",
+      "galaxy",
+      "s-max",
+      "transit",
+      "maverick",
+      "focus active",
+      "tourneo"
     ],
     "methods": [
       {
         "type": "temp",
         "unverified": true,
         "steps": [
-          "Lock the car by pressing the button on the remote control key <em>(to be confirmed)</em>."
+          "Lock the car by pressing the button on the remote control key."
         ]
       },
       {
@@ -102,12 +170,43 @@
       "i10",
       "i20",
       "i30",
+      "i40",
       "tucson",
       "kona",
-      "santa fe"
+      "santa fe",
+      "ioniq",
+      "ioniq 5",
+      "ioniq 6",
+      "bayon",
+      "santa cruz",
+      "palisade",
+      "elantra",
+      "sonata",
+      "venue",
+      "nexo"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car.",
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
+          "The hazard lights flash 4 times and the fob stops responding to the door handle."
+        ],
+        "notes": [
+          "Press any button on the fob to switch keyless entry back on."
+        ]
+      },
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the infotainment screen, go to Settings | Vehicle | Door.",
+          "Turn \"Approach unlock\" off."
+        ]
+      }
+    ]
   },
   {
     "name": "Jaguar",
@@ -116,6 +215,7 @@
       "f type",
       "xe",
       "xf",
+      "xj",
       "e-pace",
       "f-pace",
       "i-pace"
@@ -137,20 +237,6 @@
         "notes": [
           "To re-enable it, follow the same procedure but press the lock button at step 4.",
           "You must first unlock and then re-lock the car with the fob -- not the keyless button on the door handle."
-        ],
-        "sources": [
-          [
-            "F-Type forum",
-            "https://www.ftypeforums.co.uk/viewtopic.php?t=2226"
-          ],
-          [
-            "Jaguar forum",
-            "https://www.jaginfo.org/threads/how-to-disable-keyless-entry.98122/"
-          ],
-          [
-            "F-Pace forum",
-            "https://www.fpaceforums.co.uk/threads/turning-off-keyless-entry.3612/"
-          ]
         ]
       }
     ]
@@ -161,21 +247,59 @@
       "picanto",
       "rio",
       "ceed",
+      "proceed",
       "sportage",
       "niro",
-      "sorento"
+      "sorento",
+      "stonic",
+      "xceed",
+      "ev6",
+      "ev9",
+      "soul",
+      "stinger",
+      "telluride",
+      "seltos",
+      "carnival",
+      "forte"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car using the button on the door handle.",
+          "On the key fob, press and hold the lock and unlock buttons together.",
+          "The indicators flash once, pause, then flash 4 times. The fob no longer opens the car from the door handle."
+        ],
+        "notes": [
+          "Press any button on the fob to switch keyless entry back on."
+        ]
+      },
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the infotainment screen, go to Settings | Vehicle | Door.",
+          "Turn \"Approach unlock\" off."
+        ]
+      }
+    ]
   },
   {
     "name": "Lexus",
     "aliases": [
       "is",
       "es",
+      "ls",
       "rx",
       "nx",
-      "ux"
+      "ux",
+      "gx",
+      "lx",
+      "rz",
+      "rc",
+      "lc",
+      "ct"
     ],
     "methods": [
       {
@@ -183,7 +307,10 @@
         "steps": [
           "Press and hold the \"lock\" button.",
           "While still holding it, press the \"unlock\" button twice.",
-          "After about 1 second, the light on the key fob will flash an extra time to confirm."
+          "The light on the fob flashes 4 times to confirm keyless entry is now disabled."
+        ],
+        "notes": [
+          "To turn keyless entry back on, press any button on the fob."
         ]
       }
     ]
@@ -195,40 +322,27 @@
       "3",
       "6",
       "cx-3",
-      "cx-5",
       "cx-30",
-      "mx-5"
+      "cx-5",
+      "cx-60",
+      "cx-9",
+      "cx-90",
+      "mx-5",
+      "mx-30"
     ],
     "methods": [
       {
         "type": "perm",
         "models": "2021 onwards",
         "text": "Turning on the \"transmitter power saving function\" switches off the advanced keyless entry and push-button start, and limits the fob's battery use.",
-        "sub": [
-          {
-            "label": "To turn the power saving function ON",
-            "steps": [
-              "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
-              "While the indicator light is on (about 5 seconds), press and hold the lock button for 1.5 seconds or longer.",
-              "Press any button on the fob to check the indicator light does not turn on or flash -- this confirms it's off."
-            ]
-          },
-          {
-            "label": "To turn the power saving function OFF",
-            "steps": [
-              "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
-              "While the indicator light is on (about 5 seconds), press and hold the lock button for 1.5 seconds or longer."
-            ]
-          }
+        "steps": [
+          "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
+          "While the indicator light is on, press and hold the lock button for 2 seconds or longer.",
+          "Press any button on the fob to check the indicator light does not turn on or flash -- this confirms keyless entry is off."
         ],
         "notes": [
+          "Repeat the same steps to switch keyless entry back on.",
           "Once this is on, the car won't start with the key until you either turn power-save mode off, or hold the key against the start/stop button while pressing it."
-        ],
-        "sources": [
-          [
-            "Owner's Manual",
-            ""
-          ]
         ]
       }
     ]
@@ -238,12 +352,24 @@
     "aliases": [
       "mercedes-benz",
       "a-class",
+      "b-class",
       "c-class",
       "e-class",
       "s-class",
+      "cla",
       "gla",
+      "glb",
       "glc",
-      "gle"
+      "gle",
+      "gls",
+      "eqa",
+      "eqb",
+      "eqc",
+      "eqe",
+      "eqs",
+      "amg",
+      "g-class",
+      "g-wagon"
     ],
     "methods": [
       {
@@ -260,18 +386,36 @@
     "aliases": [
       "cooper",
       "countryman",
-      "clubman"
+      "clubman",
+      "hatch",
+      "convertible",
+      "electric",
+      "aceman"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car using the button on the key fob."
+        ],
+        "notes": [
+          "Once locked with the fob, the car cannot be opened by touching the handle until you unlock it with the fob again."
+        ]
+      }
+    ]
   },
   {
     "name": "MG",
     "aliases": [
       "zs",
       "hs",
+      "mg3",
       "mg4",
-      "mg5"
+      "mg5",
+      "mg7",
+      "marvel r",
+      "zt"
     ],
     "methods": [],
     "unknown": true
@@ -283,7 +427,18 @@
       "juke",
       "leaf",
       "micra",
-      "x-trail"
+      "x-trail",
+      "note",
+      "ariya",
+      "navara",
+      "pathfinder",
+      "murano",
+      "rogue",
+      "sentra",
+      "altima",
+      "maxima",
+      "kicks",
+      "townstar"
     ],
     "methods": [
       {
@@ -311,9 +466,15 @@
       "108",
       "208",
       "308",
+      "408",
+      "508",
       "2008",
       "3008",
-      "5008"
+      "5008",
+      "rifter",
+      "e-208",
+      "e-2008",
+      "partner"
     ],
     "methods": [],
     "unknown": true
@@ -322,6 +483,7 @@
     "name": "Porsche",
     "aliases": [
       "911",
+      "718",
       "cayenne",
       "macan",
       "panamera",
@@ -345,10 +507,12 @@
     "aliases": [
       "land rover",
       "landrover",
+      "range rover",
       "evoque",
       "velar",
       "sport",
       "discovery",
+      "discovery sport",
       "defender"
     ],
     "methods": [
@@ -371,10 +535,22 @@
       "superb",
       "kodiaq",
       "karoq",
-      "scala"
+      "scala",
+      "enyaq",
+      "kamiq",
+      "citigo"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
+        ]
+      }
+    ]
   },
   {
     "name": "Subaru",
@@ -382,10 +558,32 @@
       "impreza",
       "forester",
       "outback",
-      "xv"
+      "xv",
+      "crosstrek",
+      "legacy",
+      "ascent",
+      "wrx",
+      "brz",
+      "levorg",
+      "solterra"
     ],
-    "methods": [],
-    "unknown": true
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "Sit in the driver's seat and close the door.",
+          "Press the unlock side of the power door lock switch.",
+          "Open the driver's door within 5 seconds.",
+          "Press the unlock side of the switch twice within 5 seconds.",
+          "Close and open the driver's door twice within 10 seconds. Keyless access is now disabled."
+        ],
+        "notes": [
+          "Press the switch slowly -- pressing too quickly can stop it working.",
+          "Repeat the same procedure to switch keyless access back on."
+        ]
+      }
+    ]
   },
   {
     "name": "Tesla",
@@ -393,14 +591,15 @@
       "model 3",
       "model s",
       "model x",
-      "model y"
+      "model y",
+      "cybertruck"
     ],
     "methods": [
       {
         "type": "temp",
         "unverified": true,
         "steps": [
-          "Press the \"lock\" button once <em>(to be confirmed)</em>."
+          "Press the \"lock\" button once."
         ]
       },
       {
@@ -418,20 +617,39 @@
     "name": "Toyota",
     "aliases": [
       "yaris",
+      "yaris cross",
       "corolla",
       "rav4",
       "aygo",
+      "aygo x",
       "c-hr",
       "prius",
-      "tacoma"
+      "tacoma",
+      "camry",
+      "highlander",
+      "supra",
+      "land cruiser",
+      "hilux",
+      "proace",
+      "gr86",
+      "bz4x",
+      "sienna",
+      "tundra",
+      "4runner",
+      "avalon"
     ],
     "methods": [
       {
         "type": "temp",
-        "models": "e.g. Tacoma",
+        "models": "Most models with Smart Key (push-button start)",
         "steps": [
-          "Press and hold the lock button.",
-          "At the same time, press the unlock button twice."
+          "Press and hold the lock button on the key fob.",
+          "While still holding lock, press the unlock button twice.",
+          "The light on the fob flashes 4 times to confirm keyless entry is now disabled."
+        ],
+        "notes": [
+          "To turn keyless entry back on, press any button on the fob.",
+          "Touching the door handle or pressing start will not work until you wake the fob."
         ]
       }
     ]
@@ -441,10 +659,16 @@
     "aliases": [
       "opel",
       "corsa",
+      "corsa-e",
       "astra",
       "mokka",
       "grandland",
-      "crossland"
+      "crossland",
+      "insignia",
+      "combo",
+      "vivaro",
+      "zafira",
+      "adam"
     ],
     "methods": [],
     "unknown": true
@@ -459,8 +683,19 @@
       "tiguan",
       "t-roc",
       "t-cross",
+      "touareg",
+      "arteon",
       "id.3",
       "id.4",
+      "id.5",
+      "id. buzz",
+      "id buzz",
+      "jetta",
+      "atlas",
+      "taos",
+      "up",
+      "touran",
+      "caddy",
       "kessy"
     ],
     "methods": [
@@ -481,6 +716,726 @@
       {
         "type": "info",
         "text": "Volkswagen calls its keyless entry feature \"KESSY\"."
+      }
+    ]
+  },
+  {
+    "name": "Chevrolet",
+    "aliases": [
+      "chevy",
+      "silverado",
+      "equinox",
+      "malibu",
+      "tahoe",
+      "suburban",
+      "traverse",
+      "blazer",
+      "trailblazer",
+      "colorado",
+      "camaro",
+      "corvette",
+      "bolt",
+      "trax",
+      "spark",
+      "impala"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the centre touchscreen, go to Settings | Vehicle.",
+          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
+          "Turn Passive Unlocking and Passive Locking off."
+        ]
+      },
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
+          "Repeat to switch it back on."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GMC",
+    "aliases": [
+      "sierra",
+      "yukon",
+      "acadia",
+      "terrain",
+      "canyon",
+      "hummer ev",
+      "savana"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the centre touchscreen, go to Settings | Vehicle.",
+          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
+          "Turn Passive Unlocking and Passive Locking off."
+        ]
+      },
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
+          "Repeat to switch it back on."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cadillac",
+    "aliases": [
+      "escalade",
+      "xt4",
+      "xt5",
+      "xt6",
+      "ct4",
+      "ct5",
+      "lyriq",
+      "ats",
+      "cts",
+      "srx"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the centre touchscreen, go to Settings | Vehicle.",
+          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
+          "Turn Passive Unlocking and Passive Locking off."
+        ]
+      },
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
+          "Repeat to switch it back on."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Buick",
+    "aliases": [
+      "enclave",
+      "encore",
+      "encore gx",
+      "envision",
+      "envista"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the centre touchscreen, go to Settings | Vehicle.",
+          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
+          "Turn Passive Unlocking and Passive Locking off."
+        ]
+      },
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
+          "Repeat to switch it back on."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jeep",
+    "aliases": [
+      "wrangler",
+      "grand cherokee",
+      "cherokee",
+      "compass",
+      "renegade",
+      "gladiator",
+      "wagoneer",
+      "grand wagoneer",
+      "avenger"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dodge",
+    "aliases": [
+      "charger",
+      "challenger",
+      "durango",
+      "hornet",
+      "journey"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chrysler",
+    "aliases": [
+      "300",
+      "300c",
+      "pacifica",
+      "voyager"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ram",
+    "aliases": [
+      "1500",
+      "2500",
+      "3500",
+      "ram 1500",
+      "promaster"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lincoln",
+    "aliases": [
+      "navigator",
+      "aviator",
+      "corsair",
+      "nautilus",
+      "continental",
+      "mkz",
+      "mkc",
+      "mkx"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the SYNC touchscreen, go to Settings | Vehicle | Locks.",
+          "Set Intelligent Access (keyless entry) to off.",
+          "On cars without a touchscreen, use the steering-wheel menu: Settings | Vehicle | Locks | Intelligent Access."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rivian",
+    "aliases": [
+      "r1t",
+      "r1s",
+      "r2",
+      "r3"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Lucid",
+    "aliases": [
+      "air",
+      "gravity",
+      "lucid air"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Honda",
+    "aliases": [
+      "civic",
+      "accord",
+      "cr-v",
+      "crv",
+      "hr-v",
+      "hrv",
+      "jazz",
+      "fit",
+      "pilot",
+      "passport",
+      "ridgeline",
+      "odyssey",
+      "e:ny1",
+      "zr-v",
+      "insight",
+      "prologue"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Acura",
+    "aliases": [
+      "mdx",
+      "rdx",
+      "tlx",
+      "ilx",
+      "integra",
+      "nsx",
+      "zdx"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Infiniti",
+    "aliases": [
+      "q50",
+      "q60",
+      "qx50",
+      "qx55",
+      "qx60",
+      "qx80",
+      "q70",
+      "qx30"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Genesis",
+    "aliases": [
+      "g70",
+      "g80",
+      "g90",
+      "gv60",
+      "gv70",
+      "gv80",
+      "electrified g80"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the screen, go to Setup | Vehicle | Door.",
+          "Turn the Smart Key walk-up unlock off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mitsubishi",
+    "aliases": [
+      "outlander",
+      "outlander phev",
+      "eclipse cross",
+      "asx",
+      "mirage",
+      "l200",
+      "shogun",
+      "colt"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Suzuki",
+    "aliases": [
+      "swift",
+      "vitara",
+      "s-cross",
+      "jimny",
+      "ignis",
+      "swace",
+      "across",
+      "baleno",
+      "celerio"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Volvo",
+    "aliases": [
+      "xc40",
+      "xc60",
+      "xc90",
+      "v60",
+      "v90",
+      "s60",
+      "s90",
+      "c40",
+      "ex30",
+      "ex90",
+      "v40"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Polestar",
+    "aliases": [
+      "polestar 2",
+      "polestar 3",
+      "polestar 4",
+      "2",
+      "3",
+      "4"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Fiat",
+    "aliases": [
+      "500",
+      "500e",
+      "500x",
+      "500l",
+      "panda",
+      "tipo",
+      "punto",
+      "600",
+      "doblo"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Abarth",
+    "aliases": [
+      "595",
+      "695",
+      "500e",
+      "abarth 500"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alfa Romeo",
+    "aliases": [
+      "giulia",
+      "stelvio",
+      "tonale",
+      "giulietta",
+      "mito",
+      "junior"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "steps": [
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Maserati",
+    "aliases": [
+      "ghibli",
+      "levante",
+      "quattroporte",
+      "grecale",
+      "mc20",
+      "granturismo"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Citroen",
+    "aliases": [
+      "citroen",
+      "c1",
+      "c3",
+      "c4",
+      "c5",
+      "c5 aircross",
+      "c5 x",
+      "berlingo",
+      "ds3",
+      "e-c4",
+      "ami"
+    ],
+    "methods": [
+      {
+        "type": "perm",
+        "unverified": true,
+        "models": "C5 Aircross",
+        "steps": [
+          "Press and hold the lock button on the key fob.",
+          "After about 3 seconds, also press the lock button on the centre console while still holding the fob button.",
+          "After about 3 seconds, release the console button, then the fob button. A beep confirms keyless entry is disabled."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DS",
+    "aliases": [
+      "ds3",
+      "ds4",
+      "ds7",
+      "ds9",
+      "ds 3 crossback",
+      "ds 7 crossback"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "SEAT",
+    "aliases": [
+      "seat",
+      "ibiza",
+      "leon",
+      "arona",
+      "ateca",
+      "tarraco",
+      "alhambra",
+      "mii"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cupra",
+    "aliases": [
+      "cupra",
+      "formentor",
+      "born",
+      "leon",
+      "ateca",
+      "tavascan",
+      "terramar"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Renault",
+    "aliases": [
+      "clio",
+      "captur",
+      "megane",
+      "scenic",
+      "kadjar",
+      "arkana",
+      "austral",
+      "zoe",
+      "twingo",
+      "espace",
+      "koleos",
+      "megane e-tech"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Dacia",
+    "aliases": [
+      "sandero",
+      "duster",
+      "jogger",
+      "spring",
+      "logan",
+      "stepway"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Smart",
+    "aliases": [
+      "fortwo",
+      "forfour",
+      "smart #1",
+      "smart #3",
+      "eq fortwo"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Lotus",
+    "aliases": [
+      "emira",
+      "eletre",
+      "emeya",
+      "evora",
+      "exige",
+      "elise"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Aston Martin",
+    "aliases": [
+      "db11",
+      "db12",
+      "dbx",
+      "vantage",
+      "dbs",
+      "vanquish",
+      "rapide"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "McLaren",
+    "aliases": [
+      "720s",
+      "750s",
+      "570s",
+      "gt",
+      "artura",
+      "765lt"
+    ],
+    "methods": [],
+    "unknown": true
+  },
+  {
+    "name": "Rolls-Royce",
+    "aliases": [
+      "rolls royce",
+      "phantom",
+      "ghost",
+      "cullinan",
+      "wraith",
+      "dawn",
+      "spectre"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car using the button on the key fob."
+        ],
+        "notes": [
+          "Once locked with the fob, the car cannot be opened by touching the handle until you unlock it with the fob again."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lamborghini",
+    "aliases": [
+      "urus",
+      "huracan",
+      "aventador",
+      "revuelto"
+    ],
+    "methods": [
+      {
+        "type": "temp",
+        "unverified": true,
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
+        ],
+        "models": "Urus"
       }
     ]
   }

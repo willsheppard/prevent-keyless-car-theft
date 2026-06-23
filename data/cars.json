@@ -29,7 +29,7 @@
         "type": "temp",
         "unverified": true,
         "steps": [
-          "Press the \"lock\" button once <em>(to be confirmed)</em>."
+          "Press the \"lock\" button once."
         ]
       }
     ]
@@ -149,7 +149,7 @@
         "type": "temp",
         "unverified": true,
         "steps": [
-          "Lock the car by pressing the button on the remote control key <em>(to be confirmed)</em>."
+          "Lock the car by pressing the button on the remote control key."
         ]
       },
       {
@@ -611,7 +611,7 @@
         "type": "temp",
         "unverified": true,
         "steps": [
-          "Press the \"lock\" button once <em>(to be confirmed)</em>."
+          "Press the \"lock\" button once."
         ]
       },
       {

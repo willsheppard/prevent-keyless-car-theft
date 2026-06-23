@@ -649,8 +649,7 @@
         ],
         "notes": [
           "To turn keyless entry back on, press any button on the fob.",
-          "This puts the fob into a battery-saving sleep that also blocks relay attacks: touching the door handle or pressing start will not work until you wake the fob.",
-          "A Toyota dealer can disable the Smart Key system permanently if you prefer."
+          "Touching the door handle or pressing start will not work until you wake the fob."
         ]
       }
     ]

@@ -202,7 +202,7 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the infotainment screen, go to Settings > Vehicle > Door.",
+          "On the infotainment screen, go to Settings | Vehicle | Door.",
           "Turn \"Approach unlock\" off."
         ]
       }
@@ -279,7 +279,7 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the infotainment screen, go to Settings > Vehicle > Door.",
+          "On the infotainment screen, go to Settings | Vehicle | Door.",
           "Turn \"Approach unlock\" off."
         ]
       }
@@ -445,7 +445,7 @@
         "type": "perm",
         "models": "Qashqai",
         "steps": [
-          "Go to Settings > Vehicle > Locking.",
+          "Go to Settings | Vehicle | Locking.",
           "Change the i-key setting to \"off\"."
         ]
       },
@@ -744,7 +744,7 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the centre touchscreen, go to Settings > Vehicle.",
+          "On the centre touchscreen, go to Settings | Vehicle.",
           "Open Power Door Locks (or Remote Lock/Unlock/Start).",
           "Turn Passive Unlocking and Passive Locking off."
         ]
@@ -775,7 +775,7 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the centre touchscreen, go to Settings > Vehicle.",
+          "On the centre touchscreen, go to Settings | Vehicle.",
           "Open Power Door Locks (or Remote Lock/Unlock/Start).",
           "Turn Passive Unlocking and Passive Locking off."
         ]
@@ -809,7 +809,7 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the centre touchscreen, go to Settings > Vehicle.",
+          "On the centre touchscreen, go to Settings | Vehicle.",
           "Open Power Door Locks (or Remote Lock/Unlock/Start).",
           "Turn Passive Unlocking and Passive Locking off."
         ]
@@ -838,7 +838,7 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the centre touchscreen, go to Settings > Vehicle.",
+          "On the centre touchscreen, go to Settings | Vehicle.",
           "Open Power Door Locks (or Remote Lock/Unlock/Start).",
           "Turn Passive Unlocking and Passive Locking off."
         ]
@@ -969,9 +969,9 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the SYNC touchscreen, go to Settings > Vehicle > Locks.",
+          "On the SYNC touchscreen, go to Settings | Vehicle | Locks.",
           "Set Intelligent Access (keyless entry) to off.",
-          "On cars without a touchscreen, use the steering-wheel menu: Settings > Vehicle > Locks > Intelligent Access."
+          "On cars without a touchscreen, use the steering-wheel menu: Settings | Vehicle | Locks | Intelligent Access."
         ]
       }
     ]
@@ -1065,7 +1065,7 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the screen, go to Setup > Vehicle > Door.",
+          "On the screen, go to Setup | Vehicle | Door.",
           "Turn the Smart Key walk-up unlock off."
         ]
       }

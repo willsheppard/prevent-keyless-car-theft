@@ -335,24 +335,13 @@
         "type": "perm",
         "models": "2021 onwards",
         "text": "Turning on the \"transmitter power saving function\" switches off the advanced keyless entry and push-button start, and limits the fob's battery use.",
-        "sub": [
-          {
-            "label": "To turn the power saving function ON",
-            "steps": [
-              "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
-              "While the indicator light is on (about 5 seconds), press and hold the lock button for 1.5 seconds or longer.",
-              "Press any button on the fob to check the indicator light does not turn on or flash -- this confirms it's off."
-            ]
-          },
-          {
-            "label": "To turn the power saving function OFF",
-            "steps": [
-              "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
-              "While the indicator light is on (about 5 seconds), press and hold the lock button for 1.5 seconds or longer."
-            ]
-          }
+        "steps": [
+          "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
+          "While the indicator light is on, press and hold the lock button for 2 seconds or longer.",
+          "Press any button on the fob to check the indicator light does not turn on or flash -- this confirms keyless entry is off."
         ],
         "notes": [
+          "Repeat the same steps to switch keyless entry back on.",
           "Once this is on, the car won't start with the key until you either turn power-save mode off, or hold the key against the start/stop button while pressing it."
         ]
       }

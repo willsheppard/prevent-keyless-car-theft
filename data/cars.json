@@ -310,8 +310,7 @@
           "The light on the fob flashes 4 times to confirm keyless entry is now disabled."
         ],
         "notes": [
-          "To turn keyless entry back on, press any button on the fob.",
-          "This is the same battery-saving sleep used by Toyota; it also blocks relay attacks while active."
+          "To turn keyless entry back on, press any button on the fob."
         ]
       }
     ]

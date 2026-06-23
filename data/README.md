@@ -20,7 +20,6 @@
 | `steps` | string[] | no | Ordered list of steps. HTML is allowed (e.g. `<em>`). Rendered as `<ol>` for permanent methods or when there are more than two steps, otherwise `<ul>`. |
 | `sub` | Sub[] | no | Named sub-sections, each with their own `label` and `steps`. Used when a method has distinct phases (e.g. Mazda's "turn on" vs "turn off"). |
 | `notes` | string[] | no | Caveats or warnings, each rendered as a yellow highlighted box below the steps. |
-| `sources` | [string, string][] | no | Attribution links as `[label, url]` pairs. If `url` is an empty string the label is shown as plain text rather than a link. |
 
 ### `type` values
 

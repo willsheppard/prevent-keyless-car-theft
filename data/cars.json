@@ -30,12 +30,6 @@
         "unverified": true,
         "steps": [
           "Press the \"lock\" button once <em>(to be confirmed)</em>."
-        ],
-        "sources": [
-          [
-            "Manual (page 40)",
-            "https://manual-directory.com/view-manual-pdf/?mid=29412"
-          ]
         ]
       }
     ]
@@ -202,12 +196,6 @@
         ],
         "notes": [
           "Press any button on the fob to switch keyless entry back on."
-        ],
-        "sources": [
-          [
-            "Hyundai owner's manual",
-            "https://ownersmanual.hyundai.com/docview/webhelp/doc/8bf31204-4eb5-48f8-a3be-f1c555de698f/id3276ff2952d.html"
-          ]
         ]
       },
       {
@@ -216,12 +204,6 @@
         "steps": [
           "On the infotainment screen, go to Settings > Vehicle > Door.",
           "Turn \"Approach unlock\" off."
-        ],
-        "sources": [
-          [
-            "Hyundai owner's manual",
-            "https://ownersmanual.hyundai.com/docview/webhelp/doc/8bf31204-4eb5-48f8-a3be-f1c555de698f/id3276ff2952d.html"
-          ]
         ]
       }
     ]
@@ -255,20 +237,6 @@
         "notes": [
           "To re-enable it, follow the same procedure but press the lock button at step 4.",
           "You must first unlock and then re-lock the car with the fob -- not the keyless button on the door handle."
-        ],
-        "sources": [
-          [
-            "F-Type forum",
-            "https://www.ftypeforums.co.uk/viewtopic.php?t=2226"
-          ],
-          [
-            "Jaguar forum",
-            "https://www.jaginfo.org/threads/how-to-disable-keyless-entry.98122/"
-          ],
-          [
-            "F-Pace forum",
-            "https://www.fpaceforums.co.uk/threads/turning-off-keyless-entry.3612/"
-          ]
         ]
       }
     ]
@@ -305,12 +273,6 @@
         ],
         "notes": [
           "Press any button on the fob to switch keyless entry back on."
-        ],
-        "sources": [
-          [
-            "Kia Owners Club",
-            "https://www.kiaownersclub.co.uk/threads/deactivate-keyless-entry-fob-on-some-models.77826/"
-          ]
         ]
       },
       {
@@ -393,12 +355,6 @@
         ],
         "notes": [
           "Once this is on, the car won't start with the key until you either turn power-save mode off, or hold the key against the start/stop button while pressing it."
-        ],
-        "sources": [
-          [
-            "Owner's Manual",
-            ""
-          ]
         ]
       }
     ]
@@ -637,12 +593,6 @@
         "notes": [
           "Press the switch slowly -- pressing too quickly can stop it working.",
           "Repeat the same procedure to switch keyless access back on."
-        ],
-        "sources": [
-          [
-            "Subaru owner's manual",
-            "https://www.subsuv.com/subco-95.html"
-          ]
         ]
       }
     ]
@@ -713,16 +663,6 @@
           "To turn keyless entry back on, press any button on the fob.",
           "This puts the fob into a battery-saving sleep that also blocks relay attacks: touching the door handle or pressing start will not work until you wake the fob.",
           "A Toyota dealer can disable the Smart Key system permanently if you prefer."
-        ],
-        "sources": [
-          [
-            "Toyota Support",
-            "https://support.toyota.com/s/article/How-do-I-operate-the-7875"
-          ],
-          [
-            "Toyota owners forum",
-            "https://www.toyotanation.com/threads/how-to-disable-toyota-smart-key-push-to-start.1706312/"
-          ]
         ]
       }
     ]
@@ -820,16 +760,6 @@
           "On the centre touchscreen, go to Settings > Vehicle.",
           "Open Power Door Locks (or Remote Lock/Unlock/Start).",
           "Turn Passive Unlocking and Passive Locking off."
-        ],
-        "sources": [
-          [
-            "Chevrolet Support",
-            "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
-          ],
-          [
-            "GMC Support",
-            "https://www.gmc.com/support/vehicle/security/keyless-open-start"
-          ]
         ]
       },
       {
@@ -838,12 +768,6 @@
         "steps": [
           "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
           "Repeat to switch it back on."
-        ],
-        "sources": [
-          [
-            "GM owners (GM-Trucks)",
-            "https://www.gm-trucks.com/forums/topic/260511-passive-keyless-entry/"
-          ]
         ]
       }
     ]
@@ -867,16 +791,6 @@
           "On the centre touchscreen, go to Settings > Vehicle.",
           "Open Power Door Locks (or Remote Lock/Unlock/Start).",
           "Turn Passive Unlocking and Passive Locking off."
-        ],
-        "sources": [
-          [
-            "Chevrolet Support",
-            "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
-          ],
-          [
-            "GMC Support",
-            "https://www.gmc.com/support/vehicle/security/keyless-open-start"
-          ]
         ]
       },
       {
@@ -885,12 +799,6 @@
         "steps": [
           "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
           "Repeat to switch it back on."
-        ],
-        "sources": [
-          [
-            "GM owners (GM-Trucks)",
-            "https://www.gm-trucks.com/forums/topic/260511-passive-keyless-entry/"
-          ]
         ]
       }
     ]
@@ -917,16 +825,6 @@
           "On the centre touchscreen, go to Settings > Vehicle.",
           "Open Power Door Locks (or Remote Lock/Unlock/Start).",
           "Turn Passive Unlocking and Passive Locking off."
-        ],
-        "sources": [
-          [
-            "Chevrolet Support",
-            "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
-          ],
-          [
-            "GMC Support",
-            "https://www.gmc.com/support/vehicle/security/keyless-open-start"
-          ]
         ]
       },
       {
@@ -935,12 +833,6 @@
         "steps": [
           "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
           "Repeat to switch it back on."
-        ],
-        "sources": [
-          [
-            "GM owners (GM-Trucks)",
-            "https://www.gm-trucks.com/forums/topic/260511-passive-keyless-entry/"
-          ]
         ]
       }
     ]
@@ -962,16 +854,6 @@
           "On the centre touchscreen, go to Settings > Vehicle.",
           "Open Power Door Locks (or Remote Lock/Unlock/Start).",
           "Turn Passive Unlocking and Passive Locking off."
-        ],
-        "sources": [
-          [
-            "Chevrolet Support",
-            "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
-          ],
-          [
-            "GMC Support",
-            "https://www.gmc.com/support/vehicle/security/keyless-open-start"
-          ]
         ]
       },
       {
@@ -980,12 +862,6 @@
         "steps": [
           "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
           "Repeat to switch it back on."
-        ],
-        "sources": [
-          [
-            "GM owners (GM-Trucks)",
-            "https://www.gm-trucks.com/forums/topic/260511-passive-keyless-entry/"
-          ]
         ]
       }
     ]
@@ -1014,12 +890,6 @@
         ],
         "notes": [
           "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ],
-        "sources": [
-          [
-            "Mopar owner's manual",
-            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
-          ]
         ]
       }
     ]
@@ -1044,12 +914,6 @@
         ],
         "notes": [
           "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ],
-        "sources": [
-          [
-            "Mopar owner's manual",
-            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
-          ]
         ]
       }
     ]
@@ -1073,12 +937,6 @@
         ],
         "notes": [
           "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ],
-        "sources": [
-          [
-            "Mopar owner's manual",
-            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
-          ]
         ]
       }
     ]
@@ -1103,12 +961,6 @@
         ],
         "notes": [
           "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ],
-        "sources": [
-          [
-            "Mopar owner's manual",
-            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
-          ]
         ]
       }
     ]
@@ -1133,12 +985,6 @@
           "On the SYNC touchscreen, go to Settings > Vehicle > Locks.",
           "Set Intelligent Access (keyless entry) to off.",
           "On cars without a touchscreen, use the steering-wheel menu: Settings > Vehicle > Locks > Intelligent Access."
-        ],
-        "sources": [
-          [
-            "Ford Support",
-            "https://www.ford.ie/support/how-tos/keys-and-locks/door-locks-and-alarms/how-do-i-deactivate-or-activate-keyless-entry"
-          ]
         ]
       }
     ]
@@ -1234,12 +1080,6 @@
         "steps": [
           "On the screen, go to Setup > Vehicle > Door.",
           "Turn the Smart Key walk-up unlock off."
-        ],
-        "sources": [
-          [
-            "Genesis owners (GV Forums)",
-            "https://www.gvforums.com/threads/gv80-door-lock-settings.686/"
-          ]
         ]
       }
     ]
@@ -1330,12 +1170,6 @@
         ],
         "notes": [
           "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ],
-        "sources": [
-          [
-            "Mopar owner's manual",
-            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
-          ]
         ]
       }
     ]
@@ -1359,12 +1193,6 @@
         ],
         "notes": [
           "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ],
-        "sources": [
-          [
-            "Mopar owner's manual",
-            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
-          ]
         ]
       }
     ]
@@ -1390,12 +1218,6 @@
         ],
         "notes": [
           "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ],
-        "sources": [
-          [
-            "Mopar owner's manual",
-            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
-          ]
         ]
       }
     ]
@@ -1437,12 +1259,6 @@
           "Press and hold the lock button on the key fob.",
           "After about 3 seconds, also press the lock button on the centre console while still holding the fob button.",
           "After about 3 seconds, release the console button, then the fob button. A beep confirms keyless entry is disabled."
-        ],
-        "sources": [
-          [
-            "Citroen/Peugeot owners forum",
-            "https://www.peugeotforums.com/threads/how-to-turn-off-keyless-entry.336110/"
-          ]
         ]
       }
     ]

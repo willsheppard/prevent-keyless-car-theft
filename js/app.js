@@ -17,7 +17,6 @@ function initials(name) {
 function tagsFor(car) {
   if (car.unknown) return '<span class="tag none">Help needed</span>';
   const types = [...new Set(car.methods.map(m => m.type).filter(t => t !== "info"))];
-  if (types.length === 0) return '<span class="tag none">Info</span>';
   return types.map(t => `<span class="tag ${t}">${TYPE_LABEL[t]}</span>`).join("");
 }
 

@@ -44,12 +44,14 @@
     "name": "Bentley",
     "methods": [
       {
-        "type": "auto",
+        "type": "temp",
         "unverified": true,
-        "text": "Bentley uses VW Group (Audi) electronics. Recent fobs sleep after a period without movement (KESSY), blocking relay attacks overnight; check the car's keyless menu for options.",
-        "notes": [
-          "To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
-        ]
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
+        ],
+        "models": "Bentayga"
       }
     ],
     "aliases": [
@@ -109,13 +111,7 @@
   },
   {
     "name": "Ferrari",
-    "methods": [
-      {
-        "type": "info",
-        "unverified": true,
-        "text": "Keyless models (e.g. Roma, Purosangue) have no widely documented on/off switch. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
-      }
-    ],
+    "methods": [],
     "aliases": [
       "roma",
       "portofino",
@@ -124,7 +120,8 @@
       "f8",
       "812",
       "purosangue"
-    ]
+    ],
+    "unknown": true
   },
   {
     "name": "Ford",
@@ -201,23 +198,24 @@
         "steps": [
           "Lock the car.",
           "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
-          "The hazard lights flash 4 times to confirm the fob is disabled."
+          "The hazard lights flash 4 times and the fob stops responding to the door handle."
         ],
         "notes": [
-          "While disabled, touching the door handle will not unlock the car. Press any fob button to re-enable.",
-          "Wording and availability vary by model and year -- check your owner's manual."
+          "Press any button on the fob to switch keyless entry back on."
+        ],
+        "sources": [
+          [
+            "Hyundai owner's manual",
+            "https://ownersmanual.hyundai.com/docview/webhelp/doc/8bf31204-4eb5-48f8-a3be-f1c555de698f/id3276ff2952d.html"
+          ]
         ]
       },
       {
         "type": "perm",
         "unverified": true,
-        "models": "Models with this menu (e.g. Ioniq, Kona, Tucson)",
         "steps": [
           "On the infotainment screen, go to Settings > Vehicle > Door.",
-          "Turn \"Approach unlock\" (walk-up unlock) off."
-        ],
-        "notes": [
-          "This stops the car unlocking automatically as you approach, but the door-handle button may still work."
+          "Turn \"Approach unlock\" off."
         ],
         "sources": [
           [
@@ -303,11 +301,10 @@
         "steps": [
           "Lock the car using the button on the door handle.",
           "On the key fob, press and hold the lock and unlock buttons together.",
-          "The car's indicators flash once, pause, then flash 4 times -- the fob is now disabled."
+          "The indicators flash once, pause, then flash 4 times. The fob no longer opens the car from the door handle."
         ],
         "notes": [
-          "While disabled, the car will not open from the door-handle button. Press any fob button to re-enable.",
-          "Availability varies by model and year."
+          "Press any button on the fob to switch keyless entry back on."
         ],
         "sources": [
           [
@@ -319,7 +316,6 @@
       {
         "type": "perm",
         "unverified": true,
-        "models": "Models with this menu (e.g. EV6, Sportage, Niro)",
         "steps": [
           "On the infotainment screen, go to Settings > Vehicle > Door.",
           "Turn \"Approach unlock\" off."
@@ -454,11 +450,13 @@
     ],
     "methods": [
       {
-        "type": "auto",
+        "type": "temp",
         "unverified": true,
-        "text": "Mini uses BMW key technology; recent Comfort Access fobs have a motion sensor that puts the key to sleep when left still, blocking relay attacks overnight.",
+        "steps": [
+          "Lock the car using the button on the key fob."
+        ],
         "notes": [
-          "Locking the car with the fob also disables touchless unlocking, as on BMW."
+          "Once locked with the fob, the car cannot be opened by touching the handle until you unlock it with the fob again."
         ]
       }
     ]
@@ -475,13 +473,8 @@
       "marvel r",
       "zt"
     ],
-    "methods": [
-      {
-        "type": "info",
-        "unverified": true,
-        "text": "No simple keyless on/off is widely documented for MG. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Nissan",
@@ -539,20 +532,8 @@
       "e-2008",
       "partner"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "On the touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry / hands-free keyless entry."
-        ],
-        "notes": [
-          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Porsche",
@@ -621,17 +602,9 @@
         "unverified": true,
         "steps": [
           "Lock the car with the key fob.",
-          "Then press the small indented area on the door handle.",
-          "Keyless entry is now disabled until you next unlock the car with the fob."
-        ],
-        "notes": [
-          "This mirrors Volkswagen's KESSY system used across the VW Group."
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
         ]
-      },
-      {
-        "type": "auto",
-        "unverified": true,
-        "text": "Newer VW Group fobs go to sleep after about 15 minutes without movement, which blocks relay attacks overnight."
       }
     ]
   },
@@ -655,11 +628,21 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "In the vehicle settings (centre display or instrument menu), open the keyless access settings.",
-          "Turn off Keyless Access / passive entry where available."
+          "Sit in the driver's seat and close the door.",
+          "Press the unlock side of the power door lock switch.",
+          "Open the driver's door within 5 seconds.",
+          "Press the unlock side of the switch twice within 5 seconds.",
+          "Close and open the driver's door twice within 10 seconds. Keyless access is now disabled."
         ],
         "notes": [
-          "To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+          "Press the switch slowly -- pressing too quickly can stop it working.",
+          "Repeat the same procedure to switch keyless access back on."
+        ],
+        "sources": [
+          [
+            "Subaru owner's manual",
+            "https://www.subsuv.com/subco-95.html"
+          ]
         ]
       }
     ]
@@ -760,20 +743,8 @@
       "zafira",
       "adam"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "On the touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry / hands-free keyless entry."
-        ],
-        "notes": [
-          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Volkswagen",
@@ -847,11 +818,8 @@
         "unverified": true,
         "steps": [
           "On the centre touchscreen, go to Settings > Vehicle.",
-          "Open Remote Lock/Unlock/Start (or Power Door Locks).",
-          "Turn off Passive Unlocking (and Passive Locking)."
-        ],
-        "notes": [
-          "This stops the car unlocking when you touch the handle with the fob nearby."
+          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
+          "Turn Passive Unlocking and Passive Locking off."
         ],
         "sources": [
           [
@@ -868,8 +836,14 @@
         "type": "temp",
         "unverified": true,
         "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
-          "This toggles keyless (passive) entry off. Repeat to turn it back on."
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
+          "Repeat to switch it back on."
+        ],
+        "sources": [
+          [
+            "GM owners (GM-Trucks)",
+            "https://www.gm-trucks.com/forums/topic/260511-passive-keyless-entry/"
+          ]
         ]
       }
     ]
@@ -891,11 +865,8 @@
         "unverified": true,
         "steps": [
           "On the centre touchscreen, go to Settings > Vehicle.",
-          "Open Remote Lock/Unlock/Start (or Power Door Locks).",
-          "Turn off Passive Unlocking (and Passive Locking)."
-        ],
-        "notes": [
-          "This stops the car unlocking when you touch the handle with the fob nearby."
+          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
+          "Turn Passive Unlocking and Passive Locking off."
         ],
         "sources": [
           [
@@ -912,8 +883,14 @@
         "type": "temp",
         "unverified": true,
         "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
-          "This toggles keyless (passive) entry off. Repeat to turn it back on."
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
+          "Repeat to switch it back on."
+        ],
+        "sources": [
+          [
+            "GM owners (GM-Trucks)",
+            "https://www.gm-trucks.com/forums/topic/260511-passive-keyless-entry/"
+          ]
         ]
       }
     ]
@@ -938,11 +915,8 @@
         "unverified": true,
         "steps": [
           "On the centre touchscreen, go to Settings > Vehicle.",
-          "Open Remote Lock/Unlock/Start (or Power Door Locks).",
-          "Turn off Passive Unlocking (and Passive Locking)."
-        ],
-        "notes": [
-          "This stops the car unlocking when you touch the handle with the fob nearby."
+          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
+          "Turn Passive Unlocking and Passive Locking off."
         ],
         "sources": [
           [
@@ -959,8 +933,14 @@
         "type": "temp",
         "unverified": true,
         "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
-          "This toggles keyless (passive) entry off. Repeat to turn it back on."
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
+          "Repeat to switch it back on."
+        ],
+        "sources": [
+          [
+            "GM owners (GM-Trucks)",
+            "https://www.gm-trucks.com/forums/topic/260511-passive-keyless-entry/"
+          ]
         ]
       }
     ]
@@ -980,11 +960,8 @@
         "unverified": true,
         "steps": [
           "On the centre touchscreen, go to Settings > Vehicle.",
-          "Open Remote Lock/Unlock/Start (or Power Door Locks).",
-          "Turn off Passive Unlocking (and Passive Locking)."
-        ],
-        "notes": [
-          "This stops the car unlocking when you touch the handle with the fob nearby."
+          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
+          "Turn Passive Unlocking and Passive Locking off."
         ],
         "sources": [
           [
@@ -1001,8 +978,14 @@
         "type": "temp",
         "unverified": true,
         "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
-          "This toggles keyless (passive) entry off. Repeat to turn it back on."
+          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
+          "Repeat to switch it back on."
+        ],
+        "sources": [
+          [
+            "GM owners (GM-Trucks)",
+            "https://www.gm-trucks.com/forums/topic/260511-passive-keyless-entry/"
+          ]
         ]
       }
     ]
@@ -1026,11 +1009,11 @@
         "unverified": true,
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry (Keyless Enter-N-Go)."
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
         ],
         "notes": [
-          "You can still lock/unlock with the fob buttons; only the touch-the-handle feature is disabled."
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
         ],
         "sources": [
           [
@@ -1056,11 +1039,11 @@
         "unverified": true,
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry (Keyless Enter-N-Go)."
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
         ],
         "notes": [
-          "You can still lock/unlock with the fob buttons; only the touch-the-handle feature is disabled."
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
         ],
         "sources": [
           [
@@ -1085,11 +1068,11 @@
         "unverified": true,
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry (Keyless Enter-N-Go)."
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
         ],
         "notes": [
-          "You can still lock/unlock with the fob buttons; only the touch-the-handle feature is disabled."
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
         ],
         "sources": [
           [
@@ -1115,11 +1098,11 @@
         "unverified": true,
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry (Keyless Enter-N-Go)."
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
         ],
         "notes": [
-          "You can still lock/unlock with the fob buttons; only the touch-the-handle feature is disabled."
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
         ],
         "sources": [
           [
@@ -1144,16 +1127,18 @@
     ],
     "methods": [
       {
-        "type": "auto",
-        "unverified": true,
-        "text": "Like Ford, recent Lincoln intelligent-access fobs go to sleep after a period without movement, which blocks relay attacks overnight."
-      },
-      {
         "type": "perm",
         "unverified": true,
         "steps": [
-          "In the SYNC settings, open the door/lock settings.",
-          "Turn off \"Intelligent Access\" / passive entry."
+          "On the SYNC touchscreen, go to Settings > Vehicle > Locks.",
+          "Set Intelligent Access (keyless entry) to off.",
+          "On cars without a touchscreen, use the steering-wheel menu: Settings > Vehicle > Locks > Intelligent Access."
+        ],
+        "sources": [
+          [
+            "Ford Support",
+            "https://www.ford.ie/support/how-tos/keys-and-locks/door-locks-and-alarms/how-do-i-deactivate-or-activate-keyless-entry"
+          ]
         ]
       }
     ]
@@ -1166,19 +1151,8 @@
       "r2",
       "r3"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "In the centre screen, open Settings.",
-          "Under the locks/keys section, turn off passive (proximity) entry so the car only unlocks from the app or key fob button."
-        ],
-        "notes": [
-          "If you use the phone as a key, also consider turning off passive unlock for the phone."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Lucid",
@@ -1187,16 +1161,8 @@
       "gravity",
       "lucid air"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "In the centre display, open Settings.",
-          "Under doors/locks, turn off passive (walk-up) unlocking."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Honda",
@@ -1218,27 +1184,8 @@
       "insight",
       "prologue"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "text": "Honda's Smart Entry proximity unlock has no simple fob on/off button. You can switch off \"Walk Away Auto Lock\" in the vehicle settings menu, but fully disabling proximity unlocking usually needs a Honda dealer or an OBD tool (e.g. Carista).",
-        "notes": [
-          "Until disabled, keep the fob in a Faraday pouch overnight to block relay attacks.",
-          "Locking/unlocking with the fob buttons and push-button start are unaffected."
-        ],
-        "sources": [
-          [
-            "Honda owners forum (CivicX)",
-            "https://www.civicx.com/forum/threads/disabling-smart-entry.21788/"
-          ]
-        ]
-      },
-      {
-        "type": "info",
-        "text": "Honda calls this \"Smart Entry with Walk Away Auto Lock\"."
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Acura",
@@ -1251,16 +1198,8 @@
       "nsx",
       "zdx"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "text": "Acura uses Honda's Smart Entry system. There is no simple fob on/off; \"Walk Away Auto Lock\" can be turned off in settings, but fully disabling proximity unlock generally needs a dealer or OBD tool.",
-        "notes": [
-          "Until disabled, keep the fob in a Faraday pouch overnight to block relay attacks."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Infiniti",
@@ -1274,19 +1213,8 @@
       "q70",
       "qx30"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "In the vehicle settings menu, open the lock/Intelligent Key settings.",
-          "Turn the Intelligent Key (i-Key) proximity feature off."
-        ],
-        "notes": [
-          "Infiniti uses Nissan's Intelligent Key system, so the menu is similar to Nissan's."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Genesis",
@@ -1301,24 +1229,17 @@
     ],
     "methods": [
       {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "Lock the car.",
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
-          "The hazard lights flash to confirm the fob is disabled."
-        ],
-        "notes": [
-          "Genesis uses Hyundai's smart-key system. Press any fob button to re-enable.",
-          "Availability varies by model and year."
-        ]
-      },
-      {
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the infotainment screen, go to Settings > Vehicle > Door.",
-          "Turn \"Approach unlock\" off."
+          "On the screen, go to Setup > Vehicle > Door.",
+          "Turn the Smart Key walk-up unlock off."
+        ],
+        "sources": [
+          [
+            "Genesis owners (GV Forums)",
+            "https://www.gvforums.com/threads/gv80-door-lock-settings.686/"
+          ]
         ]
       }
     ]
@@ -1335,19 +1256,8 @@
       "shogun",
       "colt"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "In the vehicle settings, open the keyless/locking options.",
-          "Turn off the keyless operation (proximity) function where available."
-        ],
-        "notes": [
-          "Mitsubishi calls this the \"Keyless Operation System\" (KOS / FAST key). On models without a menu option, keep the fob in a Faraday pouch overnight."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Suzuki",
@@ -1362,13 +1272,8 @@
       "baleno",
       "celerio"
     ],
-    "methods": [
-      {
-        "type": "info",
-        "unverified": true,
-        "text": "Suzuki's keyless push-start system has no widely documented on/off switch. Until one is confirmed for your model, keep the fob in a Faraday pouch overnight to block relay attacks, and check your owner's manual under \"keyless start\"."
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Volvo",
@@ -1385,23 +1290,8 @@
       "ex90",
       "v40"
     ],
-    "methods": [
-      {
-        "type": "info",
-        "unverified": true,
-        "text": "Volvo's keyless entry cannot be fully switched off from the car's menus -- the settings only let you choose which doors unlock. To block relay attacks, keep the fob in a Faraday pouch, or ask a Volvo dealer about disabling Keyless Drive.",
-        "sources": [
-          [
-            "Volvo Support",
-            "https://www.volvocars.com/uk/support/car/v90/article/cfacf58aa03188edc0a80151739ef5d0/"
-          ],
-          [
-            "Volvo owners (SwedeSpeed)",
-            "https://www.swedespeed.com/threads/can-the-keyless-drive-feature-be-disabled.233500/"
-          ]
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Polestar",
@@ -1413,26 +1303,8 @@
       "3",
       "4"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "In the centre display, open Settings.",
-          "Under locking, turn off keyless/passive unlock if your model offers it."
-        ],
-        "notes": [
-          "Polestar shares Volvo's platform; on models where it can't be turned off, keep the fob in a Faraday pouch.",
-          "Polestar's phone-as-key feature should also be reviewed if you use it."
-        ],
-        "sources": [
-          [
-            "Polestar Forum",
-            "https://www.polestar-forum.com/threads/disable-keyless-unlocking-entry.12915/"
-          ]
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Fiat",
@@ -1452,12 +1324,18 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry / hands-free keyless entry."
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
         ],
         "notes": [
-          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ],
+        "sources": [
+          [
+            "Mopar owner's manual",
+            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
+          ]
         ]
       }
     ]
@@ -1475,12 +1353,18 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry / hands-free keyless entry."
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
         ],
         "notes": [
-          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ],
+        "sources": [
+          [
+            "Mopar owner's manual",
+            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
+          ]
         ]
       }
     ]
@@ -1500,12 +1384,18 @@
         "type": "perm",
         "unverified": true,
         "steps": [
-          "On the touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry / hands-free keyless entry."
+          "On the Uconnect touchscreen, open Settings.",
+          "Go to Doors & Locks.",
+          "Turn Passive Entry (Keyless Enter-N-Go) off."
         ],
         "notes": [
-          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
+        ],
+        "sources": [
+          [
+            "Mopar owner's manual",
+            "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
+          ]
         ]
       }
     ]
@@ -1520,19 +1410,8 @@
       "mc20",
       "granturismo"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "On the touchscreen (MTC), open Settings.",
-          "Under doors/locks, turn off passive keyless entry where available."
-        ],
-        "notes": [
-          "To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Citroen",
@@ -1553,13 +1432,17 @@
       {
         "type": "perm",
         "unverified": true,
+        "models": "C5 Aircross",
         "steps": [
-          "On the touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry / hands-free keyless entry."
+          "Press and hold the lock button on the key fob.",
+          "After about 3 seconds, also press the lock button on the centre console while still holding the fob button.",
+          "After about 3 seconds, release the console button, then the fob button. A beep confirms keyless entry is disabled."
         ],
-        "notes": [
-          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
+        "sources": [
+          [
+            "Citroen/Peugeot owners forum",
+            "https://www.peugeotforums.com/threads/how-to-turn-off-keyless-entry.336110/"
+          ]
         ]
       }
     ]
@@ -1574,20 +1457,8 @@
       "ds 3 crossback",
       "ds 7 crossback"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "On the touchscreen, open Settings.",
-          "Go to Doors & Locks (or Personal Settings).",
-          "Turn off Passive Entry / hands-free keyless entry."
-        ],
-        "notes": [
-          "You can still use the fob buttons; only touch-the-handle entry is disabled. On models without this menu option, keep the fob in a Faraday pouch overnight."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "SEAT",
@@ -1607,17 +1478,9 @@
         "unverified": true,
         "steps": [
           "Lock the car with the key fob.",
-          "Then press the small indented area on the door handle.",
-          "Keyless entry is now disabled until you next unlock the car with the fob."
-        ],
-        "notes": [
-          "This mirrors Volkswagen's KESSY system used across the VW Group."
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
         ]
-      },
-      {
-        "type": "auto",
-        "unverified": true,
-        "text": "Newer VW Group fobs go to sleep after about 15 minutes without movement, which blocks relay attacks overnight."
       }
     ]
   },
@@ -1638,17 +1501,9 @@
         "unverified": true,
         "steps": [
           "Lock the car with the key fob.",
-          "Then press the small indented area on the door handle.",
-          "Keyless entry is now disabled until you next unlock the car with the fob."
-        ],
-        "notes": [
-          "This mirrors Volkswagen's KESSY system used across the VW Group."
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
         ]
-      },
-      {
-        "type": "auto",
-        "unverified": true,
-        "text": "Newer VW Group fobs go to sleep after about 15 minutes without movement, which blocks relay attacks overnight."
       }
     ]
   },
@@ -1668,19 +1523,8 @@
       "koleos",
       "megane e-tech"
     ],
-    "methods": [
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "In the vehicle settings menu, open the access/locking options.",
-          "Turn off the hands-free keyless card (\"mains libres\") proximity unlocking where available."
-        ],
-        "notes": [
-          "Renault uses a hands-free key card. On models without a menu option, keep the card in a Faraday pouch overnight."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Dacia",
@@ -1692,13 +1536,8 @@
       "logan",
       "stepway"
     ],
-    "methods": [
-      {
-        "type": "info",
-        "unverified": true,
-        "text": "Most Dacia models use a conventional remote (press to unlock), not proximity keyless, so they are generally not vulnerable to relay attacks. If your Dacia has hands-free keyless entry, To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Smart",
@@ -1709,19 +1548,8 @@
       "smart #3",
       "eq fortwo"
     ],
-    "methods": [
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "Lock the car as usual.",
-          "Press the lock button again twice, quickly."
-        ],
-        "notes": [
-          "Older Smart cars share Mercedes' keyless system. Newer Smart #1/#3 are built with Geely -- check the car's menu instead."
-        ]
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Lotus",
@@ -1733,13 +1561,8 @@
       "exige",
       "elise"
     ],
-    "methods": [
-      {
-        "type": "info",
-        "unverified": true,
-        "text": "For keyless Lotus models (e.g. Emira, Eletre), no simple on/off is widely documented. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Aston Martin",
@@ -1752,13 +1575,8 @@
       "vanquish",
       "rapide"
     ],
-    "methods": [
-      {
-        "type": "info",
-        "unverified": true,
-        "text": "No simple keyless on/off is widely documented for Aston Martin. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "McLaren",
@@ -1770,13 +1588,8 @@
       "artura",
       "765lt"
     ],
-    "methods": [
-      {
-        "type": "info",
-        "unverified": true,
-        "text": "No simple keyless on/off is widely documented for McLaren. To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
-      }
-    ]
+    "methods": [],
+    "unknown": true
   },
   {
     "name": "Rolls-Royce",
@@ -1791,11 +1604,13 @@
     ],
     "methods": [
       {
-        "type": "auto",
+        "type": "temp",
         "unverified": true,
-        "text": "Rolls-Royce uses BMW key technology; recent fobs have a motion sensor that puts the key to sleep when left still, blocking relay attacks overnight.",
+        "steps": [
+          "Lock the car using the button on the key fob."
+        ],
         "notes": [
-          "Locking the car with the fob also disables touchless unlocking, as on BMW."
+          "Once locked with the fob, the car cannot be opened by touching the handle until you unlock it with the fob again."
         ]
       }
     ]
@@ -1810,9 +1625,14 @@
     ],
     "methods": [
       {
-        "type": "info",
+        "type": "temp",
         "unverified": true,
-        "text": "Lamborghini uses VW Group (Audi) electronics. The Urus may offer KESSY-style behaviour similar to Audi; otherwise To block relay attacks, keep the fob in a Faraday pouch overnight and check your owner's manual under \"keyless\" entry/start."
+        "steps": [
+          "Lock the car with the key fob.",
+          "Then press the indented area on the door handle.",
+          "Keyless entry stays off until you next unlock the car with the fob."
+        ],
+        "models": "Urus"
       }
     ]
   }

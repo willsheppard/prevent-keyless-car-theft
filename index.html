@@ -45,7 +45,7 @@
   <div class="grid" id="grid"></div>
   <div class="no-results" id="noresults" hidden>
     <p>😕 We don't have <strong id="nrq"></strong> listed yet.</p>
-    <p>Check the spelling, or <a href="https://github.com/willsheppard/prevent-keyless-car-theft" target="_blank" rel="noopener">help us add it →</a></p>
+    <p>Check the spelling, or <a href="#contribute">tell us how to disable it →</a></p>
   </div>
 
   <div class="legend">
@@ -123,6 +123,45 @@
         <p>This is a free community project and the list is always growing. If you can confirm the method for your model — or spot a correction — please <a href="https://github.com/willsheppard/prevent-keyless-car-theft" target="_blank" rel="noopener">add it on GitHub</a>. Some entries are marked unverified; always double-check against your own car's manual.</p>
       </div>
     </details>
+  </section>
+
+  <section class="content" id="contribute">
+    <h2>Help add or fix a car</h2>
+    <p>Know how to disable keyless entry on a car that's missing above, or spotted a mistake? Tell us here — <strong>no GitHub account needed</strong>. We check every submission before it goes live.</p>
+
+    <form id="contribute-form" class="contribute-form" action="https://formspree.io/f/xgojavoj" method="POST">
+      <div class="field">
+        <label for="cf-make">Car make <span class="req" aria-hidden="true">*</span></label>
+        <input id="cf-make" name="make" type="text" required autocomplete="off" placeholder="e.g. Ford">
+      </div>
+
+      <div class="field">
+        <label for="cf-model">Model &amp; year <span class="opt">(optional)</span></label>
+        <input id="cf-model" name="model" type="text" autocomplete="off" placeholder="e.g. Fiesta, 2019 onwards">
+      </div>
+
+      <div class="field">
+        <label for="cf-method">How do you disable keyless entry? <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="cf-method" name="method" rows="5" required placeholder="Describe the steps, e.g. 'Press the lock button on the fob twice within three seconds when leaving the car.'"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="cf-source">Where is this from? <span class="opt">(optional)</span></label>
+        <input id="cf-source" name="source" type="text" autocomplete="off" placeholder="Owner's manual, confirmed on my own car, a link…">
+      </div>
+
+      <div class="field">
+        <label for="cf-email">Your email <span class="opt">(optional)</span></label>
+        <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="Only if we can ask a follow-up or credit you">
+      </div>
+
+      <!-- Honeypot: hidden from people, catches bots. Leave empty. -->
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_subject" value="New car submission — StopKeyless">
+
+      <button type="submit" class="submit-btn">Send it in</button>
+      <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+    </form>
   </section>
 </main>
 

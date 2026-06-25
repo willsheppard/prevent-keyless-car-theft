@@ -48,7 +48,7 @@ function methodHTML(m) {
 
 function bodyHTML(car) {
   if (car.unknown) {
-    return `<div class="card-body"><p class="unknown-body">We don't yet have confirmed instructions for ${car.name}. Many ${car.name} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="https://github.com/willsheppard/prevent-keyless-car-theft" target="_blank" rel="noopener">Know how? Help us add ${car.name} →</a></p></div>`;
+    return `<div class="card-body"><p class="unknown-body">We don't yet have confirmed instructions for ${car.name}. Many ${car.name} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="#contribute">Know how? Help us add ${car.name} →</a></p></div>`;
   }
   return `<div class="card-body">${car.methods.map(methodHTML).join("")}</div>`;
 }

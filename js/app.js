@@ -131,3 +131,41 @@ fetch("data/cars.json")
 
     render(cars, "");
   });
+
+/* ---------- Contribute form (Formspree, native fetch) ---------- */
+const cform = document.getElementById("contribute-form");
+if (cform) {
+  const status = document.getElementById("cf-status");
+  const submitBtn = cform.querySelector("button[type=submit]");
+  const GH = 'You can also <a href="https://github.com/willsheppard/prevent-keyless-car-theft" target="_blank" rel="noopener">add it on GitHub</a>.';
+
+  cform.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    status.className = "form-status";
+    status.textContent = "Sending…";
+    submitBtn.disabled = true;
+
+    try {
+      const res = await fetch(cform.action, {
+        method: "POST",
+        body: new FormData(cform),
+        headers: { Accept: "application/json" }
+      });
+      if (res.ok) {
+        cform.reset();
+        status.className = "form-status ok";
+        status.textContent = "Thanks! We've got it and will review it before it goes live.";
+      } else {
+        const data = await res.json().catch(() => ({}));
+        const msg = data.errors ? data.errors.map(er => er.message).join(", ") : "Something went wrong.";
+        status.className = "form-status err";
+        status.innerHTML = `${msg} ${GH}`;
+      }
+    } catch {
+      status.className = "form-status err";
+      status.innerHTML = `Network error — please try again. ${GH}`;
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+}

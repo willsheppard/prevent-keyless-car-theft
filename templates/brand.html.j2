@@ -61,7 +61,7 @@
   {% for faq in faqs %}
   <details class="faq">
     <summary>{{ faq.q }}</summary>
-    <div class="faq-body"><p>{{ faq.a }}</p></div>
+    <div class="faq-body"><p>{{ faq.a|safe }}</p></div>
   </details>
   {% endfor %}
 </section>

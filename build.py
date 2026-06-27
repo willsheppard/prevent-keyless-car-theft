@@ -23,30 +23,9 @@ SITE_NAME = "StopKeyless"
 
 TYPE_LABEL = {"temp": "Temporary", "auto": "Automatic", "perm": "Permanent", "info": "Note"}
 
-# Visible FAQ content shown on each page.
-FAQS = [
-    {
-        "q": "If I disable keyless entry, how do I get into my car?",
-        "a": "You simply press the unlock button on your key fob, like cars have done for "
-             "years. “Keyless” (or “passive”) entry just means the car "
-             "unlocks automatically when the fob is nearby — turning it off only "
-             "removes that automatic part. Pressing the button still works normally.",
-    },
-    {
-        "q": "What about a Faraday pouch, or keeping keys far away?",
-        "a": "A Faraday pouch can block the signal, but they’re easy to forget and "
-             "often stop working over time. Keeping keys across the house doesn’t help "
-             "much — the signal can still be relayed. Disabling keyless entry at the "
-             "fob is more reliable and costs nothing.",
-    },
-    {
-        "q": "The steps for my model are missing or wrong",
-        "a": "This is a free community project and the list is always growing. If you can "
-             "confirm the method for your model — or spot a correction — please "
-             "use the contribute form on the home page. Some entries are marked unverified; "
-             "always double-check against your own car’s manual.",
-    },
-]
+
+def load_faqs():
+    return json.loads((ROOT / "data" / "faqs.json").read_text(encoding="utf-8"))
 
 
 def slugify(name):
@@ -91,7 +70,7 @@ def build_embedded_metadata(brand, url):
     return [json.dumps(b, ensure_ascii=False) for b in blobs]
 
 
-def build_brand(env, car):
+def build_brand(env, car, faqs):
     brand = car["name"]
     slug = slugify(brand)
     url = f"{SITE_URL}/disable-keyless-entry/{slug}/"
@@ -115,6 +94,8 @@ def build_brand(env, car):
         f"more than one key fob, repeat it for each one.</p>"
     )
 
+    model_faqs = [faq for faq in faqs if faq.get("on_model_page")]
+
     html = env.get_template("brand.html.j2").render(
         brand=brand,
         canonical=url,
@@ -128,7 +109,7 @@ def build_brand(env, car):
         intro_html=intro_html,
         methods=methods,
         aliases_text=", ".join(models),
-        faqs=FAQS,
+        faqs=model_faqs,
         embedded_metadata=build_embedded_metadata(brand, url),
     )
 
@@ -142,6 +123,7 @@ def main():
     brand_name = sys.argv[1] if len(sys.argv) > 1 else "Ford"
     cars = load_cars()
     car = find_brand(cars, brand_name)
+    faqs = load_faqs()
 
     env = Environment(
         loader=FileSystemLoader(str(ROOT / "templates")),
@@ -151,7 +133,7 @@ def main():
     )
     env.globals["TYPE_LABEL"] = TYPE_LABEL
 
-    path, size = build_brand(env, car)
+    path, size = build_brand(env, car, faqs)
     print(f"Wrote {path.relative_to(ROOT)} ({size:,} bytes)")
 
 

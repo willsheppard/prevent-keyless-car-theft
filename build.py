@@ -2,7 +2,7 @@
 """Static page generator for StopKeyless (see DESIGN.md, decisions D2 + D6).
 
 Proof-of-concept scope: render ONE brand page (Ford by default) from the existing
-data/cars.json through Jinja2 templates into _site/. The per-brand YAML migration
+data/cars.json through Jinja2 templates into dist/. The per-brand YAML migration
 (DESIGN.md D3) is not done yet, so this reads cars.json directly and filters to the
 requested brand.
 
@@ -17,7 +17,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / "_site"
+OUT = ROOT / "dist"
 SITE_URL = "https://stopkeyless.com"
 SITE_NAME = "StopKeyless"
 

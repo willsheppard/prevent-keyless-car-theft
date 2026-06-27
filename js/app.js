@@ -16,41 +16,46 @@ function initials(name) {
 
 function tagsFor(car) {
   if (car.unknown) return '<span class="tag none">Help needed</span>';
-  const types = [...new Set(car.methods.map(m => m.type).filter(t => t !== "info"))];
-  return types.map(t => `<span class="tag ${t}">${TYPE_LABEL[t]}</span>`).join("");
+  const types = [...new Set(car.methods.map(stepSet => stepSet.type).filter(type => type !== "info"))];
+  return types.map(type => `<span class="tag ${type}">${TYPE_LABEL[type]}</span>`).join("");
 }
 
 function stepsList(steps, ordered = true) {
   const tag = ordered ? "ol" : "ul";
-  return `<${tag}>${steps.map(s => `<li>${s}</li>`).join("")}</${tag}>`;
+  return `<${tag}>${steps.map(step => `<li>${step}</li>`).join("")}</${tag}>`;
 }
 
-function methodHTML(m) {
-  if (m.type === "info") {
-    return `<p class="note">${m.text}</p>`;
+// stepsHTML(stepSet): renders one "way to disable keyless entry" — a tagged block
+// with optional intro text, an ordered/unordered step list, labelled sub-procedures,
+// and notes. A stepSet of type "info" is just a standalone note.
+// Mirrors render_steps() in templates/macros.html.j2 (see MIGRATION.md).
+function stepsHTML(stepSet) {
+  if (stepSet.type === "info") {
+    return `<p class="note">${stepSet.text}</p>`;
   }
-  let h = `<div class="method"><div class="method-head">`;
-  h += `<span class="tag ${m.type}">${TYPE_LABEL[m.type]}</span>`;
-  if (m.unverified) h += `<span class="tag unverified">Unverified</span>`;
-  if (m.models) h += `<span class="method-models">${m.models}</span>`;
-  h += `</div>`;
-  if (m.text) h += `<p>${m.text}</p>`;
-  if (m.steps) h += stepsList(m.steps, m.type === "perm" || m.steps.length > 2);
-  if (m.sub) {
-    m.sub.forEach(s => {
-      h += `<p><strong>${s.label}:</strong></p>` + stepsList(s.steps);
+  let html = `<div class="method"><div class="method-head">`;
+  html += `<span class="tag ${stepSet.type}">${TYPE_LABEL[stepSet.type]}</span>`;
+  if (stepSet.unverified) html += `<span class="tag unverified">Unverified</span>`;
+  if (stepSet.models) html += `<span class="method-models">${stepSet.models}</span>`;
+  html += `</div>`;
+  if (stepSet.text) html += `<p>${stepSet.text}</p>`;
+  // Numbered when order matters: permanent changes, or more than two steps.
+  if (stepSet.steps) html += stepsList(stepSet.steps, stepSet.type === "perm" || stepSet.steps.length > 2);
+  if (stepSet.sub) {
+    stepSet.sub.forEach(sub => {
+      html += `<p><strong>${sub.label}:</strong></p>` + stepsList(sub.steps);
     });
   }
-  if (m.notes) m.notes.forEach(n => { h += `<p class="note">${n}</p>`; });
-  h += `</div>`;
-  return h;
+  if (stepSet.notes) stepSet.notes.forEach(note => { html += `<p class="note">${note}</p>`; });
+  html += `</div>`;
+  return html;
 }
 
 function bodyHTML(car) {
   if (car.unknown) {
     return `<div class="card-body"><p class="unknown-body">We don't yet have confirmed instructions for ${car.name}. Many ${car.name} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="#contribute">Know how? Help us add ${car.name} →</a></p></div>`;
   }
-  return `<div class="card-body">${car.methods.map(methodHTML).join("")}</div>`;
+  return `<div class="card-body">${car.methods.map(stepsHTML).join("")}</div>`;
 }
 
 function cardHTML(car, idx) {

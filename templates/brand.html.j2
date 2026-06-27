@@ -1,5 +1,5 @@
 {% extends "base.html.j2" %}
-{% from "macros.html.j2" import render_method %}
+{% from "macros.html.j2" import render_steps %}
 
 {% block head_extra %}
 {% for blob in jsonld %}
@@ -40,8 +40,8 @@
 <section class="content">
   <h2>How to disable it on your {{ brand }}</h2>
   <div class="brand-methods">
-    {% for m in methods %}
-    {{ render_method(m) }}
+    {% for step_set in methods %}
+    {{ render_steps(step_set) }}
     {% endfor %}
   </div>
   <p class="models-note">Applies across {{ brand }} models including {{ aliases_text }}.</p>
@@ -58,10 +58,10 @@
 
 <section class="content">
   <h2>Common questions</h2>
-  {% for f in faqs %}
+  {% for faq in faqs %}
   <details class="faq">
-    <summary>{{ f.q }}</summary>
-    <div class="faq-body"><p>{{ f.a }}</p></div>
+    <summary>{{ faq.q }}</summary>
+    <div class="faq-body"><p>{{ faq.a }}</p></div>
   </details>
   {% endfor %}
 </section>

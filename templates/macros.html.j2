@@ -1,30 +1,35 @@
-{# Render one method block. Mirrors the client-side methodHTML() in js/app.js.
-   TYPE_LABEL comes from the Jinja environment globals. #}
-{% macro render_method(m) %}
-{% if m.type == 'info' %}
-<p class="note">{{ m.text|safe }}</p>
+{# render_steps(step_set): renders one "way to disable keyless entry" — a tagged
+   block with optional intro text, an ordered/unordered step list, labelled
+   sub-procedures, and notes. A step_set of type "info" is just a standalone note.
+   Mirrors stepsHTML() in js/app.js; the two are kept in sync until the homepage is
+   templated (see MIGRATION.md). TYPE_LABEL is a Jinja global set in build.py. #}
+{% macro render_steps(step_set) %}
+{% if step_set.type == 'info' %}
+<p class="note">{{ step_set.text|safe }}</p>
 {% else %}
 <div class="method">
   <div class="method-head">
-    <span class="tag {{ m.type }}">{{ TYPE_LABEL[m.type] }}</span>
-    {% if m.unverified %}<span class="tag unverified">Unverified</span>{% endif %}
-    {% if m.models %}<span class="method-models">{{ m.models }}</span>{% endif %}
+    <span class="tag {{ step_set.type }}">{{ TYPE_LABEL[step_set.type] }}</span>
+    {% if step_set.unverified %}<span class="tag unverified">Unverified</span>{% endif %}
+    {% if step_set.models %}<span class="method-models">{{ step_set.models }}</span>{% endif %}
   </div>
-  {% if m.text %}<p>{{ m.text|safe }}</p>{% endif %}
-  {% if m.steps %}
-  {% set ordered = (m.type == 'perm') or (m.steps|length > 2) %}
+  {% if step_set.text %}<p>{{ step_set.text|safe }}</p>{% endif %}
+  {% if step_set.steps %}
+  {# Numbered when order matters: permanent changes, or more than two steps. #}
+  {% set ordered = (step_set.type == 'perm') or (step_set.steps|length > 2) %}
   {% if ordered %}<ol>{% else %}<ul>{% endif %}
-    {% for s in m.steps %}<li>{{ s|safe }}</li>{% endfor %}
+    {% for step in step_set.steps %}<li>{{ step|safe }}</li>{% endfor %}
   {% if ordered %}</ol>{% else %}</ul>{% endif %}
   {% endif %}
-  {% if m.sub %}
-  {% for s in m.sub %}
-  <p><strong>{{ s.label }}:</strong></p>
-  <ul>{% for st in s.steps %}<li>{{ st|safe }}</li>{% endfor %}</ul>
+  {% if step_set.sub %}
+  {# Labelled sub-procedures, e.g. "To re-enable:" followed by its own steps. #}
+  {% for sub in step_set.sub %}
+  <p><strong>{{ sub.label }}:</strong></p>
+  <ul>{% for sub_step in sub.steps %}<li>{{ sub_step|safe }}</li>{% endfor %}</ul>
   {% endfor %}
   {% endif %}
-  {% if m.notes %}
-  {% for n in m.notes %}<p class="note">{{ n|safe }}</p>{% endfor %}
+  {% if step_set.notes %}
+  {% for note in step_set.notes %}<p class="note">{{ note|safe }}</p>{% endfor %}
   {% endif %}
 </div>
 {% endif %}

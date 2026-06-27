@@ -201,29 +201,29 @@ main { padding: 20px 0 20px; }
 }
 .card.open .card-body { display: block; }
 
-.method {
+.technique {
   margin-top: 20px;
   padding-top: 4px;
 }
-.method:first-child { margin-top: 14px; }
-.method-head {
+.technique:first-child { margin-top: 14px; }
+.technique-head {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 8px;
 }
-.method-head h4 { margin: 0; font-size: 16px; }
-.method-models {
+.technique-head h4 { margin: 0; font-size: 16px; }
+.technique-models {
   font-size: 13px;
   color: var(--muted);
   font-weight: 500;
 }
-.method ol, .method ul {
+.technique ol, .technique ul {
   margin: 8px 0;
   padding-left: 22px;
 }
-.method li { margin: 4px 0; }
-.method p { margin: 8px 0; }
+.technique li { margin: 4px 0; }
+.technique p { margin: 8px 0; }
 .note {
   background: #fffbeb;
   border-left: 3px solid var(--accent);

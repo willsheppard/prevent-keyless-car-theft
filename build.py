@@ -131,7 +131,7 @@ def build_brand(env, car):
     methods = car.get("methods", [])
     models = model_names(car.get("aliases", []))
 
-    lede = (
+    subtitle = (
         f"Thieves can unlock and start a keyless {brand} in seconds with a relay attack "
         f"— without ever touching your key. {brand} builds in free ways to switch "
         f"keyless entry off. Here’s how."
@@ -157,7 +157,7 @@ def build_brand(env, car):
             f"Free, manufacturer-approved ways to disable keyless entry on your {brand} "
             f"and stop relay theft. Simple step-by-step instructions for {brand} models."
         ),
-        lede=lede,
+        subtitle=subtitle,
         intro_html=intro_html,
         methods=methods,
         aliases_text=", ".join(models),

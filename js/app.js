@@ -16,37 +16,37 @@ function initials(name) {
 
 function tagsFor(car) {
   if (car.unknown) return '<span class="tag none">Help needed</span>';
-  const types = [...new Set(car.methods.map(stepSet => stepSet.type).filter(type => type !== "info"))];
+  const types = [...new Set(car.methods.map(stepList => stepList.type).filter(type => type !== "info"))];
   return types.map(type => `<span class="tag ${type}">${TYPE_LABEL[type]}</span>`).join("");
 }
 
-function stepsList(steps, ordered = true) {
+function listHTML(steps, ordered = true) {
   const tag = ordered ? "ol" : "ul";
   return `<${tag}>${steps.map(step => `<li>${step}</li>`).join("")}</${tag}>`;
 }
 
-// stepsHTML(stepSet): renders one "way to disable keyless entry" — a tagged block
+// stepsHTML(stepList): renders one "way to disable keyless entry" — a tagged block
 // with optional intro text, an ordered/unordered step list, labelled sub-procedures,
-// and notes. A stepSet of type "info" is just a standalone note.
+// and notes. A stepList of type "info" is just a standalone note.
 // Mirrors render_steps() in templates/macros.html.j2 (see MIGRATION.md).
-function stepsHTML(stepSet) {
-  if (stepSet.type === "info") {
-    return `<p class="note">${stepSet.text}</p>`;
+function stepsHTML(stepList) {
+  if (stepList.type === "info") {
+    return `<p class="note">${stepList.text}</p>`;
   }
   let html = `<div class="method"><div class="method-head">`;
-  html += `<span class="tag ${stepSet.type}">${TYPE_LABEL[stepSet.type]}</span>`;
-  if (stepSet.unverified) html += `<span class="tag unverified">Unverified</span>`;
-  if (stepSet.models) html += `<span class="method-models">${stepSet.models}</span>`;
+  html += `<span class="tag ${stepList.type}">${TYPE_LABEL[stepList.type]}</span>`;
+  if (stepList.unverified) html += `<span class="tag unverified">Unverified</span>`;
+  if (stepList.models) html += `<span class="method-models">${stepList.models}</span>`;
   html += `</div>`;
-  if (stepSet.text) html += `<p>${stepSet.text}</p>`;
+  if (stepList.text) html += `<p>${stepList.text}</p>`;
   // Numbered when order matters: permanent changes, or more than two steps.
-  if (stepSet.steps) html += stepsList(stepSet.steps, stepSet.type === "perm" || stepSet.steps.length > 2);
-  if (stepSet.sub) {
-    stepSet.sub.forEach(sub => {
-      html += `<p><strong>${sub.label}:</strong></p>` + stepsList(sub.steps);
+  if (stepList.steps) html += listHTML(stepList.steps, stepList.type === "perm" || stepList.steps.length > 2);
+  if (stepList.sub) {
+    stepList.sub.forEach(sub => {
+      html += `<p><strong>${sub.label}:</strong></p>` + listHTML(sub.steps);
     });
   }
-  if (stepSet.notes) stepSet.notes.forEach(note => { html += `<p class="note">${note}</p>`; });
+  if (stepList.notes) stepList.notes.forEach(note => { html += `<p class="note">${note}</p>`; });
   html += `</div>`;
   return html;
 }

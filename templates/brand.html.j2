@@ -2,7 +2,7 @@
 {% from "macros.html.j2" import render_steps %}
 
 {% block head_extra %}
-{% for blob in jsonld %}
+{% for blob in embedded_metadata %}
 <script type="application/ld+json">{{ blob|safe }}</script>
 {% endfor %}
 <style>

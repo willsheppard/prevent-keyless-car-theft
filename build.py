@@ -23,7 +23,7 @@ SITE_NAME = "StopKeyless"
 
 TYPE_LABEL = {"temp": "Temporary", "auto": "Automatic", "perm": "Permanent", "info": "Note"}
 
-# Defined once; rendered as both visible FAQ and FAQPage JSON-LD.
+# Visible FAQ content shown on each page.
 FAQS = [
     {
         "q": "If I disable keyless entry, how do I get into my car?",
@@ -75,12 +75,9 @@ def find_brand(cars, name):
     raise SystemExit(f"Brand not found in cars.json: {name!r}")
 
 
-def strip_tags(text):
-    return re.sub(r"<[^>]+>", "", text)
-
-
-def build_jsonld(brand, url, methods, faqs):
-    """BreadcrumbList + a HowTo per method with steps + FAQPage."""
+def build_embedded_metadata(brand, url):
+    """Embedded metadata (JSON-LD) for search engines. Only BreadcrumbList still
+    earns a rich result; Google dropped HowTo (2023) and FAQ (2026) rich results."""
     blobs = [
         {
             "@context": "https://schema.org",
@@ -91,36 +88,6 @@ def build_jsonld(brand, url, methods, faqs):
             ],
         }
     ]
-    for m in methods:
-        steps = m.get("steps")
-        if not steps:
-            continue
-        name = f"Disable keyless entry on a {brand}"
-        if m.get("models"):
-            name += f" ({m['models']})"
-        elif TYPE_LABEL.get(m["type"]):
-            name += f" ({TYPE_LABEL[m['type']].lower()})"
-        blobs.append({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": name,
-            "step": [
-                {"@type": "HowToStep", "position": i + 1, "text": strip_tags(s)}
-                for i, s in enumerate(steps)
-            ],
-        })
-    blobs.append({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": f["q"],
-                "acceptedAnswer": {"@type": "Answer", "text": f["a"]},
-            }
-            for f in faqs
-        ],
-    })
     return [json.dumps(b, ensure_ascii=False) for b in blobs]
 
 
@@ -162,7 +129,7 @@ def build_brand(env, car):
         methods=methods,
         aliases_text=", ".join(models),
         faqs=FAQS,
-        jsonld=build_jsonld(brand, url, methods, FAQS),
+        embedded_metadata=build_embedded_metadata(brand, url),
     )
 
     out_path = OUT / "disable-keyless-entry" / slug / "index.html"

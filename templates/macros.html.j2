@@ -1,0 +1,31 @@
+{# Render one method block. Mirrors the client-side methodHTML() in js/app.js.
+   TYPE_LABEL comes from the Jinja environment globals. #}
+{% macro render_method(m) %}
+{% if m.type == 'info' %}
+<p class="note">{{ m.text|safe }}</p>
+{% else %}
+<div class="method">
+  <div class="method-head">
+    <span class="tag {{ m.type }}">{{ TYPE_LABEL[m.type] }}</span>
+    {% if m.unverified %}<span class="tag unverified">Unverified</span>{% endif %}
+    {% if m.models %}<span class="method-models">{{ m.models }}</span>{% endif %}
+  </div>
+  {% if m.text %}<p>{{ m.text|safe }}</p>{% endif %}
+  {% if m.steps %}
+  {% set ordered = (m.type == 'perm') or (m.steps|length > 2) %}
+  {% if ordered %}<ol>{% else %}<ul>{% endif %}
+    {% for s in m.steps %}<li>{{ s|safe }}</li>{% endfor %}
+  {% if ordered %}</ol>{% else %}</ul>{% endif %}
+  {% endif %}
+  {% if m.sub %}
+  {% for s in m.sub %}
+  <p><strong>{{ s.label }}:</strong></p>
+  <ul>{% for st in s.steps %}<li>{{ st|safe }}</li>{% endfor %}</ul>
+  {% endfor %}
+  {% endif %}
+  {% if m.notes %}
+  {% for n in m.notes %}<p class="note">{{ n|safe }}</p>{% endfor %}
+  {% endif %}
+</div>
+{% endif %}
+{% endmacro %}

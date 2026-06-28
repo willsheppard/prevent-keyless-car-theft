@@ -24,7 +24,7 @@
       "rs3",
       "rs6"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -36,7 +36,14 @@
   },
   {
     "name": "Bentley",
-    "methods": [
+    "aliases": [
+      "continental",
+      "continental gt",
+      "flying spur",
+      "bentayga",
+      "mulsanne"
+    ],
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -47,13 +54,6 @@
         ],
         "models": "Bentayga"
       }
-    ],
-    "aliases": [
-      "continental",
-      "continental gt",
-      "flying spur",
-      "bentayga",
-      "mulsanne"
     ]
   },
   {
@@ -89,7 +89,7 @@
       "digital key",
       "comfort access"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -105,7 +105,6 @@
   },
   {
     "name": "Ferrari",
-    "methods": [],
     "aliases": [
       "roma",
       "portofino",
@@ -115,6 +114,7 @@
       "812",
       "purosangue"
     ],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -144,7 +144,7 @@
       "focus active",
       "tourneo"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -185,7 +185,7 @@
       "venue",
       "nexo"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -220,7 +220,7 @@
       "f-pace",
       "i-pace"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "models": "2013 F-Type, Discovery Sport",
@@ -262,7 +262,7 @@
       "carnival",
       "forte"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -301,7 +301,7 @@
       "lc",
       "ct"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "steps": [
@@ -330,7 +330,7 @@
       "mx-5",
       "mx-30"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "models": "2021 onwards",
@@ -371,7 +371,7 @@
       "g-class",
       "g-wagon"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "steps": [
@@ -392,7 +392,7 @@
       "electric",
       "aceman"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -417,7 +417,7 @@
       "marvel r",
       "zt"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -440,7 +440,7 @@
       "kicks",
       "townstar"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "models": "Qashqai",
@@ -453,11 +453,10 @@
         "type": "auto",
         "models": "J12 onwards?",
         "text": "The latest key fobs turn themselves off after a period of inactivity."
-      },
-      {
-        "type": "info",
-        "text": "Nissan calls this feature \"i-key\" (intelligent key)."
       }
+    ],
+    "info": [
+      "Nissan calls this feature \"i-key\" (intelligent key)."
     ]
   },
   {
@@ -476,7 +475,7 @@
       "e-2008",
       "partner"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -491,7 +490,7 @@
       "boxster",
       "cayman"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "steps": [
@@ -515,7 +514,7 @@
       "discovery sport",
       "defender"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "steps": [
@@ -540,7 +539,7 @@
       "kamiq",
       "citigo"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -567,7 +566,7 @@
       "levorg",
       "solterra"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -594,7 +593,7 @@
       "model y",
       "cybertruck"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -638,7 +637,7 @@
       "4runner",
       "avalon"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "models": "Most models with Smart Key (push-button start)",
@@ -670,7 +669,7 @@
       "zafira",
       "adam"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -698,7 +697,7 @@
       "caddy",
       "kessy"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "models": "T-Roc 7 onwards?",
@@ -712,11 +711,10 @@
         "type": "auto",
         "models": "T-Cross",
         "text": "The key fob goes to sleep after 15 minutes of inactivity."
-      },
-      {
-        "type": "info",
-        "text": "Volkswagen calls its keyless entry feature \"KESSY\"."
       }
+    ],
+    "info": [
+      "Volkswagen calls its keyless entry feature \"KESSY\"."
     ]
   },
   {
@@ -739,7 +737,7 @@
       "spark",
       "impala"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -770,7 +768,7 @@
       "hummer ev",
       "savana"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -804,7 +802,7 @@
       "cts",
       "srx"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -833,7 +831,7 @@
       "envision",
       "envista"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -866,7 +864,7 @@
       "grand wagoneer",
       "avenger"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -890,7 +888,7 @@
       "hornet",
       "journey"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -913,7 +911,7 @@
       "pacifica",
       "voyager"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -937,7 +935,7 @@
       "ram 1500",
       "promaster"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -964,7 +962,7 @@
       "mkc",
       "mkx"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -984,7 +982,7 @@
       "r2",
       "r3"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -994,7 +992,7 @@
       "gravity",
       "lucid air"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1017,7 +1015,7 @@
       "insight",
       "prologue"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1031,7 +1029,7 @@
       "nsx",
       "zdx"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1046,7 +1044,7 @@
       "q70",
       "qx30"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1060,7 +1058,7 @@
       "gv80",
       "electrified g80"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1083,7 +1081,7 @@
       "shogun",
       "colt"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1099,7 +1097,7 @@
       "baleno",
       "celerio"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1117,7 +1115,7 @@
       "ex90",
       "v40"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1130,7 +1128,7 @@
       "3",
       "4"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1146,7 +1144,7 @@
       "600",
       "doblo"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1169,7 +1167,7 @@
       "500e",
       "abarth 500"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1194,7 +1192,7 @@
       "mito",
       "junior"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1219,7 +1217,7 @@
       "mc20",
       "granturismo"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1237,7 +1235,7 @@
       "e-c4",
       "ami"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1260,7 +1258,7 @@
       "ds 3 crossback",
       "ds 7 crossback"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1275,7 +1273,7 @@
       "alhambra",
       "mii"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -1298,7 +1296,7 @@
       "tavascan",
       "terramar"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -1326,7 +1324,7 @@
       "koleos",
       "megane e-tech"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1339,7 +1337,7 @@
       "logan",
       "stepway"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1351,7 +1349,7 @@
       "smart #3",
       "eq fortwo"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1364,7 +1362,7 @@
       "exige",
       "elise"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1378,7 +1376,7 @@
       "vanquish",
       "rapide"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1391,7 +1389,7 @@
       "artura",
       "765lt"
     ],
-    "methods": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1405,7 +1403,7 @@
       "dawn",
       "spectre"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -1426,7 +1424,7 @@
       "aventador",
       "revuelto"
     ],
-    "methods": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,

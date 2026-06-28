@@ -16,7 +16,7 @@ function initials(name) {
 
 function tagsFor(car) {
   if (car.unknown) return '<span class="tag none">Help needed</span>';
-  const types = [...new Set(car.methods.map(stepList => stepList.type).filter(type => type !== "info"))];
+  const types = [...new Set(car.instructions.map(instruction => instruction.type))];
   return types.map(type => `<span class="tag ${type}">${TYPE_LABEL[type]}</span>`).join("");
 }
 
@@ -25,28 +25,24 @@ function listHTML(steps, ordered = true) {
   return `<${tag}>${steps.map(step => `<li>${step}</li>`).join("")}</${tag}>`;
 }
 
-// stepsHTML(stepList): renders one "way to disable keyless entry" — a tagged block
-// with optional intro text, an ordered/unordered step list, labelled sub-procedures,
-// and notes. A stepList of type "info" is just a standalone note.
-// Mirrors render_steps() in templates/macros.html.j2 (see MIGRATION.md).
-function stepsHTML(stepList) {
-  if (stepList.type === "info") {
-    return `<p class="note">${stepList.text}</p>`;
-  }
-  let html = `<div class="method"><div class="method-head">`;
-  html += `<span class="tag ${stepList.type}">${TYPE_LABEL[stepList.type]}</span>`;
-  if (stepList.unverified) html += `<span class="tag unverified">Unverified</span>`;
-  if (stepList.models) html += `<span class="method-models">${stepList.models}</span>`;
+// instructionHTML(instruction): renders one way to disable keyless entry: a tagged
+// block with optional intro text, an ordered/unordered step list, labelled
+// sub-procedures, and notes. Mirrors render_instruction() in templates/macros.html.j2.
+function instructionHTML(instruction) {
+  let html = `<div class="instruction"><div class="instruction-head">`;
+  html += `<span class="tag ${instruction.type}">${TYPE_LABEL[instruction.type]}</span>`;
+  if (instruction.unverified) html += `<span class="tag unverified">Unverified</span>`;
+  if (instruction.models) html += `<span class="instruction-models">${instruction.models}</span>`;
   html += `</div>`;
-  if (stepList.text) html += `<p>${stepList.text}</p>`;
+  if (instruction.text) html += `<p>${instruction.text}</p>`;
   // Numbered when order matters: permanent changes, or more than two steps.
-  if (stepList.steps) html += listHTML(stepList.steps, stepList.type === "perm" || stepList.steps.length > 2);
-  if (stepList.sub) {
-    stepList.sub.forEach(sub => {
+  if (instruction.steps) html += listHTML(instruction.steps, instruction.type === "perm" || instruction.steps.length > 2);
+  if (instruction.sub) {
+    instruction.sub.forEach(sub => {
       html += `<p><strong>${sub.label}:</strong></p>` + listHTML(sub.steps);
     });
   }
-  if (stepList.notes) stepList.notes.forEach(note => { html += `<p class="note">${note}</p>`; });
+  if (instruction.notes) instruction.notes.forEach(note => { html += `<p class="note">${note}</p>`; });
   html += `</div>`;
   return html;
 }
@@ -55,7 +51,7 @@ function bodyHTML(car) {
   if (car.unknown) {
     return `<div class="card-body"><p class="unknown-body">We don't yet have confirmed instructions for ${car.name}. Many ${car.name} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="#contribute">Know how? Help us add ${car.name} →</a></p></div>`;
   }
-  return `<div class="card-body">${car.methods.map(stepsHTML).join("")}</div>`;
+  return `<div class="card-body">${car.instructions.map(instructionHTML).join("") + (car.info || []).map(note => `<p class="note">${note}</p>`).join("")}</div>`;
 }
 
 function cardHTML(car, idx) {

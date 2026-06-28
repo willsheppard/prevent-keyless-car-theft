@@ -60,7 +60,7 @@ header.hero h1 {
   font-weight: 800;
   letter-spacing: -.02em;
 }
-header.hero p.lede {
+header.hero p.subtitle {
   font-size: clamp(14px, 2vw, 17px);
   max-width: 640px;
   margin: 0 auto;

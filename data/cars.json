@@ -24,7 +24,7 @@
       "rs3",
       "rs6"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -43,7 +43,7 @@
       "bentayga",
       "mulsanne"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -89,7 +89,7 @@
       "digital key",
       "comfort access"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -114,7 +114,7 @@
       "812",
       "purosangue"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -144,7 +144,7 @@
       "focus active",
       "tourneo"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -185,7 +185,7 @@
       "venue",
       "nexo"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -220,7 +220,7 @@
       "f-pace",
       "i-pace"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "models": "2013 F-Type, Discovery Sport",
@@ -262,7 +262,7 @@
       "carnival",
       "forte"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -301,7 +301,7 @@
       "lc",
       "ct"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "steps": [
@@ -330,7 +330,7 @@
       "mx-5",
       "mx-30"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "models": "2021 onwards",
@@ -371,7 +371,7 @@
       "g-class",
       "g-wagon"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "steps": [
@@ -392,7 +392,7 @@
       "electric",
       "aceman"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -417,7 +417,7 @@
       "marvel r",
       "zt"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -440,7 +440,7 @@
       "kicks",
       "townstar"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "models": "Qashqai",
@@ -475,7 +475,7 @@
       "e-2008",
       "partner"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -490,7 +490,7 @@
       "boxster",
       "cayman"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "steps": [
@@ -514,7 +514,7 @@
       "discovery sport",
       "defender"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "steps": [
@@ -539,7 +539,7 @@
       "kamiq",
       "citigo"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -566,7 +566,7 @@
       "levorg",
       "solterra"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -593,7 +593,7 @@
       "model y",
       "cybertruck"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -637,7 +637,7 @@
       "4runner",
       "avalon"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "models": "Most models with Smart Key (push-button start)",
@@ -669,7 +669,7 @@
       "zafira",
       "adam"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -697,7 +697,7 @@
       "caddy",
       "kessy"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "models": "T-Roc 7 onwards?",
@@ -737,7 +737,7 @@
       "spark",
       "impala"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -768,7 +768,7 @@
       "hummer ev",
       "savana"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -802,7 +802,7 @@
       "cts",
       "srx"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -831,7 +831,7 @@
       "envision",
       "envista"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -864,7 +864,7 @@
       "grand wagoneer",
       "avenger"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -888,7 +888,7 @@
       "hornet",
       "journey"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -911,7 +911,7 @@
       "pacifica",
       "voyager"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -935,7 +935,7 @@
       "ram 1500",
       "promaster"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -962,7 +962,7 @@
       "mkc",
       "mkx"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -982,7 +982,7 @@
       "r2",
       "r3"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -992,7 +992,7 @@
       "gravity",
       "lucid air"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1015,7 +1015,7 @@
       "insight",
       "prologue"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1029,7 +1029,7 @@
       "nsx",
       "zdx"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1044,7 +1044,7 @@
       "q70",
       "qx30"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1058,7 +1058,7 @@
       "gv80",
       "electrified g80"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1081,7 +1081,7 @@
       "shogun",
       "colt"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1097,7 +1097,7 @@
       "baleno",
       "celerio"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1115,7 +1115,7 @@
       "ex90",
       "v40"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1128,7 +1128,7 @@
       "3",
       "4"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1144,7 +1144,7 @@
       "600",
       "doblo"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1167,7 +1167,7 @@
       "500e",
       "abarth 500"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1192,7 +1192,7 @@
       "mito",
       "junior"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1217,7 +1217,7 @@
       "mc20",
       "granturismo"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1235,7 +1235,7 @@
       "e-c4",
       "ami"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "perm",
         "unverified": true,
@@ -1258,7 +1258,7 @@
       "ds 3 crossback",
       "ds 7 crossback"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1273,7 +1273,7 @@
       "alhambra",
       "mii"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -1296,7 +1296,7 @@
       "tavascan",
       "terramar"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -1324,7 +1324,7 @@
       "koleos",
       "megane e-tech"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1337,7 +1337,7 @@
       "logan",
       "stepway"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1349,7 +1349,7 @@
       "smart #3",
       "eq fortwo"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1362,7 +1362,7 @@
       "exige",
       "elise"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1376,7 +1376,7 @@
       "vanquish",
       "rapide"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1389,7 +1389,7 @@
       "artura",
       "765lt"
     ],
-    "techniques": [],
+    "instructions": [],
     "unknown": true
   },
   {
@@ -1403,7 +1403,7 @@
       "dawn",
       "spectre"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,
@@ -1424,7 +1424,7 @@
       "aventador",
       "revuelto"
     ],
-    "techniques": [
+    "instructions": [
       {
         "type": "temp",
         "unverified": true,

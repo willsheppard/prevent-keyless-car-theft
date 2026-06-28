@@ -16,7 +16,7 @@ function initials(name) {
 
 function tagsFor(car) {
   if (car.unknown) return '<span class="tag none">Help needed</span>';
-  const types = [...new Set(car.techniques.map(m => m.type))];
+  const types = [...new Set(car.instructions.map(m => m.type))];
   return types.map(t => `<span class="tag ${t}">${TYPE_LABEL[t]}</span>`).join("");
 }
 
@@ -25,11 +25,11 @@ function stepsList(steps, ordered = true) {
   return `<${tag}>${steps.map(s => `<li>${s}</li>`).join("")}</${tag}>`;
 }
 
-function techniqueHTML(m) {
-  let h = `<div class="technique"><div class="technique-head">`;
+function instructionHTML(m) {
+  let h = `<div class="instruction"><div class="instruction-head">`;
   h += `<span class="tag ${m.type}">${TYPE_LABEL[m.type]}</span>`;
   if (m.unverified) h += `<span class="tag unverified">Unverified</span>`;
-  if (m.models) h += `<span class="technique-models">${m.models}</span>`;
+  if (m.models) h += `<span class="instruction-models">${m.models}</span>`;
   h += `</div>`;
   if (m.text) h += `<p>${m.text}</p>`;
   if (m.steps) h += stepsList(m.steps, m.type === "perm" || m.steps.length > 2);
@@ -47,7 +47,7 @@ function bodyHTML(car) {
   if (car.unknown) {
     return `<div class="card-body"><p class="unknown-body">We don't yet have confirmed instructions for ${car.name}. Many ${car.name} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="#contribute">Know how? Help us add ${car.name} →</a></p></div>`;
   }
-  return `<div class="card-body">${car.techniques.map(techniqueHTML).join("") + (car.info || []).map(n => `<p class="note">${n}</p>`).join("")}</div>`;
+  return `<div class="card-body">${car.instructions.map(instructionHTML).join("") + (car.info || []).map(n => `<p class="note">${n}</p>`).join("")}</div>`;
 }
 
 function cardHTML(car, idx) {

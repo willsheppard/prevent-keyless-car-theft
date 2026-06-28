@@ -1,36 +1,33 @@
-{# render_steps(step_list): renders one "way to disable keyless entry" — a tagged
-   block with optional intro text, an ordered/unordered step list, labelled
-   sub-procedures, and notes. A step_list of type "info" is just a standalone note.
-   Mirrors stepsHTML() in js/app.js; the two are kept in sync until the homepage is
-   templated (see MIGRATION.md). TYPE_LABEL is a Jinja global set in build.py. #}
-{% macro render_steps(step_list) %}
-{% if step_list.type == 'info' %}
-<p class="note">{{ step_list.text|safe }}</p>
-{% else %}
-<div class="method">
-  <div class="method-head">
-    <span class="tag {{ step_list.type }}">{{ TYPE_LABEL[step_list.type] }}</span>
-    {% if step_list.unverified %}<span class="tag unverified">Unverified</span>{% endif %}
-    {% if step_list.models %}<span class="method-models">{{ step_list.models }}</span>{% endif %}
+{# render_instruction(instruction): renders one way to disable keyless entry: a
+   tagged block with optional intro text, an ordered/unordered step list, labelled
+   sub-procedures, and notes. Mirrors instructionHTML() in js/app.js; the two are
+   kept in sync until the homepage is templated (see MIGRATION.md). TYPE_LABEL is a
+   Jinja global set in build.py. Standalone "info" notes live in a separate car.info
+   field and are rendered by the page, not here. #}
+{% macro render_instruction(instruction) %}
+<div class="instruction">
+  <div class="instruction-head">
+    <span class="tag {{ instruction.type }}">{{ TYPE_LABEL[instruction.type] }}</span>
+    {% if instruction.unverified %}<span class="tag unverified">Unverified</span>{% endif %}
+    {% if instruction.models %}<span class="instruction-models">{{ instruction.models }}</span>{% endif %}
   </div>
-  {% if step_list.text %}<p>{{ step_list.text|safe }}</p>{% endif %}
-  {% if step_list.steps %}
+  {% if instruction.text %}<p>{{ instruction.text|safe }}</p>{% endif %}
+  {% if instruction.steps %}
   {# Numbered when order matters: permanent changes, or more than two steps. #}
-  {% set ordered = (step_list.type == 'perm') or (step_list.steps|length > 2) %}
+  {% set ordered = (instruction.type == 'perm') or (instruction.steps|length > 2) %}
   {% if ordered %}<ol>{% else %}<ul>{% endif %}
-    {% for step in step_list.steps %}<li>{{ step|safe }}</li>{% endfor %}
+    {% for step in instruction.steps %}<li>{{ step|safe }}</li>{% endfor %}
   {% if ordered %}</ol>{% else %}</ul>{% endif %}
   {% endif %}
-  {% if step_list.sub %}
+  {% if instruction.sub %}
   {# Labelled sub-procedures, e.g. "To re-enable:" followed by its own steps. #}
-  {% for sub in step_list.sub %}
+  {% for sub in instruction.sub %}
   <p><strong>{{ sub.label }}:</strong></p>
   <ul>{% for sub_step in sub.steps %}<li>{{ sub_step|safe }}</li>{% endfor %}</ul>
   {% endfor %}
   {% endif %}
-  {% if step_list.notes %}
-  {% for note in step_list.notes %}<p class="note">{{ note|safe }}</p>{% endfor %}
+  {% if instruction.notes %}
+  {% for note in instruction.notes %}<p class="note">{{ note|safe }}</p>{% endfor %}
   {% endif %}
 </div>
-{% endif %}
 {% endmacro %}

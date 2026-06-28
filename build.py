@@ -74,7 +74,8 @@ def build_brand(env, car, faqs):
     brand = car["name"]
     slug = slugify(brand)
     url = f"{SITE_URL}/disable-keyless-entry/{slug}/"
-    methods = car.get("methods", [])
+    instructions = car.get("instructions", [])
+    info = car.get("info", [])
     models = model_names(car.get("aliases", []))
 
     subtitle = (
@@ -107,7 +108,8 @@ def build_brand(env, car, faqs):
         ),
         subtitle=subtitle,
         intro_html=intro_html,
-        methods=methods,
+        instructions=instructions,
+        info=info,
         aliases_text=", ".join(models),
         faqs=model_faqs,
         embedded_metadata=build_embedded_metadata(brand, url),

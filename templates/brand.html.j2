@@ -1,6 +1,12 @@
 {% extends "base.html.j2" %}
 {% from "macros.html.j2" import render_instruction %}
 
+{# Brand prose lives here, not in build.py: the same pattern for every brand,
+   with {{ brand }} interpolated. build_brand passes only data. #}
+{% set title = "How to disable keyless entry on a " ~ brand ~ " — free | " ~ SITE_NAME %}
+{% set og_title = "Stop your " ~ brand ~ " being stolen — disable keyless entry" %}
+{% set meta_description = "Free, manufacturer-approved ways to disable keyless entry on your " ~ brand ~ " and stop relay theft. Simple step-by-step instructions for " ~ brand ~ " models." %}
+
 {% block head_extra %}
 {% for blob in embedded_metadata %}
 <script type="application/ld+json">{{ blob|safe }}</script>
@@ -21,7 +27,7 @@
   <div class="wrap">
     <span class="badge">Free · No products to buy</span>
     <h1>How to disable keyless entry on a {{ brand }}</h1>
-    <p class="subtitle">{{ subtitle }}</p>
+    <p class="subtitle">Thieves can unlock and start a keyless {{ brand }} in seconds with a relay attack — without ever touching your key. {{ brand }} builds in free ways to switch keyless entry off. Here’s how.</p>
     <p class="brand-back"><a href="/#finder">← Search a different car</a></p>
   </div>
 </header>
@@ -34,7 +40,8 @@
 
 <section class="content">
   <h2>Why your {{ brand }} is at risk</h2>
-  {{ intro_html|safe }}
+  <p>Many {{ brand }} models with keyless entry can be stolen by a <em>relay attack</em>: two thieves use cheap radio equipment to extend the signal from your key fob — sitting indoors near your front door — until the car believes the key is right beside it. The car unlocks and starts, and they drive off silently in under a minute.</p>
+  <p>The good news is you don’t need to buy anything. Depending on your model and year, {{ brand }} lets you suspend keyless entry automatically or turn it off entirely. Choose the method below that matches your {{ brand }}, and if you have more than one key fob, repeat it for each one.</p>
 </section>
 
 <section class="content">

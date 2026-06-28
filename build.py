@@ -78,36 +78,13 @@ def build_brand(env, car, faqs):
     info = car.get("info", [])
     models = model_names(car.get("aliases", []))
 
-    subtitle = (
-        f"Thieves can unlock and start a keyless {brand} in seconds with a relay attack "
-        f"— without ever touching your key. {brand} builds in free ways to switch "
-        f"keyless entry off. Here’s how."
-    )
-    intro_html = (
-        f"<p>Many {brand} models with keyless entry can be stolen by a <em>relay "
-        f"attack</em>: two thieves use cheap radio equipment to extend the signal from "
-        f"your key fob — sitting indoors near your front door — until the car "
-        f"believes the key is right beside it. The car unlocks and starts, and they drive "
-        f"off silently in under a minute.</p>"
-        f"<p>The good news is you don’t need to buy anything. Depending on your model "
-        f"and year, {brand} lets you suspend keyless entry automatically or turn it off "
-        f"entirely. Choose the method below that matches your {brand}, and if you have "
-        f"more than one key fob, repeat it for each one.</p>"
-    )
-
     model_faqs = [faq for faq in faqs if faq.get("on_model_page")]
 
+    # Brand prose (subtitle, intro, title/meta patterns) lives in brand.html.j2,
+    # interpolating {{ brand }}; build_brand passes only data.
     html = env.get_template("brand.html.j2").render(
         brand=brand,
         canonical=url,
-        title=f"How to disable keyless entry on a {brand} — free | {SITE_NAME}",
-        og_title=f"Stop your {brand} being stolen — disable keyless entry",
-        meta_description=(
-            f"Free, manufacturer-approved ways to disable keyless entry on your {brand} "
-            f"and stop relay theft. Simple step-by-step instructions for {brand} models."
-        ),
-        subtitle=subtitle,
-        intro_html=intro_html,
         instructions=instructions,
         info=info,
         aliases_text=", ".join(models),
@@ -134,6 +111,7 @@ def main():
         lstrip_blocks=True,
     )
     env.globals["TYPE_LABEL"] = TYPE_LABEL
+    env.globals["SITE_NAME"] = SITE_NAME
 
     path, size = build_brand(env, car, faqs)
     print(f"Wrote {path.relative_to(ROOT)} ({size:,} bytes)")

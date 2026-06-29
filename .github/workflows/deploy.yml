@@ -28,7 +28,11 @@ jobs:
       - name: Build site
         run: python build.py
       - name: Configure Pages
+        # enablement flips this repo's Pages from the legacy "deploy from branch"
+        # mode to "GitHub Actions" on the first run, so dist/ is what goes live.
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

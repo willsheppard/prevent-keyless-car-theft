@@ -164,7 +164,7 @@ if (cform) {
       }
     } catch {
       status.className = "form-status err";
-      status.innerHTML = `Network error — please try again. ${GH}`;
+      status.innerHTML = `Network error. Please try again. ${GH}`;
     } finally {
       submitBtn.disabled = false;
     }

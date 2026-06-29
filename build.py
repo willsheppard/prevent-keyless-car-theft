@@ -32,6 +32,16 @@ def slugify(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
+def initials(name):
+    """Two-letter monogram for a brand logo. Mirrors initials() in js/app.js: first
+    letters of the first two words, else the first two letters."""
+    clean = re.sub(r"[^A-Za-zÀ-ž ]", "", name).strip()
+    parts = re.split(r"\s+", clean)
+    if len(parts) >= 2:
+        return (parts[0][0] + parts[1][0]).upper()
+    return clean[:2].upper()
+
+
 def model_names(aliases):
     """Title-case the alias list into display model names, de-duplicated."""
     out = []
@@ -98,6 +108,38 @@ def build_brand(env, car, faqs):
     return out_path, len(html)
 
 
+def build_index(env, cars, faqs):
+    """Render the homepage with all 58 brand cards pre-rendered into the grid.
+    js/app.js now only filters/expands these cards. Cards are sorted by name
+    (case-insensitive, matching the JS localeCompare order); `idx` is the original
+    data position so the aria-controls/id pairing stays stable."""
+    cards = []
+    for idx, car in sorted(enumerate(cars), key=lambda pair: pair[1]["name"].lower()):
+        name = car["name"]
+        instructions = car.get("instructions", [])
+        cards.append({
+            "idx": idx,
+            "name": name,
+            "initials": initials(name),
+            "search": " ".join([name, *car.get("aliases", [])]).lower(),
+            "unknown": bool(car.get("unknown")),
+            # Unique instruction types, first-seen order (mirrors tagsFor()).
+            "tag_types": list(dict.fromkeys(i["type"] for i in instructions)),
+            "instructions": instructions,
+            "info": car.get("info", []),
+        })
+
+    html = env.get_template("index.html.j2").render(
+        canonical=SITE_URL + "/",
+        cards=cards,
+        faqs=faqs,
+    )
+    out_path = OUT / "index.html"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(html, encoding="utf-8")
+    return out_path, len(html)
+
+
 def main():
     brand_name = sys.argv[1] if len(sys.argv) > 1 else "Ford"
     cars = load_cars()
@@ -112,6 +154,9 @@ def main():
     )
     env.globals["TYPE_LABEL"] = TYPE_LABEL
     env.globals["SITE_NAME"] = SITE_NAME
+
+    idx_path, idx_size = build_index(env, cars, faqs)
+    print(f"Wrote {idx_path.relative_to(ROOT)} ({idx_size:,} bytes)")
 
     path, size = build_brand(env, car, faqs)
     print(f"Wrote {path.relative_to(ROOT)} ({size:,} bytes)")

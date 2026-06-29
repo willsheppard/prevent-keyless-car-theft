@@ -31,3 +31,31 @@
   {% endif %}
 </div>
 {% endmacro %}
+
+{# render_card(card): one collapsible brand card for the homepage finder. Mirrors
+   cardHTML()/bodyHTML()/tagsFor() in js/app.js, which now only filter/expand these
+   pre-rendered cards (no client-side rendering). `card` is a dict prepared in
+   build.py: idx, name, initials, search, unknown, tag_types, instructions, info. #}
+{% macro render_card(card) %}
+<div class="card" data-idx="{{ card.idx }}" data-search="{{ card.search }}">
+  <button class="card-head" aria-expanded="false" aria-controls="body-{{ card.idx }}">
+    <span class="brand-logo" aria-hidden="true">{{ card.initials }}</span>
+    <span class="brand-meta">
+      <span class="brand-name">{{ card.name }}</span>
+      <span class="brand-tags">
+        {% if card.unknown %}<span class="tag none">Help needed</span>
+        {% else %}{% for type in card.tag_types %}<span class="tag {{ type }}">{{ TYPE_LABEL[type] }}</span>{% endfor %}{% endif %}
+      </span>
+    </span>
+    <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </button>
+  <div class="card-body" id="body-{{ card.idx }}">
+    {% if card.unknown %}
+    <p class="unknown-body">We don't yet have confirmed instructions for {{ card.name }}. Many {{ card.name }} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="#contribute">Know how? Help us add {{ card.name }} →</a></p>
+    {% else %}
+    {% for instruction in card.instructions %}{{ render_instruction(instruction) }}{% endfor %}
+    {% for note in card.info %}<p class="note">{{ note|safe }}</p>{% endfor %}
+    {% endif %}
+  </div>
+</div>
+{% endmacro %}

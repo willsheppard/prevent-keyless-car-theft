@@ -1,0 +1,110 @@
+{% extends "base.html.j2" %}
+{% from "macros.html.j2" import render_card %}
+
+{# Homepage head/prose. The finder cards are pre-rendered (render_card); js/app.js
+   now only filters/expands them. Legend + FAQ are shared with brand pages. #}
+{% set title = "Stop Keyless Car Theft — Free instructions for your car" %}
+{% set og_title = "Stop Keyless Car Theft — for free" %}
+{% set meta_description = "Find the free, manufacturer-approved way to disable keyless entry on your car and protect it from relay theft. Search for your car's make and follow simple step-by-step instructions." %}
+{% set og_description = "Find the free, manufacturer-approved way to disable keyless entry on your car and protect it from relay theft." %}
+{% set main_id = "finder" %}
+
+{% block skip_link %}<a class="skip-link" href="#finder">Skip to car finder</a>{% endblock %}
+
+{% block header %}
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Free · No products to buy</span>
+    <h1>Stop your car being stolen</h1>
+    <p class="subtitle">Thieves can unlock and drive away modern cars in seconds without your key. Your car maker has a free, built-in way to block them. Find yours below.</p>
+
+    <div class="search-zone">
+      <label for="search" class="visually-hidden" style="position:absolute;left:-9999px;">Search for your car's make</label>
+      <div class="search-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input id="search" type="search" autocomplete="off" placeholder="Type your car's make, e.g. Ford, BMW, Toyota…" aria-describedby="searchhint">
+        <button class="search-clear" id="clear" aria-label="Clear search">×</button>
+      </div>
+      <p class="search-hint" id="searchhint">Start typing to jump straight to your car maker.</p>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<p class="results-meta" id="meta" aria-live="polite"></p>
+<div class="grid" id="grid">
+  {% for card in cards %}{{ render_card(card) }}{% endfor %}
+</div>
+<div class="no-results" id="noresults" hidden>
+  <p>😕 We don't have <strong id="nrq"></strong> listed yet.</p>
+  <p>Check the spelling, or <a href="#contribute">tell us how to disable it →</a></p>
+</div>
+
+{% include "_legend.html.j2" %}
+
+<section class="content">
+  <h2>Why your car is at risk</h2>
+  <p>Most of us leave our car keys near the front door — only a short distance from the car outside. Thieves use cheap equipment to <strong>boost the signal</strong> from your keyless fob so it reaches the car and unlocks it, even if the keys are on the far side of your house. This is called a <em>relay attack</em>, and it lets them drive off in under a minute, silently.</p>
+  <p>You don't need an expensive gadget to stop this. Car makers already built in a "secret switch" so you can disable keyless entry yourself. The instructions above show exactly which buttons to press for your car.</p>
+  <p><strong>Got more than one fob?</strong> Do it for each one.</p>
+</section>
+
+<section class="content">
+  <h2>Common questions</h2>
+  {% for faq in faqs %}
+  <details class="faq">
+    <summary>{{ faq.q }}</summary>
+    <div class="faq-body">{{ faq.a|safe }}</div>
+  </details>
+  {% endfor %}
+</section>
+
+<section class="content" id="contribute">
+  <h2>Help add or fix a car</h2>
+  <p>Know how to disable keyless entry on a car that's missing above, or spotted a mistake? Tell us here. We check every submission before it goes live.</p>
+
+  <form id="contribute-form" class="contribute-form" action="https://formspree.io/f/xgojavoj" method="POST">
+    <div class="field">
+      <label for="cf-make">Car make <span class="req" aria-hidden="true">*</span></label>
+      <input id="cf-make" name="make" type="text" required autocomplete="off" placeholder="e.g. Ford">
+    </div>
+
+    <div class="field">
+      <label for="cf-model">Model &amp; year <span class="opt">(optional)</span></label>
+      <input id="cf-model" name="model" type="text" autocomplete="off" placeholder="e.g. Fiesta, 2019 onwards">
+    </div>
+
+    <div class="field">
+      <label for="cf-method">How do you disable keyless entry? <span class="req" aria-hidden="true">*</span></label>
+      <textarea id="cf-method" name="method" rows="5" required placeholder="Describe the steps, e.g. 'Press the lock button on the fob twice within three seconds when leaving the car.'"></textarea>
+    </div>
+
+    <div class="field">
+      <label for="cf-source">Where is this from? <span class="opt">(optional)</span></label>
+      <input id="cf-source" name="source" type="text" autocomplete="off" placeholder="Owner's manual, confirmed on my own car, a link…">
+    </div>
+
+    <div class="field">
+      <label for="cf-email">Your email <span class="opt">(optional)</span></label>
+      <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="Only if we can ask a follow-up or credit you">
+    </div>
+
+    <!-- Honeypot: hidden from people, catches bots. Leave empty. -->
+    <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="_subject" value="New car submission — StopKeyless">
+
+    <button type="submit" class="submit-btn">Send it in</button>
+    <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
+{% endblock %}
+
+{% block footer_secondary_action %}<a class="btn outline" href="https://github.com/willsheppard/prevent-keyless-car-theft" target="_blank" rel="noopener">Contribute on GitHub</a>{% endblock %}
+
+{% block footer_extra %} · Tested with BrowserStack
+      <img src="https://c.statcounter.com/12814957/0/a8f80a61/1/" alt="" referrerpolicy="no-referrer-when-downgrade" style="border:0;height:1px;width:1px;opacity:0;">{% endblock %}
+
+{% block body_end %}
+<script src="/js/app.js"></script>
+{% endblock %}

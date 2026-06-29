@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 
 <meta property="og:title" content="{{ og_title }}">
-<meta property="og:description" content="{{ meta_description }}">
+<meta property="og:description" content="{{ og_description|default(meta_description) }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ canonical }}">
 
@@ -21,9 +21,9 @@
 {% block head_extra %}{% endblock %}
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+{% block skip_link %}<a class="skip-link" href="#main">Skip to content</a>{% endblock %}
 {% block header %}{% endblock %}
-<main id="main" class="wrap">
+<main id="{{ main_id|default('main') }}" class="wrap">
 {% block content %}{% endblock %}
 </main>
 <footer>
@@ -32,13 +32,14 @@
     <p>This is a free, independent project. If it helped protect your car, a small donation keeps it going — and please share it with anyone who drives.</p>
     <div class="footer-actions">
       <a class="btn" href="https://www.paypal.com/donate/?hosted_button_id=LRE8FY2BEMXUE" target="_blank" rel="noopener">❤ Donate via PayPal</a>
-      <a class="btn outline" href="/#contribute">Add or fix a car</a>
+      {% block footer_secondary_action %}<a class="btn outline" href="/#contribute">Add or fix a car</a>{% endblock %}
     </div>
     <p class="footer-fine">
       Instructions are gathered from owner's manuals and car owner communities. Some are marked unverified — always check your own manual.<br>
-      <a href="https://github.com/willsheppard/prevent-keyless-car-theft" target="_blank" rel="noopener">Open source</a>
+      <a href="https://github.com/willsheppard/prevent-keyless-car-theft" target="_blank" rel="noopener">Open source</a>{% block footer_extra %}{% endblock %}
     </p>
   </div>
 </footer>
+{% block body_end %}{% endblock %}
 </body>
 </html>

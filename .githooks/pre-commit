@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Prevent commits by author or committer "Your Name"
+if [[ "$GIT_AUTHOR_NAME" == "Your Name" ]]
+then
+    echo "Error: Author name 'Your Name' is not allowed."
+    exit 1
+fi
+if [[ "$GIT_COMMITTER_NAME" == "Your Name" ]]
+then
+    echo "Error: Committer name 'Your Name' is not allowed."
+    exit 1
+fi
+
+# Allow bypassing trailing whitespace check
+if [ -n "$GIT_HOOK_IGNORE_TRAILING_SPACE" ]; then
+    exit 0
+fi
+
+# Check for trailing whitespace in staged files
+files_with_whitespace=$(git diff --cached --name-only --diff-filter=ACM | xargs grep -l '[[:space:]]$' 2>/dev/null)
+
+if [ -n "$files_with_whitespace" ]; then
+    echo
+    echo "❌ commit hook failed: Trailing whitespace. To fix:"
+    echo
+    echo "  sed -i 's/[[:space:]]*$//' "$files_with_whitespace
+    echo ""
+    echo "Or bypass with: GIT_HOOK_IGNORE_TRAILING_SPACE=1 git commit"
+    echo ""
+    exit 1
+fi
+
+# Allow bypassing forbidden character check
+if [ -n "$GIT_HOOK_IGNORE_FORBIDDEN" ]; then
+    exit 0
+fi
+
+VERBOTEN="—"
+# Check for forbidden character in staged files
+files_with_forbidden_char=$(git diff --cached --name-only --diff-filter=ACM | xargs grep -l $VERBOTEN 2>/dev/null)
+
+if [ -n "$files_with_forbidden_char" ]; then
+    echo
+    echo "❌ commit hook failed: Forbidden character. To fix:"
+    echo
+    echo "  sed -i 's/${VERBOTEN}/--/g' "$files_with_forbidden_char
+    echo ""
+    echo "Or bypass with: GIT_HOOK_IGNORE_FORBIDDEN=1 git commit"
+    echo ""
+    exit 1
+fi
+
+exit 0

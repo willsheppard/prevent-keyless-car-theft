@@ -1,0 +1,78 @@
+{% extends "base.html.j2" %}
+{% from "macros.html.j2" import render_instruction %}
+
+{# Brand prose lives here, not in build.py: the same pattern for every brand,
+   with {{ brand }} interpolated. build_brand passes only data. #}
+{% set title = "How to disable keyless entry on a " ~ brand ~ " — free | " ~ SITE_NAME %}
+{% set og_title = "Stop your " ~ brand ~ " being stolen — disable keyless entry" %}
+{% set meta_description = "Free, manufacturer-approved ways to disable keyless entry on your " ~ brand ~ " and stop relay theft. Simple step-by-step instructions for " ~ brand ~ " models." %}
+
+{% block head_extra %}
+{% for blob in embedded_metadata %}
+<script type="application/ld+json">{{ blob|safe }}</script>
+{% endfor %}
+<style>
+  .brand-hero h1 { text-transform: none; }
+  .brand-back { margin-top: 14px; }
+  .brand-back a { color: #fff; font-weight: 600; }
+  .breadcrumb { font-size: 14px; color: var(--muted); margin: 4px 0 18px; }
+  .breadcrumb a { color: var(--green); }
+  .brand-instructions .instruction:first-child { margin-top: 4px; }
+  .models-note { font-size: 14px; color: var(--muted); margin-top: 18px; }
+</style>
+{% endblock %}
+
+{% block header %}
+<header class="hero brand-hero">
+  <div class="wrap">
+    <span class="badge">Free · No products to buy</span>
+    <h1>How to disable keyless entry on a {{ brand }}</h1>
+    <p class="subtitle">Thieves can unlock and start a keyless {{ brand }} in seconds with a relay attack — without ever touching your key. {{ brand }} builds in free ways to switch keyless entry off. Here’s how.</p>
+    <p class="brand-back"><a href="/#finder">← Search a different car</a></p>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a> › <span aria-current="page">{{ brand }}</span>
+</nav>
+
+<section class="content">
+  <h2>Why your {{ brand }} is at risk</h2>
+  <p>Many {{ brand }} models with keyless entry can be stolen by a <em>relay attack</em>: two thieves use cheap radio equipment to extend the signal from your key fob — sitting indoors near your front door — until the car believes the key is right beside it. The car unlocks and starts, and they drive off silently in under a minute.</p>
+  <p>The good news is you don’t need to buy anything. Depending on your model and year, {{ brand }} lets you suspend keyless entry automatically or turn it off entirely. Choose the method below that matches your {{ brand }}, and if you have more than one key fob, repeat it for each one.</p>
+</section>
+
+<section class="content">
+  <h2>How to disable it on your {{ brand }}</h2>
+  <div class="brand-instructions">
+    {% for instruction in instructions %}
+    {{ render_instruction(instruction) }}
+    {% endfor %}
+    {% for note in info %}
+    <p class="note">{{ note|safe }}</p>
+    {% endfor %}
+  </div>
+  <p class="models-note">Applies across {{ brand }} models including {{ aliases_text }}.</p>
+</section>
+
+<div class="legend">
+  <h2>What the coloured labels mean</h2>
+  <div class="legend-grid">
+    <div class="legend-item"><span class="tag auto">Automatic</span><p><strong>Best — nothing to remember</strong>The key fob switches itself off when left still.</p></div>
+    <div class="legend-item"><span class="tag temp">Temporary</span><p><strong>Turn off when you choose</strong>Disable it overnight or on holiday; you repeat it each time.</p></div>
+    <div class="legend-item"><span class="tag perm">Permanent</span><p><strong>Switch it off for good</strong>Disable keyless entry completely.</p></div>
+  </div>
+</div>
+
+<section class="content">
+  <h2>Common questions</h2>
+  {% for faq in faqs %}
+  <details class="faq">
+    <summary>{{ faq.q }}</summary>
+    <div class="faq-body"><p>{{ faq.a|safe }}</p></div>
+  </details>
+  {% endfor %}
+</section>
+{% endblock %}

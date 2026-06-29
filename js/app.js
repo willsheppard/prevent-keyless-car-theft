@@ -16,38 +16,42 @@ function initials(name) {
 
 function tagsFor(car) {
   if (car.unknown) return '<span class="tag none">Help needed</span>';
-  const types = [...new Set(car.instructions.map(m => m.type))];
-  return types.map(t => `<span class="tag ${t}">${TYPE_LABEL[t]}</span>`).join("");
+  const types = [...new Set(car.instructions.map(instruction => instruction.type))];
+  return types.map(type => `<span class="tag ${type}">${TYPE_LABEL[type]}</span>`).join("");
 }
 
-function stepsList(steps, ordered = true) {
+function listHTML(steps, ordered = true) {
   const tag = ordered ? "ol" : "ul";
-  return `<${tag}>${steps.map(s => `<li>${s}</li>`).join("")}</${tag}>`;
+  return `<${tag}>${steps.map(step => `<li>${step}</li>`).join("")}</${tag}>`;
 }
 
-function instructionHTML(m) {
-  let h = `<div class="instruction"><div class="instruction-head">`;
-  h += `<span class="tag ${m.type}">${TYPE_LABEL[m.type]}</span>`;
-  if (m.unverified) h += `<span class="tag unverified">Unverified</span>`;
-  if (m.models) h += `<span class="instruction-models">${m.models}</span>`;
-  h += `</div>`;
-  if (m.text) h += `<p>${m.text}</p>`;
-  if (m.steps) h += stepsList(m.steps, m.type === "perm" || m.steps.length > 2);
-  if (m.sub) {
-    m.sub.forEach(s => {
-      h += `<p><strong>${s.label}:</strong></p>` + stepsList(s.steps);
+// instructionHTML(instruction): renders one way to disable keyless entry: a tagged
+// block with optional intro text, an ordered/unordered step list, labelled
+// sub-procedures, and notes. Mirrors render_instruction() in templates/macros.html.j2.
+function instructionHTML(instruction) {
+  let html = `<div class="instruction"><div class="instruction-head">`;
+  html += `<span class="tag ${instruction.type}">${TYPE_LABEL[instruction.type]}</span>`;
+  if (instruction.unverified) html += `<span class="tag unverified">Unverified</span>`;
+  if (instruction.models) html += `<span class="instruction-models">${instruction.models}</span>`;
+  html += `</div>`;
+  if (instruction.text) html += `<p>${instruction.text}</p>`;
+  // Numbered when order matters: permanent changes, or more than two steps.
+  if (instruction.steps) html += listHTML(instruction.steps, instruction.type === "perm" || instruction.steps.length > 2);
+  if (instruction.sub) {
+    instruction.sub.forEach(sub => {
+      html += `<p><strong>${sub.label}:</strong></p>` + listHTML(sub.steps);
     });
   }
-  if (m.notes) m.notes.forEach(n => { h += `<p class="note">${n}</p>`; });
-  h += `</div>`;
-  return h;
+  if (instruction.notes) instruction.notes.forEach(note => { html += `<p class="note">${note}</p>`; });
+  html += `</div>`;
+  return html;
 }
 
 function bodyHTML(car) {
   if (car.unknown) {
     return `<div class="card-body"><p class="unknown-body">We don't yet have confirmed instructions for ${car.name}. Many ${car.name} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="#contribute">Know how? Help us add ${car.name} →</a></p></div>`;
   }
-  return `<div class="card-body">${car.instructions.map(instructionHTML).join("") + (car.info || []).map(n => `<p class="note">${n}</p>`).join("")}</div>`;
+  return `<div class="card-body">${car.instructions.map(instructionHTML).join("") + (car.info || []).map(note => `<p class="note">${note}</p>`).join("")}</div>`;
 }
 
 function cardHTML(car, idx) {

@@ -1,0 +1,32 @@
+[
+  {
+    "q": "What is the infotainment centre?",
+    "a": "The infotainment centre is the vehicle's main display screen and menu system. It allows you to control entertainment features such as radio, music, and phone connectivity, as well as vehicle settings including locking, lights and keyless entry. Depending on the vehicle model, settings may be found under menus such as \"Vehicle Settings\", \"Car Settings\", \"Setup\", or \"Configuration\".",
+    "on_model_page": false
+  },
+  {
+    "q": "If I disable keyless entry, how do I get into my car?",
+    "a": "You simply press the unlock button on your key fob, like cars have done for years. \"Keyless\" (or \"passive\") entry just means the car unlocks automatically when the fob is nearby — turning it off only removes that automatic part. Pressing the button still works normally.",
+    "on_model_page": true
+  },
+  {
+    "q": "Can thieves copy my fob's button signal instead?",
+    "a": "You almost certainly don't need to worry about this. The lock and unlock signals are different, and they change each time. Copying your \"lock\" signal would only let someone lock the car. And you only press \"unlock\" when you're about to get in and drive away — so a thief would have to follow you. Relay theft is popular precisely because it's low-effort and low-risk; this isn't.",
+    "on_model_page": false
+  },
+  {
+    "q": "What about a Faraday pouch, or keeping keys far away?",
+    "a": "A <a href=\"https://www.google.com/search?q=Faraday+Pouch\" target=\"_blank\" rel=\"noopener\">Faraday pouch</a> can block the signal, but they're easy to forget and often stop working over time. Keeping keys across the house doesn't help much — the signal can still be relayed. Disabling keyless entry at the fob is more reliable and costs nothing.",
+    "on_model_page": false
+  },
+  {
+    "q": "What other protection can I add?",
+    "a": "<ul><li><strong>Mechanical wheel lock</strong> (e.g. Thatcham-approved) — visible deterrent that makes any theft method harder.</li><li><strong><a href=\"https://ghostinstallations.co.uk/\" target=\"_blank\" rel=\"noopener\">Ghost immobiliser</a></strong> — adds a hidden PIN layer. Effective but costs money to fit.</li><li><strong>Lock the <a href=\"https://revolar.com/what-is-a-data-port-lock\" target=\"_blank\" rel=\"noopener\">OBD data port</a></strong> — stops thieves plugging in to program a new key.</li><li><strong>Tracker</strong> — won't stop the theft but may help recovery.</li><li>Note: the <a href=\"https://www.mustard.co.uk/car-insurance/guides/what-is-an-immobiliser/\" target=\"_blank\" rel=\"noopener\">factory immobiliser</a> fitted to all cars since 1998 does <em>not</em> stop relay attacks — the car is fooled into thinking your real key is present.</li></ul>",
+    "on_model_page": false
+  },
+  {
+    "q": "My car isn't listed, or the steps are wrong",
+    "a": "This is a free community project and the list is always growing. If you can confirm the method for your model — or spot a correction — please <a href=\"/#contribute\">tell us using the form</a> (no account needed). Developers can also <a href=\"https://github.com/willsheppard/prevent-keyless-car-theft\" target=\"_blank\" rel=\"noopener\">contribute on GitHub</a>. Some entries are marked unverified; always double-check against your own car's manual.",
+    "on_model_page": true
+  }
+]

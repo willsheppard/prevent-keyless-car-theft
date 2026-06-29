@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
-"""Static page generator for StopKeyless (see DESIGN.md, decisions D2 + D6).
+"""Static site generator for StopKeyless (see DESIGN.md, decisions D2 + D6).
 
-Proof-of-concept scope: render ONE brand page (Ford by default) from the existing
-data/cars.json through Jinja2 templates into dist/. The per-brand YAML migration
-(DESIGN.md D3) is not done yet, so this reads cars.json directly and filters to the
-requested brand.
+Builds the complete site into dist/:
+  - the homepage (index.html) with all brand cards pre-rendered,
+  - one indexable page per known brand (disable-keyless-entry/<slug>/),
+  - the static assets (css/ js/ img/ data/),
+  - sitemap.xml (indexable pages only, per the DESIGN.md §6 content gate),
+  - robots.txt.
+
+The per-brand YAML migration (DESIGN.md D3) is not done yet, so this reads the
+single data/cars.json directly.
 
 Usage:
-    .venv/bin/python build.py [BrandName]   # defaults to "Ford"
+    .venv/bin/python build.py            # build the whole site into dist/
+    .venv/bin/python build.py Ford       # build only the homepage + the Ford page
 """
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -20,6 +27,11 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "dist"
 SITE_URL = "https://stopkeyless.com"
 SITE_NAME = "StopKeyless"
+
+# Static asset directories copied verbatim into dist/. `data/` keeps the public
+# dataset (and faqs) reachable at its existing URL; the homepage no longer fetches
+# it (cards are pre-rendered), but external links and consumers still resolve.
+ASSET_DIRS = ["css", "js", "img", "data"]
 
 TYPE_LABEL = {"temp": "Temporary", "auto": "Automatic", "perm": "Permanent", "info": "Note"}
 
@@ -64,6 +76,19 @@ def find_brand(cars, name):
     raise SystemExit(f"Brand not found in cars.json: {name!r}")
 
 
+def is_indexable(car):
+    """Content gate (DESIGN.md §6). A brand earns its own indexable page only if it
+    is not flagged `unknown` and has at least one instruction with steps. The 21
+    `unknown` brands stay a contribution funnel (homepage cards), not thin pages."""
+    if car.get("unknown"):
+        return False
+    return any(i.get("steps") for i in car.get("instructions", []))
+
+
+def brand_url(car):
+    return f"{SITE_URL}/disable-keyless-entry/{slugify(car['name'])}/"
+
+
 def build_embedded_metadata(brand, url):
     """Embedded metadata (JSON-LD) for search engines. Only BreadcrumbList still
     earns a rich result; Google dropped HowTo (2023) and FAQ (2026) rich results."""
@@ -83,7 +108,7 @@ def build_embedded_metadata(brand, url):
 def build_brand(env, car, faqs):
     brand = car["name"]
     slug = slugify(brand)
-    url = f"{SITE_URL}/disable-keyless-entry/{slug}/"
+    url = brand_url(car)
     instructions = car.get("instructions", [])
     info = car.get("info", [])
     models = model_names(car.get("aliases", []))
@@ -109,7 +134,7 @@ def build_brand(env, car, faqs):
 
 
 def build_index(env, cars, faqs):
-    """Render the homepage with all 58 brand cards pre-rendered into the grid.
+    """Render the homepage with all brand cards pre-rendered into the grid.
     js/app.js now only filters/expands these cards. Cards are sorted by name
     (case-insensitive, matching the JS localeCompare order); `idx` is the original
     data position so the aria-controls/id pairing stays stable."""
@@ -140,12 +165,40 @@ def build_index(env, cars, faqs):
     return out_path, len(html)
 
 
-def main():
-    brand_name = sys.argv[1] if len(sys.argv) > 1 else "Ford"
-    cars = load_cars()
-    car = find_brand(cars, brand_name)
-    faqs = load_faqs()
+def build_sitemap(indexable):
+    """sitemap.xml of indexable URLs only: the homepage plus each gated brand page."""
+    urls = [SITE_URL + "/"] + [brand_url(car) for car in indexable]
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for url in urls:
+        lines.append(f"  <url><loc>{url}</loc></url>")
+    lines.append("</urlset>")
+    path = OUT / "sitemap.xml"
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return path, len(urls)
 
+
+def build_robots():
+    path = OUT / "robots.txt"
+    path.write_text(
+        f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n",
+        encoding="utf-8",
+    )
+    return path
+
+
+def copy_assets():
+    """Copy the static asset dirs (and CNAME) verbatim into dist/."""
+    for name in ASSET_DIRS:
+        src = ROOT / name
+        if src.is_dir():
+            shutil.copytree(src, OUT / name, dirs_exist_ok=True)
+    cname = ROOT / "CNAME"
+    if cname.is_file():
+        shutil.copy2(cname, OUT / "CNAME")
+
+
+def make_env():
     env = Environment(
         loader=FileSystemLoader(str(ROOT / "templates")),
         autoescape=select_autoescape(["html", "xml", "j2"]),
@@ -154,12 +207,47 @@ def main():
     )
     env.globals["TYPE_LABEL"] = TYPE_LABEL
     env.globals["SITE_NAME"] = SITE_NAME
+    return env
+
+
+def build_site(only_brand=None):
+    """Build the whole site into dist/. If only_brand is given, build just the
+    homepage and that one brand page (fast local preview) and skip assets/sitemap."""
+    cars = load_cars()
+    faqs = load_faqs()
+    env = make_env()
+
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    OUT.mkdir(parents=True)
 
     idx_path, idx_size = build_index(env, cars, faqs)
     print(f"Wrote {idx_path.relative_to(ROOT)} ({idx_size:,} bytes)")
 
-    path, size = build_brand(env, car, faqs)
-    print(f"Wrote {path.relative_to(ROOT)} ({size:,} bytes)")
+    if only_brand:
+        car = find_brand(cars, only_brand)
+        path, size = build_brand(env, car, faqs)
+        print(f"Wrote {path.relative_to(ROOT)} ({size:,} bytes)")
+        return
+
+    indexable = [car for car in cars if is_indexable(car)]
+    for car in indexable:
+        build_brand(env, car, faqs)
+    print(f"Wrote {len(indexable)} brand pages "
+          f"({len(cars) - len(indexable)} brands gated out as cards only)")
+
+    copy_assets()
+    print(f"Copied assets: {', '.join(ASSET_DIRS)}")
+
+    _, n = build_sitemap(indexable)
+    print(f"Wrote sitemap.xml ({n} URLs)")
+    build_robots()
+    print("Wrote robots.txt")
+
+
+def main():
+    only_brand = sys.argv[1] if len(sys.argv) > 1 else None
+    build_site(only_brand=only_brand)
 
 
 if __name__ == "__main__":

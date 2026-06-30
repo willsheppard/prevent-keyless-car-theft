@@ -773,21 +773,18 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off passive (keyless) entry in the infotainment settings; the fob buttons still lock and unlock.",
         "steps": [
-          "On the centre touchscreen, go to Settings | Vehicle.",
-          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
-          "Turn Passive Unlocking and Passive Locking off."
-        ]
-      },
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
-          "Repeat to switch it back on."
-        ]
+          "On the infotainment screen, go to Settings | Vehicle | Remote Lock, Unlock, Start.",
+          "Turn Passive Door Unlock off so the handles no longer unlock when the fob is nearby.",
+          "Optionally turn Passive Locking off too (the walk-away auto-lock)."
+        ],
+        "source": "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
       }
+    ],
+    "info": [
+      "Chevrolet calls its keyless entry \"Keyless Open and Start\" (passive entry/start, PEPS). Its infotainment is the \"Chevrolet Infotainment System\" (formerly MyLink); connected services are \"OnStar\".",
+      "Keyless Open is available on most current Chevrolet models on higher trims."
     ]
   },
   {
@@ -804,21 +801,18 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off passive (keyless) entry in the infotainment settings; the fob buttons still lock and unlock.",
         "steps": [
-          "On the centre touchscreen, go to Settings | Vehicle.",
-          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
-          "Turn Passive Unlocking and Passive Locking off."
-        ]
-      },
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
-          "Repeat to switch it back on."
-        ]
+          "On the infotainment screen, go to Settings | Vehicle | Remote Lock, Unlock, Start.",
+          "Turn Passive Door Unlock off so the handles no longer unlock when the fob is nearby.",
+          "Optionally turn Passive Locking off too (the walk-away auto-lock)."
+        ],
+        "source": "https://www.gmc.com/support/vehicle/security/keyless-open-start"
       }
+    ],
+    "info": [
+      "GMC calls its keyless entry \"Keyless Open and Start\" (passive entry/start). Its infotainment is the \"GMC Infotainment System\"; connected services are \"OnStar\".",
+      "Keyless Open is standard or optional across the GMC range."
     ]
   },
   {
@@ -838,21 +832,18 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off passive (keyless) entry in the infotainment settings; the fob buttons still lock and unlock.",
         "steps": [
-          "On the centre touchscreen, go to Settings | Vehicle.",
-          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
-          "Turn Passive Unlocking and Passive Locking off."
-        ]
-      },
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
-          "Repeat to switch it back on."
-        ]
+          "On the infotainment screen, go to Settings | Vehicle | Remote Lock, Unlock, Start.",
+          "Turn Passive Door Unlock off so the handles no longer unlock when the fob is nearby.",
+          "Optionally turn Passive Locking off too (the walk-away auto-lock)."
+        ],
+        "source": "https://www.cadillac.com/support/vehicle/security/keyless-open-start"
       }
+    ],
+    "info": [
+      "Cadillac calls its keyless entry \"Keyless Open and Start\" (passive entry/start). Its infotainment is the Cadillac user experience system (formerly \"CUE\"); connected services are \"OnStar\".",
+      "Keyless Open is standard across the Cadillac range."
     ]
   },
   {
@@ -867,21 +858,18 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off passive (keyless) entry in the infotainment settings; the fob buttons still lock and unlock.",
         "steps": [
-          "On the centre touchscreen, go to Settings | Vehicle.",
-          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
-          "Turn Passive Unlocking and Passive Locking off."
-        ]
-      },
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
-          "Repeat to switch it back on."
-        ]
+          "On the infotainment screen, go to Settings | Vehicle | Remote Lock, Unlock, Start.",
+          "Turn Passive Door Unlock off so the handles no longer unlock when the fob is nearby.",
+          "Optionally turn Passive Locking off too (the walk-away auto-lock)."
+        ],
+        "source": "https://www.buick.com/support/vehicle/security/keyless-open-start"
       }
+    ],
+    "info": [
+      "Buick calls its keyless entry \"Keyless Open and Start\" (passive entry/start). Its infotainment is the \"Buick Infotainment System\"; connected services are \"OnStar\".",
+      "Keyless Open is available across the Buick range on higher trims."
     ]
   },
   {

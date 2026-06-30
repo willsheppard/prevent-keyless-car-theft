@@ -37,7 +37,7 @@ TYPE_LABEL = {"temp": "Temporary", "auto": "Automatic", "perm": "Permanent", "in
 # Minimum body word count for a brand page to be indexable (DESIGN.md §6).
 # Set to 1 so every brand with any content still publishes; raise later to gate
 # out genuinely thin pages.
-MIN_BODY_WORDS = 1
+MIN_BODY_WORDS = 20
 
 
 def load_faqs():

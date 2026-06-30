@@ -888,16 +888,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (the touch-the-handle part of Keyless Enter-N-Go) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Jeep uses Stellantis \"Keyless Enter-N-Go\" (with Passive Entry). Its infotainment is \"Uconnect\".",
+      "Passive Entry is available across the Jeep range on higher trims."
     ]
   },
   {
@@ -912,16 +917,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (the touch-the-handle part of Keyless Enter-N-Go) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Dodge uses Stellantis \"Keyless Enter-N-Go\" (with Passive Entry). Its infotainment is \"Uconnect\".",
+      "Passive Entry is available on Charger, Challenger, Durango and Hornet on higher trims."
     ]
   },
   {
@@ -935,16 +945,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (the touch-the-handle part of Keyless Enter-N-Go) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Chrysler uses Stellantis \"Keyless Enter-N-Go\" (with Passive Entry). Its infotainment is \"Uconnect\".",
+      "Passive Entry is available on the 300, Pacifica and Voyager on higher trims."
     ]
   },
   {
@@ -959,16 +974,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (the touch-the-handle part of Keyless Enter-N-Go) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Ram uses Stellantis \"Keyless Enter-N-Go\" (with Passive Entry). Its infotainment is \"Uconnect\".",
+      "Passive Entry is available on 1500/2500/3500 on higher trims."
     ]
   },
   {
@@ -1209,16 +1229,22 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "models": "Models with the Uconnect touchscreen",
+        "text": "\"Passive Entry\" (touch-the-handle keyless entry) can be switched off in Uconnect on models that have it.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Fiat uses Stellantis \"Keyless Entry/Go\" (with Passive Entry) on Uconnect-equipped models such as the 500e, 600 and Tipo. Its infotainment is \"Uconnect\".",
+      "Small models without a Uconnect touchscreen may not offer the disable toggle."
     ]
   },
   {
@@ -1232,16 +1258,22 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "models": "Models with the Uconnect touchscreen",
+        "text": "\"Passive Entry\" (touch-the-handle keyless entry) can be switched off in Uconnect on models that have it.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Abarth (Fiat's performance brand) uses Stellantis \"Keyless Entry/Go\" with Passive Entry on Uconnect-equipped models such as the 500e-based 595/695. Its infotainment is \"Uconnect\".",
+      "Older 500-based models without a Uconnect touchscreen may not offer the disable toggle."
     ]
   },
   {
@@ -1257,16 +1289,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (touch-the-handle keyless entry) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Alfa Romeo uses Stellantis \"Keyless Entry/Go\" with Passive Entry. Its infotainment is \"Uconnect\".",
+      "Passive Entry can be switched off in Uconnect on Giulia, Stelvio, Tonale and Junior."
     ]
   },
   {
@@ -1279,8 +1316,24 @@
       "mc20",
       "granturismo"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Maserati's Passive Entry (touch-the-handle keyless entry) can be set on or off from the settings menu on models with the MIA system.",
+        "steps": [
+          "On the Maserati Intelligent Assistant (MIA) screen, open the settings menu.",
+          "Find Passive Entry and set it to Off."
+        ],
+        "notes": [
+          "On older Ghibli, Levante and Quattroporte the toggle was in the Uconnect menu; Maserati removed the disable option on some model years over lock-out concerns."
+        ],
+        "source": "https://www.maserati.com/us/en/ownership/maserati-manuals"
+      }
+    ],
+    "info": [
+      "Maserati calls its keyless entry \"Passive Entry\". Its infotainment is the \"Maserati Intelligent Assistant\" (MIA, Android Automotive); older cars used \"Maserati Touch Control Plus\".",
+      "Keyless entry is standard across the Maserati range (Ghibli, Quattroporte, Levante, Grecale, MC20, GranTurismo)."
+    ]
   },
   {
     "name": "Citroen",

@@ -1,9 +1,8 @@
 {# render_instruction(instruction): renders one way to disable keyless entry: a
    tagged block with optional intro text, an ordered/unordered step list, labelled
-   sub-procedures, and notes. Mirrors instructionHTML() in js/app.js; the two are
-   kept in sync until the homepage is templated (see MIGRATION.md). TYPE_LABEL is a
-   Jinja global set in build.py. Standalone "info" notes live in a separate car.info
-   field and are rendered by the page, not here. #}
+   sub-procedures, and notes. TYPE_LABEL is a Jinja global set in build.py.
+   Standalone "info" notes live in a separate car.info field and are rendered by
+   the page, not here. #}
 {% macro render_instruction(instruction) %}
 <div class="instruction">
   <div class="instruction-head">

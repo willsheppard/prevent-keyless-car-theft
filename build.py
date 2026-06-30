@@ -8,8 +8,7 @@ Builds the complete site into dist/:
   - sitemap.xml (indexable pages only, per the DESIGN.md §6 content gate),
   - robots.txt.
 
-The per-brand YAML migration (DESIGN.md D3) is not done yet, so this reads the
-single data/cars.json directly.
+All brand data is read from the single data/cars.json.
 
 Usage:
     .venv/bin/python build.py            # build the whole site into dist/

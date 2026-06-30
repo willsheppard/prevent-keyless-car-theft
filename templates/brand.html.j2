@@ -63,8 +63,8 @@
   <h2>Common questions</h2>
   {% for faq in faqs %}
   <details class="faq">
-    <summary>{{ faq.q }}</summary>
-    <div class="faq-body">{{ faq.a|safe }}</div>
+    <summary>{{ faq.question }}</summary>
+    <div class="faq-body">{{ faq.answer|safe }}</div>
   </details>
   {% endfor %}
 </section>

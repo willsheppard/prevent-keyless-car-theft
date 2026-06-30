@@ -304,6 +304,7 @@
     "instructions": [
       {
         "type": "temp",
+        "text": "Lexus uses Toyota's \"battery-saving function\": it stops the key receiving radio waves, which also defeats relay theft.",
         "steps": [
           "Press and hold the \"lock\" button.",
           "While still holding it, press the \"unlock\" button twice.",
@@ -311,8 +312,13 @@
         ],
         "notes": [
           "To turn keyless entry back on, press any button on the fob."
-        ]
+        ],
+        "source": "https://www.lexus.com/My-Lexus/resources/manual"
       }
+    ],
+    "info": [
+      "Lexus calls its keyless entry and push-button start the \"Smart Key System\". The infotainment is \"Lexus Interface\" (2022 on; older models: \"Lexus Enform\").",
+      "Keyless entry is standard across the Lexus range, and the fob uses the same battery-saving procedure as Toyota."
     ]
   },
   {
@@ -641,6 +647,7 @@
       {
         "type": "temp",
         "models": "Most models with Smart Key (push-button start)",
+        "text": "Toyota's owner's manual calls this the \"battery-saving function\": it stops the key receiving radio waves, which also defeats relay theft.",
         "steps": [
           "Press and hold the lock button on the key fob.",
           "While still holding lock, press the unlock button twice.",
@@ -649,8 +656,13 @@
         "notes": [
           "To turn keyless entry back on, press any button on the fob.",
           "Touching the door handle or pressing start will not work until you wake the fob."
-        ]
+        ],
+        "source": "https://www.toyota.com/owners/warranty-owners-manuals/digital/article/tundra-hv/2022/om0c031u/ch03se020405/"
       }
+    ],
+    "info": [
+      "Toyota calls its keyless entry and push-button start the \"Smart Key System\". The infotainment is \"Toyota Audio Multimedia\" (older models: \"Entune\").",
+      "Smart Key is standard or optional on most current Toyota models; entry-level trims often have a conventional remote without proximity unlocking."
     ]
   },
   {

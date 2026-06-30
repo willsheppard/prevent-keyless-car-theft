@@ -1029,7 +1029,11 @@
       "prologue"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Honda calls its keyless entry and push-button start \"Smart Entry\" (with Walk Away Auto Lock). Its infotainment and connected services are \"HondaLink\".",
+      "Honda's owner's manuals do not document a setting to fully switch off Smart Entry; the only related options are Walk Away Auto Lock and which doors unlock."
+    ]
   },
   {
     "name": "Acura",
@@ -1043,7 +1047,11 @@
       "zdx"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Acura calls its keyless entry the \"Keyless Access System\" (with Walk Away Auto Lock). Its infotainment is the \"True Touchpad Interface\"; connected services are \"AcuraLink\".",
+      "Like Honda, Acura does not document a setting to fully switch off keyless entry; the related options are Walk Away Auto Lock and auto door lock/unlock."
+    ]
   },
   {
     "name": "Infiniti",

@@ -7,7 +7,7 @@
 | `name` | string | yes | Manufacturer name shown on the card and used in search. |
 | `aliases` | string[] | no | Extra search terms -- models, trims, alternative spellings. The entry matches if any alias contains the search query. |
 | `instructions` | Instruction[] | yes | List of instructions. Empty array is fine alongside `unknown: true`. |
-| `info` | string[] | no | Contextual notes about the car's keyless system (e.g. the manufacturer's brand name for the feature). Each is rendered as a yellow highlighted box after the instructions. |
+| `info` | string[] | no | Contextual notes about the car's keyless system (e.g. the manufacturer's brand name for the feature and infotainment). Each is rendered as a yellow highlighted box after the instructions, and also below the "Help needed" message on `unknown` cards. |
 | `unknown` | boolean | no | Set to `true` when no instruction is documented. Shows a "Help needed" tag and a contribute link instead of instructions. |
 
 ## Instruction object
@@ -21,6 +21,7 @@
 | `steps` | string[] | no | Ordered list of steps. HTML is allowed (e.g. `<em>`). Rendered as `<ol>` for permanent instructions or when there are more than two steps, otherwise `<ul>`. |
 | `sub` | Sub[] | no | Named sub-sections, each with their own `label` and `steps`. Used when an instruction has distinct phases (e.g. Mazda's "turn on" vs "turn off"). |
 | `notes` | string[] | no | Caveats or warnings, each rendered as a yellow highlighted box below the steps. |
+| `source` | string | no | URL of the manufacturer source (owner's manual, support page or press release) the instruction was taken from. Stored for provenance; not currently rendered. |
 
 ### `type` values
 

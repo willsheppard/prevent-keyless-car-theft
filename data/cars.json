@@ -1659,8 +1659,34 @@
       "koleos",
       "megane e-tech"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "temp",
+        "text": "Locking with the buttons on the RENAULT card (instead of walking away) deactivates hands-free locking and unlocking.",
+        "steps": [
+          "Lock the car using the lock button on the RENAULT card or key.",
+          "Hands-free (walk-up) locking and unlocking is now off until you next start the car."
+        ],
+        "notes": [
+          "Restart the vehicle to reactivate hands-free mode."
+        ],
+        "source": "https://gb.e-guide.renault.com/eng/Captur-2/HANDS-FREE-CARD-use"
+      },
+      {
+        "type": "perm",
+        "models": "Models with a touchscreen",
+        "text": "Hands-free access can be switched off in the multimedia settings.",
+        "steps": [
+          "On the multimedia screen, open Settings | Vehicle (or User settings).",
+          "Turn \"Hands-free access\" (keyless entry) off."
+        ],
+        "source": "https://gb.e-guide.renault.com/eng/Captur-2/HANDS-FREE-CARD-use"
+      }
+    ],
+    "info": [
+      "Renault calls its keyless system the \"hands-free card\" (hands-free access). Its infotainment is \"OpenR Link\" (Google built-in) on newer cars, \"Easy Link\" before that.",
+      "Hands-free access is an option across the range (Clio, Captur, Megane, Austral, Scenic, Espace)."
+    ]
   },
   {
     "name": "Dacia",
@@ -1672,8 +1698,24 @@
       "logan",
       "stepway"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "temp",
+        "text": "Dacia shares Renault's hands-free card. Locking with the card/key buttons deactivates hands-free locking and unlocking.",
+        "steps": [
+          "Lock the car using the lock button on the card or key.",
+          "Hands-free (walk-up) locking and unlocking is now off until you next start the car."
+        ],
+        "notes": [
+          "On models with a touchscreen, hands-free access can also be switched off in the multimedia settings."
+        ],
+        "source": "https://gb.e-guide.renault.com/eng/Captur-2/HANDS-FREE-CARD-use"
+      }
+    ],
+    "info": [
+      "Dacia uses Renault's \"hands-free card\" keyless system. Its infotainment is the Dacia \"Media Nav\"/\"Media Display\" system.",
+      "Hands-free access is an option on higher trims (Sandero, Duster, Jogger)."
+    ]
   },
   {
     "name": "Smart",

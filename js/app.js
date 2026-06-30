@@ -12,6 +12,9 @@ const clearBtn = document.getElementById("clear");
 
 const cards = Array.from(grid.querySelectorAll(".card"));
 
+// Default "all brands" message, rendered server-side in the template.
+const allMeta = meta.textContent;
+
 function matches(card, q) {
   if (!q) return true;
   const hay = card.dataset.search || "";
@@ -46,7 +49,7 @@ function render(q = "") {
     meta.textContent = `${visible} match${visible === 1 ? "" : "es"} for "${q}"`;
     if (visible === 1) setOpen(lastVisible, true);   // single match: open it
   } else {
-    meta.textContent = `Showing all ${visible} car makes. Tap yours, or search above.`;
+    meta.textContent = allMeta;
   }
 }
 

@@ -3,8 +3,8 @@
 
 {# Homepage head/prose. The finder cards are pre-rendered (render_card); js/app.js
    now only filters/expands them. Legend + FAQ are shared with brand pages. #}
-{% set title = "Stop Keyless Car Theft — Free instructions for your car" %}
-{% set og_title = "Stop Keyless Car Theft — for free" %}
+{% set title = "Stop Keyless Car Theft - Free instructions for your car" %}
+{% set og_title = "Stop Keyless Car Theft - for free" %}
 {% set meta_description = "Find the free, manufacturer-approved way to disable keyless entry on your car and protect it from relay theft. Search for your car's make and follow simple step-by-step instructions." %}
 {% set og_description = "Find the free, manufacturer-approved way to disable keyless entry on your car and protect it from relay theft." %}
 {% set main_id = "finder" %}
@@ -32,7 +32,7 @@
 {% endblock %}
 
 {% block content %}
-<p class="results-meta" id="meta" aria-live="polite"></p>
+<p class="results-meta" id="meta" aria-live="polite">Showing all car brands.</p>
 <div class="grid" id="grid">
   {% for card in cards %}{{ render_card(card) }}{% endfor %}
 </div>
@@ -45,7 +45,7 @@
 
 <section class="content">
   <h2>Why your car is at risk</h2>
-  <p>Most of us leave our car keys near the front door — only a short distance from the car outside. Thieves use cheap equipment to <strong>boost the signal</strong> from your keyless fob so it reaches the car and unlocks it, even if the keys are on the far side of your house. This is called a <em>relay attack</em>, and it lets them drive off in under a minute, silently.</p>
+  <p>Most of us leave our car keys near the front door - only a short distance from the car outside. Thieves use cheap equipment to <strong>boost the signal</strong> from your keyless fob so it reaches the car and unlocks it, even if the keys are on the far side of your house. This is called a <em>relay attack</em>, and it lets them drive off in under a minute, silently.</p>
   <p>You don't need an expensive gadget to stop this. Car makers already built in a "secret switch" so you can disable keyless entry yourself. The instructions above show exactly which buttons to press for your car.</p>
   <p><strong>Got more than one fob?</strong> Do it for each one.</p>
 </section>
@@ -92,7 +92,7 @@
 
     <!-- Honeypot: hidden from people, catches bots. Leave empty. -->
     <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <input type="hidden" name="_subject" value="New car submission — StopKeyless">
+    <input type="hidden" name="_subject" value="New car submission - StopKeyless">
 
     <button type="submit" class="submit-btn">Send it in</button>
     <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>

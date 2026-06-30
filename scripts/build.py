@@ -11,8 +11,8 @@ Builds the complete site into dist/:
 All brand data is read from the single data/cars.json.
 
 Usage:
-    .venv/bin/python build.py            # build the whole site into dist/
-    .venv/bin/python build.py Ford       # build only the homepage + the Ford page
+    .venv/bin/python scripts/build.py        # build the whole site into dist/
+    .venv/bin/python scripts/build.py Ford   # build only the homepage + the Ford page
 """
 import json
 import re
@@ -22,7 +22,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "dist"
 SITE_URL = "https://stopkeyless.com"
 SITE_NAME = "StopKeyless"
@@ -33,6 +33,11 @@ SITE_NAME = "StopKeyless"
 ASSET_DIRS = ["css", "js", "img", "data"]
 
 TYPE_LABEL = {"temp": "Temporary", "auto": "Automatic", "perm": "Permanent", "info": "Note"}
+
+# Minimum body word count for a brand page to be indexable (DESIGN.md §6).
+# Set to 1 so every brand with any content still publishes; raise later to gate
+# out genuinely thin pages.
+MIN_BODY_WORDS = 20
 
 
 def load_faqs():
@@ -75,13 +80,34 @@ def find_brand(cars, name):
     raise SystemExit(f"Brand not found in cars.json: {name!r}")
 
 
+def body_word_count(car):
+    """Count words in a brand's visible body text (DESIGN.md §6 thin-content gate):
+    instruction prose, steps, sub-section labels/steps, notes, model scope, and the
+    standalone info boxes. HTML tags are stripped first so markup isn't counted."""
+    chunks = []
+    for instr in car.get("instructions", []):
+        chunks.append(instr.get("text", ""))
+        chunks.append(instr.get("models", ""))
+        chunks.extend(instr.get("steps", []))
+        chunks.extend(instr.get("notes", []))
+        for sub in instr.get("sub", []):
+            chunks.append(sub.get("label", ""))
+            chunks.extend(sub.get("steps", []))
+    chunks.extend(car.get("info", []))
+    text = re.sub(r"<[^>]+>", " ", " ".join(chunks))
+    return len(text.split())
+
+
 def is_indexable(car):
     """Content gate (DESIGN.md §6). A brand earns its own indexable page only if it
-    is not flagged `unknown` and has at least one instruction with steps. The 21
-    `unknown` brands stay a contribution funnel (homepage cards), not thin pages."""
+    is not flagged `unknown`, has at least one instruction with steps, and clears the
+    minimum body word count. The 21 `unknown` brands stay a contribution funnel
+    (homepage cards), not thin pages."""
     if car.get("unknown"):
         return False
-    return any(i.get("steps") for i in car.get("instructions", []))
+    if not any(i.get("steps") for i in car.get("instructions", [])):
+        return False
+    return body_word_count(car) >= MIN_BODY_WORDS
 
 
 def brand_url(car):

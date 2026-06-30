@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Build site
-        run: python build.py
+        run: python scripts/build.py
       - name: Configure Pages
         # enablement flips this repo's Pages from the legacy "deploy from branch"
         # mode to "GitHub Actions" on the first run, so dist/ is what goes live.

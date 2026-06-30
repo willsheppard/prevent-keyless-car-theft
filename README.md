@@ -6,11 +6,11 @@ All the instructions live in [`data/cars.json`](data/cars.json) (field reference
 
 ## How it works
 
-A small static-site generator. `build.py` (Python + Jinja2) renders pages from `data/cars.json` into `dist/`. The homepage finder (`index.html` + `js/app.js`) reads the same data in the browser.
+A small static-site generator. `scripts/build.py` (Python + Jinja2) renders pages from `data/cars.json` into `dist/`. The homepage finder (`index.html` + `js/app.js`) reads the same data in the browser.
 
 ```bash
 pip install -r requirements.txt
-python build.py            # render a brand page into dist/
+python scripts/build.py            # render the whole site into dist/
 ```
 
 ## Help wanted

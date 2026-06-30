@@ -188,24 +188,22 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "Hyundai's owner's manual gives this as a way to prevent unintentional locking/unlocking (e.g. at a car wash). It stops the door-handle touch sensor responding.",
         "steps": [
-          "Lock the car.",
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
-          "The hazard lights flash 4 times and the fob stops responding to the door handle."
+          "Press the lock button on the smart key.",
+          "Immediately press and hold the lock and unlock buttons together for more than 4 seconds.",
+          "The hazard warning lights blink 4 times and the door-handle touch sensor stops responding."
         ],
         "notes": [
-          "Press any button on the fob to switch keyless entry back on."
-        ]
-      },
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "On the infotainment screen, go to Settings | Vehicle | Door.",
-          "Turn \"Approach unlock\" off."
-        ]
+          "Press the lock or unlock button on the fob to switch keyless entry back on.",
+          "There is no documented menu setting that fully disables smart-key touch entry; the \"Welcome\"/\"Approach unlock\" toggles only affect the welcome lights and mirrors."
+        ],
+        "source": "https://ownersmanual.hyundai.com/docview/webhelp/doc/8bf31204-4eb5-48f8-a3be-f1c555de698f/id3276ff2952d.html"
       }
+    ],
+    "info": [
+      "Hyundai calls its keyless entry and push-button start the \"Smart Key\" system. Its latest infotainment is \"ccNC\" (connected car Navigation Cockpit); connected services are \"Bluelink\".",
+      "Smart Key is standard or optional across most current Hyundai models; the touch sensor works when the fob is within about 1 m of the handle."
     ]
   },
   {
@@ -265,24 +263,22 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "Kia's owner's manual gives this as a way to prevent unintentional locking/unlocking. It stops the door-handle touch sensor responding.",
         "steps": [
-          "Lock the car using the button on the door handle.",
-          "On the key fob, press and hold the lock and unlock buttons together.",
-          "The indicators flash once, pause, then flash 4 times. The fob no longer opens the car from the door handle."
+          "Press the lock button on the smart key.",
+          "Immediately press and hold the lock and unlock buttons together for more than 4 seconds.",
+          "The hazard warning lights blink 4 times and the door-handle touch sensor stops responding."
         ],
         "notes": [
-          "Press any button on the fob to switch keyless entry back on."
-        ]
-      },
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "On the infotainment screen, go to Settings | Vehicle | Door.",
-          "Turn \"Approach unlock\" off."
-        ]
+          "Press the lock or unlock button on the fob to switch keyless entry back on.",
+          "There is no documented menu setting that fully disables smart-key touch entry; the fob method above is the way to switch it off."
+        ],
+        "source": "https://ownersmanual.kia.com/docview/webhelp/doc/948b7d97-b6fe-417d-ae9b-0c50cdc49184/topics/chapter5_1_1.html"
       }
+    ],
+    "info": [
+      "Kia calls its keyless entry and push-button start the \"Smart Key\" system. Its latest infotainment is \"ccNC\" (connected car Navigation Cockpit); connected services are \"Kia Connect\".",
+      "Smart Key is standard or optional across most current Kia models; the touch sensor works when the fob is within about 1 m of the handle."
     ]
   },
   {
@@ -1072,13 +1068,22 @@
     ],
     "instructions": [
       {
-        "type": "perm",
-        "unverified": true,
+        "type": "temp",
+        "text": "Genesis shares Hyundai's smart key. The owner's manual gives this as a way to prevent unintentional locking/unlocking.",
         "steps": [
-          "On the screen, go to Setup | Vehicle | Door.",
-          "Turn the Smart Key walk-up unlock off."
-        ]
+          "Press the lock button on the smart key.",
+          "Immediately press and hold the lock and unlock buttons together for more than 4 seconds.",
+          "The hazard warning lights blink 4 times and the door-handle touch sensor stops responding."
+        ],
+        "notes": [
+          "Press the lock or unlock button on the fob to switch keyless entry back on."
+        ],
+        "source": "https://ownersmanual.genesis.com/full_webhelp/JK/2025/en_AU/id7684733bc70.html"
       }
+    ],
+    "info": [
+      "Genesis uses Hyundai's \"Smart Key\" system. Its infotainment has no separate brand name (referred to as the Genesis Display Audio / AVN system); connected services are \"Genesis Connected Services\".",
+      "Keyless entry is standard across the Genesis range."
     ]
   },
   {

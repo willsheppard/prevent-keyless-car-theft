@@ -31,7 +31,7 @@ def _wait_for_port(port, timeout=30):
 
 @pytest.fixture(scope="session", autouse=True)
 def site_server():
-    subprocess.run([sys.executable, "build.py"], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, "scripts/build.py"], cwd=ROOT, check=True)
     proc = subprocess.Popen(
         [sys.executable, "-m", "http.server", str(PORT), "-d", "dist"],
         cwd=ROOT,

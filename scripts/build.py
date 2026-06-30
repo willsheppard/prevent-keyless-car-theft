@@ -11,8 +11,8 @@ Builds the complete site into dist/:
 All brand data is read from the single data/cars.json.
 
 Usage:
-    .venv/bin/python build.py            # build the whole site into dist/
-    .venv/bin/python build.py Ford       # build only the homepage + the Ford page
+    .venv/bin/python scripts/build.py        # build the whole site into dist/
+    .venv/bin/python scripts/build.py Ford   # build only the homepage + the Ford page
 """
 import json
 import re
@@ -22,7 +22,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "dist"
 SITE_URL = "https://stopkeyless.com"
 SITE_NAME = "StopKeyless"

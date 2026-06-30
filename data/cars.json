@@ -1335,8 +1335,25 @@
       "ex90",
       "v40"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Keyless unlocking is configured in the centre display; you can limit or turn off the doors unlocking as you approach.",
+        "steps": [
+          "In the centre display, open Settings (top view).",
+          "Go to My Car | Locking.",
+          "Open the Keyless entry settings and turn keyless unlocking off (or limit which doors respond)."
+        ],
+        "notes": [
+          "On some models keyless unlocking can only be limited, not fully switched off. On EX30 and newer digital-key cars you can also turn off proximity unlock in the centre display."
+        ],
+        "source": "https://www.volvocars.com/uk/support/manuals/xc90/2017w46/key-locks-and-alarm/keyless-locking-and-unlocking/settings-for-keyless-entry"
+      }
+    ],
+    "info": [
+      "Volvo calls its keyless system \"Keyless drive\" (passive entry and start). Its infotainment is \"Google built-in\" (Android Automotive) on newer cars, \"Sensus\" on older.",
+      "Keyless drive is an option across the range (XC40/60/90, EX30, EX90, S60/90, V60/90)."
+    ]
   },
   {
     "name": "Polestar",
@@ -1348,8 +1365,21 @@
       "3",
       "4"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Polestar shares Volvo's passive entry. Keyless unlocking is configured in the centre display; for the phone digital key, passive entry is turned off in the wallet app.",
+        "steps": [
+          "On Polestar 2/3, open Settings in the centre display and go to the keyless/locking settings to limit or turn off keyless unlocking.",
+          "For the digital key (Polestar 3), turn off passive entry in the phone's wallet app so the car does not unlock as you approach."
+        ],
+        "source": "https://www.polestar.com/us/manual/polestar-2/2023/article/0500c0935429ad42c0a8015111e87238/"
+      }
+    ],
+    "info": [
+      "Polestar (Volvo-derived) keyless entry uses the same passive entry and start as Volvo. Its infotainment is \"Android Automotive\" (Google built-in).",
+      "Keyless entry is standard across the range (Polestar 2, 3, 4)."
+    ]
   },
   {
     "name": "Fiat",

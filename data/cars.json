@@ -151,7 +151,11 @@
       "purosangue"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Ferrari fits keyless entry to its front-engined GTs and SUV (Roma, Portofino, Purosangue); mid-engined models use a conventional key.",
+      "No owner setting to disable keyless entry is documented; a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Ford",
@@ -263,22 +267,26 @@
     "instructions": [
       {
         "type": "perm",
-        "models": "2013 F-Type, Discovery Sport",
+        "text": "Jaguar Land Rover lets you deactivate keyless entry from the key fob.",
         "steps": [
-          "Open the driver's door (using the fob).",
-          "Place the key fob inside the car.",
-          "Press the headlamp button on the key fob 3 times.",
-          "Press the unlock button on the key fob once.",
-          "Take the keys outside the car.",
-          "Close the driver's door.",
-          "Lock the car using the fob.",
-          "Unlock the car using the fob."
+          "On the key fob, press the headlamp (lights) button 3 times, then press the unlock button once. Keyless entry is now disabled.",
+          "To re-enable it, press the headlamp button 3 times, then the lock button once."
         ],
         "notes": [
-          "To re-enable it, follow the same procedure but press the lock button at step 4.",
-          "You must first unlock and then re-lock the car with the fob -- not the keyless button on the door handle."
-        ]
+          "After disabling, lock and unlock using the fob buttons rather than the door handle."
+        ],
+        "source": "https://www.landroverusa.com/ownership/infotainment-systems/emergency-and-security-features.html"
+      },
+      {
+        "type": "auto",
+        "models": "2018 on; UWB keys on the latest models",
+        "text": "Newer JLR keys go to sleep when left still, and the latest models use ultra-wideband (UWB) keys that JLR says are not vulnerable to relay attacks.",
+        "source": "https://media.jaguarlandrover.com/news/2023/11/jlr-invests-vehicle-security-reduce-thefts"
       }
+    ],
+    "info": [
+      "Jaguar calls it simply \"keyless entry\" (passive entry). Its infotainment is \"Pivi Pro\" (older cars: \"InControl Touch Pro\").",
+      "Keyless entry is an option across the range; JLR was a major relay-theft target, which drove its move to UWB keys."
     ]
   },
   {
@@ -489,7 +497,11 @@
       "zt"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "MG's keyless entry is a \"smart key\"/passive entry system. Its infotainment is \"MG iSMART\".",
+      "No owner setting to disable keyless entry is documented; a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Nissan",
@@ -630,13 +642,27 @@
     ],
     "instructions": [
       {
-        "type": "temp",
+        "type": "perm",
+        "text": "Land Rover / Range Rover lets you deactivate keyless entry from the key fob.",
         "steps": [
-          "With the key inside the car and the door open,",
-          "press the headlight button 3 times, then the unlock button.",
-          "Then lock the car with the fob as normal."
-        ]
+          "On the key fob, press the headlight (lights) button 3 times, then press the unlock button once. Keyless entry is now disabled.",
+          "To re-enable it, press the lights button 3 times, then the lock button once."
+        ],
+        "notes": [
+          "After disabling, lock and unlock using the fob buttons rather than the door handle."
+        ],
+        "source": "https://www.landroverusa.com/ownership/infotainment-systems/emergency-and-security-features.html"
+      },
+      {
+        "type": "auto",
+        "models": "2018 on; UWB keys on the latest models",
+        "text": "Newer keys go to sleep when left still, and the latest Range Rover, Defender and Discovery use ultra-wideband (UWB) keys that JLR says resist relay attacks.",
+        "source": "https://media.jaguarlandrover.com/news/2023/11/jlr-invests-vehicle-security-reduce-thefts"
       }
+    ],
+    "info": [
+      "Land Rover/Range Rover calls it \"keyless entry\" (passive entry). Its infotainment is \"Pivi Pro\" (older cars: \"InControl Touch Pro\").",
+      "Keyless entry is an option across the range (Evoque, Velar, Sport, Discovery, Defender)."
     ]
   },
   {
@@ -1331,8 +1357,23 @@
       "shogun",
       "colt"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Mitsubishi's \"Keyless Operation System\" can be limited or switched off, but it is a dealer setting.",
+        "steps": [
+          "Ask a Mitsubishi service point to limit the keyless operation system to lock/unlock only, to start only, or to disable it."
+        ],
+        "notes": [
+          "For everyday use, lock the car with the key's buttons rather than touching the handle, and keep the key in a signal-blocking pouch."
+        ],
+        "source": "https://www.mitshelp.com/micont-1282.html"
+      }
+    ],
+    "info": [
+      "Mitsubishi calls its keyless system the \"Keyless Operation System\" (KOS). Its infotainment is the \"Smartphone-link Display Audio\" (SDA); connected services are \"Mitsubishi Connect\".",
+      "KOS is an option on higher trims (Outlander, Eclipse Cross, ASX)."
+    ]
   },
   {
     "name": "Suzuki",
@@ -1348,7 +1389,11 @@
       "celerio"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Suzuki calls its keyless system the \"Keyless Push Start System\" (smart key). Its infotainment is the \"SLDA\" display with \"Suzuki Connect\".",
+      "Suzuki does not document a simple owner setting to switch off the smart key; a Suzuki dealer can disable it, and a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Volvo",
@@ -1784,7 +1829,11 @@
       "elise"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Lotus keyless entry: the Eletre and Emeya (Geely-based EVs) use the touchscreen; the Emira sports car uses a key fob.",
+      "On the Eletre/Emeya, passive entry is managed in the vehicle settings; the Emira has no documented disable. A signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Aston Martin",
@@ -1798,7 +1847,11 @@
       "rapide"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Aston Martin fits keyless entry to the DBX and current models; older cars use Mercedes-Benz electronics (KEYLESS-GO-style).",
+      "No owner setting to disable keyless entry is documented; a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "McLaren",
@@ -1811,7 +1864,11 @@
       "765lt"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "McLaren fits keyless entry (passive entry) to its sports and GT cars.",
+      "No owner setting to disable keyless entry is documented; a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Rolls-Royce",

@@ -26,12 +26,32 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
+        "type": "perm",
+        "models": "A4/A5, Q5 and above (where the menu option exists)",
+        "text": "Switch off convenience-key unlocking in the MMI.",
         "steps": [
-          "Press the \"lock\" button once."
-        ]
+          "In the MMI, go to Vehicle (or Settings) > Central locking.",
+          "Turn off \"Open with convenience key\" (also shown under Doors & Keys)."
+        ],
+        "notes": [
+          "On some models the car can still be locked by touching the handle pad; the temp method below also blocks unlocking.",
+          "Not all model years or trims expose this menu option."
+        ],
+        "source": "https://www.audiusa.com/us/web/en/support/help/audi-advanced-key-video-tutorial.html"
+      },
+      {
+        "type": "temp",
+        "text": "Switch off keyless unlocking for the current lock cycle from the door handle.",
+        "steps": [
+          "Press the lock button on the Advanced Key.",
+          "Within 5 seconds, touch the sensor on a door handle. Keyless unlocking is now off until you unlock with the key button."
+        ],
+        "source": "https://www.audiusa.com/us/web/en/support/help/audi-advanced-key-video-tutorial.html"
       }
+    ],
+    "info": [
+      "Audi calls its keyless entry the \"Advanced Key\" (VW Group KESSY). Its infotainment is \"MMI\" (Multi Media Interface).",
+      "Advanced Key is an option across the Audi range."
     ]
   },
   {
@@ -46,14 +66,18 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "models": "Bentayga (shares Audi's Advanced Key)",
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle (do not grip it). Keyless unlocking is now off until you unlock with the key button."
         ],
-        "models": "Bentayga"
+        "source": "https://www.audiusa.com/us/web/en/support/help/audi-advanced-key-video-tutorial.html"
       }
+    ],
+    "info": [
+      "Bentley uses the VW Group keyless system (Audi's \"Advanced Key\"/KESSY). Its infotainment is based on Audi's MMI.",
+      "Keyless entry is standard on the Bentayga, Continental GT and Flying Spur."
     ]
   },
   {
@@ -540,12 +564,21 @@
     "instructions": [
       {
         "type": "temp",
+        "text": "Porsche calls its keyless system \"Entry & Drive\". You can deactivate it on the key (per Porsche's Good to Know guide).",
         "steps": [
-          "Press and hold the lock button.",
-          "At the same time, press the unlock button within 1 second.",
-          "Keep both buttons pressed until the indicator light on the key lights up continuously."
-        ]
+          "Press and hold one button on the key while pressing the unlock button within 1 second.",
+          "Keep both buttons pressed until the indicator light on the key lights up continuously - this confirms Entry & Drive is deactivated."
+        ],
+        "notes": [
+          "Pressing the key buttons again reactivates Entry & Drive.",
+          "Passive entry for the doors, front compartment and tailgate can also be de-selected in the PCM settings."
+        ],
+        "source": "https://contentful-assets.porsche.com/u1ih0u5p8hpf/1el5P5zHGlNgZ0S9nxgxFL/92a3c4f0165ea30007733db3a79d06e8/Porsche_MY21_Cayenne_QSG.pdf"
       }
+    ],
+    "info": [
+      "Porsche calls its keyless entry and start \"Entry & Drive\". Its infotainment is \"PCM\" (Porsche Communication Management).",
+      "Entry & Drive is an option across the range (911, Cayenne, Macan, Panamera, Taycan)."
     ]
   },
   {
@@ -589,13 +622,21 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
-        ]
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle with a finger (do not grip it). The indicators flash once to confirm.",
+          "Keyless unlocking is now off; to get in you must press the unlock button on the key."
+        ],
+        "notes": [
+          "This resets the next time you unlock with the key, so repeat each time you park."
+        ],
+        "source": "https://www.manualslib.com/manual/1985337/Skoda-Karoq.html?page=28"
       }
+    ],
+    "info": [
+      "Skoda calls its keyless system \"KESSY\". Its infotainment is Skoda's system (\"Columbus\", \"Amundsen\" or \"Bolero\").",
+      "KESSY is an option across the range (Octavia, Superb, Kodiaq, Karoq, Enyaq)."
     ]
   },
   {
@@ -780,21 +821,37 @@
     "instructions": [
       {
         "type": "temp",
-        "models": "T-Roc 7 onwards?",
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the little indented area on the door handle.",
-          "Keyless entry is now disabled until you next unlock the car."
-        ]
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor surface on a door handle with a finger (do not grip the handle). The indicators flash once to confirm.",
+          "Keyless unlocking is now off; to get in you must press the unlock button on the key."
+        ],
+        "notes": [
+          "This resets the next time you unlock with the key, so repeat each time you park."
+        ],
+        "source": "https://www.vw-id4.com/unlocking-or-locking-using-keyless-access-56.html"
+      },
+      {
+        "type": "perm",
+        "models": "ID.3, ID.4 and other infotainment-equipped models",
+        "text": "Keyless Access can be turned off permanently in the infotainment.",
+        "steps": [
+          "On the infotainment screen, open the Vehicle menu.",
+          "Open the Keyless Access (door/locking) settings.",
+          "Turn Keyless Access off."
+        ],
+        "source": "https://www.vw-id4.com/unlocking-or-locking-using-keyless-access-56.html"
       },
       {
         "type": "auto",
-        "models": "T-Cross",
-        "text": "The key fob goes to sleep after 15 minutes of inactivity."
+        "models": "Newer keys (e.g. T-Cross)",
+        "text": "The key goes to sleep after about 15 minutes of inactivity, which also blocks relay attacks."
       }
     ],
     "info": [
-      "Volkswagen calls its keyless entry feature \"KESSY\"."
+      "Volkswagen calls its keyless system \"KESSY\" (Keyless Entry, Start and exit System), marketed as \"Keyless Access\". Its infotainment is the Volkswagen infotainment system (\"Discover Media/Pro\" on older cars).",
+      "Keyless Access is an option across most of the range."
     ]
   },
   {
@@ -1474,13 +1531,21 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
-        ]
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle with a finger (do not grip it). The indicators flash once to confirm.",
+          "Keyless unlocking is now off; to get in you must press the unlock button on the key."
+        ],
+        "notes": [
+          "This resets the next time you unlock with the key. The procedure is shared across the VW Group (KESSY)."
+        ],
+        "source": "https://www.manualslib.com/manual/1985337/Skoda-Karoq.html?page=28"
       }
+    ],
+    "info": [
+      "SEAT calls its keyless system \"Kessy\". Its infotainment is the \"SEAT Media System\".",
+      "Kessy is an option across the range (Ibiza, Leon, Arona, Ateca, Tarraco)."
     ]
   },
   {
@@ -1497,13 +1562,21 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
-        ]
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle with a finger (do not grip it). The indicators flash once to confirm.",
+          "Keyless unlocking is now off; to get in you must press the unlock button on the key."
+        ],
+        "notes": [
+          "This resets the next time you unlock with the key. The procedure is shared across the VW Group (KESSY)."
+        ],
+        "source": "https://www.manualslib.com/manual/1985337/Skoda-Karoq.html?page=28"
       }
+    ],
+    "info": [
+      "Cupra (SEAT's performance brand) uses the VW Group \"Kessy\" keyless system. Its infotainment is the Cupra/SEAT Media System.",
+      "Kessy is fitted across the range (Formentor, Born, Leon, Ateca, Tavascan)."
     ]
   },
   {
@@ -1625,14 +1698,18 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "models": "Urus (shares Audi's Advanced Key)",
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle (do not grip it). Keyless unlocking is now off until you unlock with the key button."
         ],
-        "models": "Urus"
+        "source": "https://www.audiusa.com/us/web/en/support/help/audi-advanced-key-video-tutorial.html"
       }
+    ],
+    "info": [
+      "The Lamborghini Urus shares the VW Group keyless system (Audi's \"Advanced Key\"/KESSY) and Audi's MMI infotainment.",
+      "Keyless entry applies to the Urus; the Huracan and Revuelto supercars use a conventional remote."
     ]
   }
 ]

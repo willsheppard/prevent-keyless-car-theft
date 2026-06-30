@@ -423,11 +423,22 @@
     "instructions": [
       {
         "type": "temp",
+        "text": "KEYLESS-GO can be switched off from the SmartKey (e.g. to stop the car being opened while parked).",
         "steps": [
           "Lock the car as usual.",
-          "Press the lock button again twice, quickly."
-        ]
+          "Press the lock button on the SmartKey twice in quick succession.",
+          "The key's indicator flashes twice then lights once to confirm KEYLESS-GO is off."
+        ],
+        "notes": [
+          "Press any button on the key to switch keyless entry back on.",
+          "This resets each time you unlock with the key, so repeat each time you park. With two keys nearby, deactivate both."
+        ],
+        "source": "https://www.mersag.com/cmer-3922.html"
       }
+    ],
+    "info": [
+      "Mercedes calls its keyless entry \"KEYLESS-GO\" (the key is the \"SmartKey\"; the kick-to-open tailgate is \"HANDS-FREE ACCESS\"). Its infotainment is \"MBUX\" (older cars: \"COMAND\").",
+      "KEYLESS-GO is an option across the range; newer SmartKeys also have a motion sensor that sleeps when still, blocking relay attacks."
     ]
   },
   {
@@ -1643,8 +1654,22 @@
       "smart #3",
       "eq fortwo"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "temp",
+        "models": "fortwo/forfour with KEYLESS-GO (Mercedes era)",
+        "text": "On Mercedes-era Smarts with KEYLESS-GO, deactivate it from the key like a Mercedes SmartKey.",
+        "steps": [
+          "Lock the car, then press the lock button on the key twice in quick succession.",
+          "The key's indicator confirms; keyless entry is off until you press any button or unlock with the key."
+        ],
+        "source": "https://www.mersag.com/cmer-3922.html"
+      }
+    ],
+    "info": [
+      "Smart is now a Mercedes-Benz/Geely joint venture. Older fortwo/forfour used Mercedes \"KEYLESS-GO\"; the current Smart #1 and #3 use the Smart OS infotainment.",
+      "On the Smart #1/#3, keyless (passive) entry is managed in the vehicle settings; no separate disable procedure is documented here."
+    ]
   },
   {
     "name": "Lotus",

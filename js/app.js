@@ -46,7 +46,7 @@ function render(q = "") {
     meta.textContent = `${visible} match${visible === 1 ? "" : "es"} for "${q}"`;
     if (visible === 1) setOpen(lastVisible, true);   // single match: open it
   } else {
-    meta.textContent = `Showing all ${visible} car makes. Tap yours, or search above.`;
+    meta.textContent = "Showing all car brands.";
   }
 }
 

@@ -726,21 +726,23 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "Press the \"lock\" button once."
-        ]
-      },
-      {
         "type": "perm",
-        "models": "Model S",
+        "text": "Tesla lets you switch off Passive Entry (walk-up unlock). Tesla's own manual recommends this to reduce relay theft.",
         "steps": [
-          "On the centre touchscreen, go to the Settings tab.",
-          "Open the Doors & Locks menu.",
-          "Switch 'Passive Entry' OFF (you must press the brake pedal)."
-        ]
+          "On the central touchscreen, tap Controls.",
+          "Go to Locks (on Model S/X: Safety/Locks).",
+          "Switch Passive Entry off."
+        ],
+        "notes": [
+          "With Passive Entry off, press the fob, key card or phone key to unlock.",
+          "Menu wording varies by model and software version."
+        ],
+        "source": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-7A32EC01-A17E-42CC-A15B-2E0A39FD07AB.html"
       }
+    ],
+    "info": [
+      "Tesla's keyless entry is \"Passive Entry\" (walk-up unlock) using the phone key, key card or key fob. The central touchscreen has no separate brand name.",
+      "Passive Entry can be switched off on all current models (3, Y, S, X, Cybertruck)."
     ]
   },
   {
@@ -1169,8 +1171,22 @@
       "r2",
       "r3"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Rivian lets you turn proximity (keyless) unlocking off so the car doesn't unlock as you approach with the phone key or fob.",
+        "steps": [
+          "On the centre display, open Settings.",
+          "Go to Vehicle | Access (or Locks).",
+          "Set proximity unlock to \"Lock only\" or \"Off\"."
+        ],
+        "source": "https://rivian.com/support"
+      }
+    ],
+    "info": [
+      "Rivian's keyless entry uses a phone-as-key with proximity (Bluetooth) unlocking, plus an optional key fob and key band. Its central display has no separate brand name.",
+      "Proximity locking/unlocking is standard on the R1T and R1S and can be set to Lock only or Off."
+    ]
   },
   {
     "name": "Lucid",
@@ -1179,8 +1195,22 @@
       "gravity",
       "lucid air"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Lucid lets you switch off passive unlock (and passive lock) so the car doesn't unlock as you approach.",
+        "steps": [
+          "On the touchscreen, tap Settings.",
+          "Go to Vehicle | Doors & Seats.",
+          "Turn Passive Unlock (and Passive Lock) off."
+        ],
+        "source": "https://lucidmotors.com/media/document/OM_Air_enUS_v35.pdf"
+      }
+    ],
+    "info": [
+      "Lucid's keyless entry is \"Passive Unlock\"/\"Passive Lock\" using the phone key, key fob or key card. Its infotainment is \"Lucid UX\" (Pilot Panel and Glass Cockpit displays).",
+      "Passive entry is standard on the Air and Gravity and can be switched off in the menu."
+    ]
   },
   {
     "name": "Honda",

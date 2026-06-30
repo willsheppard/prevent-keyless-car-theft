@@ -335,18 +335,23 @@
     "instructions": [
       {
         "type": "perm",
-        "models": "2021 onwards",
-        "text": "Turning on the \"transmitter power saving function\" switches off the advanced keyless entry and push-button start, and limits the fob's battery use.",
+        "models": "Models with Advanced Keyless Entry",
+        "text": "Turning on the \"key transmitter power saving function\" switches off the advanced keyless entry and restricts the fob's battery use.",
         "steps": [
-          "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
-          "While the indicator light is on, press and hold the lock button for 2 seconds or longer.",
-          "Press any button on the fob to check the indicator light does not turn on or flash -- this confirms keyless entry is off."
+          "Press the lock button on the transmitter 4 times within 3 seconds -- the operation indicator light turns on.",
+          "While the indicator light is on, press and hold the lock button for 1.5 seconds or longer.",
+          "Press any button on the transmitter to check the indicator light does not turn on or flash -- this confirms keyless entry is off."
         ],
         "notes": [
           "Repeat the same steps to switch keyless entry back on.",
-          "Once this is on, the car won't start with the key until you either turn power-save mode off, or hold the key against the start/stop button while pressing it."
-        ]
+          "While power saving is on, start the engine by touching the key to the start/stop button (as you would with a flat key battery)."
+        ],
+        "source": "https://owners-manual.mazda.com/gen/en/mazda3/mazda3_8jr6ee20e/contents/04010201.html"
       }
+    ],
+    "info": [
+      "Mazda calls its keyless entry the \"Advanced Keyless Entry System\". Its infotainment is \"Mazda Connect\".",
+      "Advanced Keyless is fitted to higher trims across the range; lower trims use a conventional remote."
     ]
   },
   {
@@ -576,19 +581,28 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "models": "Models with Keyless Access and push-button start",
+        "text": "Subaru lets you fully disable the keyless access function (proximity entry and push-button start) using the driver's door and power door lock switch. The fob buttons still lock and unlock the car.",
         "steps": [
           "Sit in the driver's seat and close the door.",
-          "Press the unlock side of the power door lock switch.",
-          "Open the driver's door within 5 seconds.",
-          "Press the unlock side of the switch twice within 5 seconds.",
-          "Close and open the driver's door twice within 10 seconds. Keyless access is now disabled."
+          "Push the rear (unlock) side of the power door lock switch.",
+          "Within 5 seconds, open the driver's door.",
+          "Within 5 seconds, push the unlock side of the switch twice while the door is open.",
+          "Within 30 seconds, close and open the driver's door twice.",
+          "Within 30 seconds, push the unlock side of the switch twice while the door is open.",
+          "Within 30 seconds, close and open the driver's door once.",
+          "Within 5 seconds, close the door. A chirp confirms the functions are disabled."
         ],
         "notes": [
-          "Press the switch slowly -- pressing too quickly can stop it working.",
-          "Repeat the same procedure to switch keyless access back on."
-        ]
+          "In the two-press steps, press the switch slowly -- pressing too quickly can stop it working.",
+          "Perform the same procedure again to switch keyless access back on."
+        ],
+        "source": "https://www.subsuv.com/subco-95.html"
       }
+    ],
+    "info": [
+      "Subaru calls its keyless system \"Keyless Access with push-button start\". Its infotainment is \"Subaru Starlink\".",
+      "Keyless Access is fitted to higher trims; unlike most rivals it can be switched off completely using the procedure above."
     ]
   },
   {

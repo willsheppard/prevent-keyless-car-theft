@@ -445,20 +445,25 @@
     "instructions": [
       {
         "type": "perm",
-        "models": "Qashqai",
+        "models": "Qashqai and most current models",
+        "text": "Turning off the door request switch disables touch-the-handle keyless entry; you can still lock and unlock with the fob buttons.",
         "steps": [
-          "Go to Settings | Vehicle | Locking.",
-          "Change the i-key setting to \"off\"."
-        ]
+          "On the vehicle information display, open Settings.",
+          "Go to Locking | I-Key Door Lock.",
+          "Turn it off to deactivate the request switch on the door handles."
+        ],
+        "source": "https://www.nissan.co.uk/owners/car-repair/car-owner-manual/manuals/iom/qashqai/0j12/e1/2024/vehicle-settings-1.shtml"
       },
       {
         "type": "auto",
-        "models": "J12 onwards?",
-        "text": "The latest key fobs turn themselves off after a period of inactivity."
+        "models": "Current Intelligent Key fobs",
+        "text": "The Intelligent Key has a sleep function: if it is not physically moved for 2 minutes or more it stops transmitting, so a still key cannot be picked up by relay thieves.",
+        "source": "https://www.nissan.co.uk/owners/car-repair/car-owner-manual/manuals/iom/qashqaiepower/hj12/e1/2024/intelligent-key-sleep-function-where-fitted-1.shtml"
       }
     ],
     "info": [
-      "Nissan calls this feature \"i-key\" (intelligent key)."
+      "Nissan calls its keyless system the \"Intelligent Key\" (sometimes \"i-Key\"). Its infotainment is \"NissanConnect\".",
+      "Intelligent Key is available across most of the current Nissan range; the door handles carry a request switch that unlocks the car when the key is nearby."
     ]
   },
   {
@@ -1052,8 +1057,24 @@
       "q70",
       "qx30"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Infiniti shares Nissan's Intelligent Key. Turning off lock/unlock by the door-handle request switch disables touch-the-handle entry; the fob buttons still lock and unlock.",
+        "steps": [
+          "In the vehicle settings menu (on the InTouch screen), open the door lock / Intelligent Key settings.",
+          "Turn off lock and unlock by the door-handle request switch."
+        ],
+        "notes": [
+          "Like Nissan, the Intelligent Key fob also stops transmitting after about 2 minutes without movement."
+        ],
+        "source": "https://www-europe.infiniti-cdn.net/content/dam/Infiniti/ownership/owner-manuals/Q50-Owner-Manual-EN.pdf"
+      }
+    ],
+    "info": [
+      "Infiniti calls its keyless system the \"Intelligent Key\". Its infotainment and connected services are \"INFINITI InTouch\".",
+      "Intelligent Key is standard across the Infiniti range (Q50, Q60, QX50/55/60/80)."
+    ]
   },
   {
     "name": "Genesis",

@@ -1,2 +1,5 @@
 # Static page generator (build.py)
 Jinja2>=3.1
+
+# e2e tests (pytest -> Playwright)
+pytest-playwright>=0.8

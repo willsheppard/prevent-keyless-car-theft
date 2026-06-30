@@ -493,8 +493,37 @@
       "e-2008",
       "partner"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "models": "Models with the i-Connect touchscreen",
+        "text": "Switch off hands-free (keyless) access in the vehicle settings.",
+        "steps": [
+          "Press the car-settings button (car symbol) to open the vehicle menu.",
+          "Open Comfort.",
+          "Set \"Automatic hands-free access\" (keyless entry) to Off."
+        ],
+        "source": "https://public.servicebox.peugeot.com/APddb/modeles/2008.p2/eGuide_p24_ed01-20/pdfs/9999_9999_402_en-GB.pdf"
+      },
+      {
+        "type": "perm",
+        "models": "Models without the menu option",
+        "text": "On cars without the menu toggle, deactivate hands-free access using the key and the centre console.",
+        "steps": [
+          "Press and hold the lock button on the key.",
+          "After about 3 seconds, also press the lock button on the centre console while still holding the key button.",
+          "After about 3 seconds, release the console button, then the key button. A beep confirms keyless entry is disabled."
+        ],
+        "notes": [
+          "Repeat the same procedure to switch keyless entry back on."
+        ],
+        "source": "https://public.servicebox.peugeot.com/APddb/modeles/2008.p2/eGuide_p24_ed01-20/pdfs/9999_9999_402_en-GB.pdf"
+      }
+    ],
+    "info": [
+      "Peugeot calls its keyless system \"Keyless Entry and Start\" (hands-free access). Its infotainment is \"Peugeot i-Connect\" within the i-Cockpit.",
+      "Hands-free access is an option on most current Peugeots (208, 2008, 308, 3008, 5008, 408)."
+    ]
   },
   {
     "name": "Porsche",
@@ -702,8 +731,26 @@
       "zafira",
       "adam"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "models": "Corsa, Mokka, Astra, Grandland (Stellantis platform)",
+        "text": "On current (Stellantis-platform) Vauxhalls, switch off hands-free (keyless) access in the vehicle settings.",
+        "steps": [
+          "Open the vehicle/car settings menu on the touchscreen.",
+          "Open Comfort.",
+          "Set \"Automatic hands-free access\" (keyless entry) to Off."
+        ],
+        "notes": [
+          "Older GM-based models (Insignia, Astra K) instead have a keyless setting in the on-screen Settings menu."
+        ],
+        "source": "https://www.vauxhall.co.uk/owners/information-and-safety/owners-manuals.html"
+      }
+    ],
+    "info": [
+      "Vauxhall (Opel) calls its keyless system \"Keyless Open & Start\". Its infotainment is the Vauxhall Multimedia/Navi system (connected services: \"Vauxhall Connect\").",
+      "Keyless Open is an option on most current models (Corsa, Mokka, Astra, Grandland)."
+    ]
   },
   {
     "name": "Volkswagen",
@@ -1353,14 +1400,33 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
-        "models": "C5 Aircross",
+        "models": "Models with touchscreen",
+        "text": "Switch off hands-free (keyless) access in the vehicle settings.",
+        "steps": [
+          "Press the car-settings button to open the vehicle menu.",
+          "Open Comfort.",
+          "Set \"Automatic hands-free access\" (keyless entry) to Off."
+        ],
+        "source": "https://www.citroen.co.uk/about-citroen/technology/keyless-entry-and-start"
+      },
+      {
+        "type": "perm",
+        "models": "C5 Aircross and similar without the menu option",
+        "text": "On cars without the menu toggle, deactivate hands-free access using the key and the centre console.",
         "steps": [
           "Press and hold the lock button on the key fob.",
           "After about 3 seconds, also press the lock button on the centre console while still holding the fob button.",
           "After about 3 seconds, release the console button, then the fob button. A beep confirms keyless entry is disabled."
-        ]
+        ],
+        "notes": [
+          "Repeat the same procedure to switch keyless entry back on."
+        ],
+        "source": "https://www.citroen.co.uk/about-citroen/technology/keyless-entry-and-start"
       }
+    ],
+    "info": [
+      "Citroën calls its keyless system \"Keyless Entry and Start\" (hands-free access). Its infotainment is the \"Citroën Connect\" system.",
+      "Hands-free access is an option across the range (C3, C4, C5 Aircross, C5 X, ë-C4)."
     ]
   },
   {
@@ -1373,8 +1439,25 @@
       "ds 3 crossback",
       "ds 7 crossback"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "DS shares Peugeot/Citroën's hands-free access. Switch off hands-free (keyless) access in the vehicle settings.",
+        "steps": [
+          "Open the vehicle/car settings menu on the touchscreen.",
+          "Open Comfort.",
+          "Set \"Automatic hands-free access\" (keyless entry) to Off."
+        ],
+        "notes": [
+          "On models without the menu toggle, hold the key lock button and the centre-console lock button together for a few seconds until a beep confirms keyless entry is off; repeat to re-enable."
+        ],
+        "source": "https://www.dsautomobiles.co.uk/owners/my-ds/manuals-tutorials.html"
+      }
+    ],
+    "info": [
+      "DS Automobiles calls its keyless system \"Keyless Entry and Start\" (hands-free access). Its infotainment is the \"DS IRIS\" system.",
+      "Hands-free access is available across the DS range (DS 3, DS 4, DS 7, DS 9)."
+    ]
   },
   {
     "name": "SEAT",

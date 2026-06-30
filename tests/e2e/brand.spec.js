@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-// Pre-rendered, individually indexable brand pages (the point of the migration).
+// Pre-rendered, individually indexable brand pages: one indexable URL per brand.
 
 test("a known brand page renders its content and metadata", async ({ page }) => {
   const res = await page.goto("/disable-keyless-entry/ford/");

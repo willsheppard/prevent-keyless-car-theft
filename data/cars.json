@@ -146,22 +146,28 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "Lock the car by pressing the button on the remote control key."
-        ]
-      },
-      {
         "type": "auto",
-        "models": "Fiesta / Focus, 2019 onwards",
-        "text": "The \"sleeping key fob\" feature automatically deactivates the transmitter when the key fob has not moved for 40 seconds."
+        "models": "Fiesta/Focus 2019 on; later Kuga, Puma and others",
+        "text": "Ford's motion-sensor \"sleeping\" key fob deactivates the transmitter after the fob has been still for 40 seconds, so it cannot be picked up by a relay attack. It wakes the moment it is moved.",
+        "source": "https://media.ford.com/content/fordmedia/feu/gb/en/news/2021/03/03/most-popular-ford-models-add-protection-for-owners-in-fight-agai.html"
       },
       {
         "type": "perm",
-        "models": "Fiesta 2016, Focus 2017 onwards",
-        "text": "Disable \"Passive entry\" in the car's menu."
+        "text": "Switch off Intelligent Access (keyless entry) in the vehicle settings.",
+        "steps": [
+          "On the information/message display (or SYNC touchscreen), open Settings, then Vehicle.",
+          "Select Intelligent Access and switch it off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons.",
+          "Some model years and regional software do not offer this toggle; on those, rely on the sleeping key fob above."
+        ],
+        "source": "https://owner.ford.com/support/how-tos/vehicle-features/locks-and-security/intelligent-access-with-push-button-start.html"
       }
+    ],
+    "info": [
+      "Ford calls its keyless entry and push-button start \"Intelligent Access\". Its infotainment is \"SYNC\" (connected services: \"FordPass\").",
+      "Intelligent Access is available across much of the range on higher trims; the sleeping key fob was introduced partly to defeat relay theft."
     ]
   },
   {
@@ -992,13 +998,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off Intelligent Access (keyless entry) in the vehicle settings; the fob buttons still lock and unlock.",
         "steps": [
           "On the SYNC touchscreen, go to Settings | Vehicle | Locks.",
           "Set Intelligent Access (keyless entry) to off.",
-          "On cars without a touchscreen, use the steering-wheel menu: Settings | Vehicle | Locks | Intelligent Access."
-        ]
+          "On cars without a touchscreen, use the steering-wheel information display: Settings | Vehicle | Locks | Intelligent Access."
+        ],
+        "notes": [
+          "Some model years and regional software do not offer this toggle."
+        ],
+        "source": "https://owner.lincoln.com/how-tos/vehicle-features/locks-and-security/how-to-program-your-intelligent-access-key.html"
       }
+    ],
+    "info": [
+      "Lincoln calls its keyless entry and push-button start \"Intelligent Access\". It shares Ford's \"SYNC\" infotainment (connected services: \"Lincoln Connect\").",
+      "Intelligent Access is standard across the Lincoln range."
     ]
   },
   {

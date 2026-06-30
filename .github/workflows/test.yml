@@ -16,15 +16,7 @@ jobs:
           python-version: "3.12"
       - name: Install Python dependencies
         run: pip install -r requirements.txt
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install Node dependencies
-        run: npm ci
       - name: Install Playwright browser
-        run: npx playwright install --with-deps chromium
+        run: playwright install --with-deps chromium
       - name: Run e2e tests
-        run: npx playwright test
-        env:
-          CI: "true"
-          PYTHON: python
+        run: pytest

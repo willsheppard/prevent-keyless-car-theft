@@ -5,10 +5,7 @@ dist/
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
 
-# Node / Playwright
-node_modules/
+# Playwright
 test-results/
-playwright-report/
-blob-report/
-.last-run.json

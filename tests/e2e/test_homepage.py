@@ -15,7 +15,7 @@ def test_lists_all_brands_none_expanded(page: Page):
     cards = page.locator("#grid .card")
     expect(cards).to_have_count(58)
     expect(page.locator("#grid .card.open")).to_have_count(0)
-    expect(page.locator("#meta")).to_contain_text("Showing all 58 car makes")
+    expect(page.locator("#meta")).to_contain_text("Showing all car brands.")
 
 
 def test_search_filters_to_single_brand_and_auto_opens(page: Page):

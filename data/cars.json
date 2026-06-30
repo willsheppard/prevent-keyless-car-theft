@@ -115,16 +115,28 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
+        "type": "perm",
+        "text": "Comfort Access (keyless entry) can be switched off in iDrive to stop the car locking/unlocking as you approach.",
         "steps": [
-          "Press the \"lock\" button on the digital key or remote control key fob."
+          "In iDrive, open the vehicle settings and find Comfort Access (menu path varies by iDrive version).",
+          "Switch Comfort Access off."
         ],
         "notes": [
-          "If the vehicle was locked with the remote control, it cannot be unlocked touchless.",
-          "If the vehicle has been idle for several days, touchless unlocking and locking is not possible until after the vehicle has been driven again."
-        ]
+          "You can also deactivate Comfort Access from the My BMW app.",
+          "The fob lock/unlock buttons keep working."
+        ],
+        "source": "https://faq.bmwusa.com/s/article/Vehicle-Vehicle-access-Comfort-Access-Functional-limitations-V3vOA?language=en_US"
+      },
+      {
+        "type": "auto",
+        "models": "Comfort Access keys on many models",
+        "text": "BMW's Comfort Access key has a motion sensor: it goes to sleep after about 2 minutes without movement, so a still key cannot be picked up by relay thieves. The Digital Key Plus (ultra-wideband) is also relay-resistant.",
+        "source": "https://www.fleetnews.co.uk/news/manufacturer-news/2019/11/06/carmakers-introduce-sleeping-fobs-to-tackle-keyless-thieves"
       }
+    ],
+    "info": [
+      "BMW calls its keyless entry \"Comfort Access\". Its infotainment is \"iDrive\"; the phone-as-key is the \"BMW Digital Key\".",
+      "Comfort Access is an option across the BMW range."
     ]
   },
   {
@@ -431,15 +443,26 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
+        "type": "perm",
+        "text": "Mini shares BMW's Comfort Access. Switch it off in the infotainment to stop the car locking/unlocking as you approach.",
         "steps": [
-          "Lock the car using the button on the key fob."
+          "In the MINI operating system, open the vehicle settings and find Comfort Access.",
+          "Switch Comfort Access off."
         ],
         "notes": [
-          "Once locked with the fob, the car cannot be opened by touching the handle until you unlock it with the fob again."
-        ]
+          "You can also deactivate it from the MINI app. The fob lock/unlock buttons keep working."
+        ],
+        "source": "https://faq.bmwusa.com/s/article/Vehicle-Vehicle-access-Comfort-Access-Functional-limitations-V3vOA?language=en_US"
+      },
+      {
+        "type": "auto",
+        "models": "Comfort Access keys on newer models",
+        "text": "Like BMW, the Comfort Access key has a motion sensor and goes to sleep after a couple of minutes without movement, blocking relay attacks."
       }
+    ],
+    "info": [
+      "Mini (BMW-owned) calls its keyless entry \"Comfort Access\". Its infotainment is the \"MINI Operating System\" (iDrive-based); connected services are \"MINI Connected\".",
+      "Comfort Access is an option across the range (Cooper, Countryman, Aceman)."
     ]
   },
   {
@@ -1676,15 +1699,21 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
+        "type": "perm",
+        "text": "Rolls-Royce uses BMW's Comfort Access. Switch it off in the infotainment to stop the car unlocking as you approach.",
         "steps": [
-          "Lock the car using the button on the key fob."
+          "In the infotainment (BMW iDrive-based), open the vehicle settings and find Comfort Access.",
+          "Switch Comfort Access off."
         ],
         "notes": [
-          "Once locked with the fob, the car cannot be opened by touching the handle until you unlock it with the fob again."
-        ]
+          "The fob lock/unlock buttons keep working."
+        ],
+        "source": "https://faq.bmwusa.com/s/article/Vehicle-Vehicle-access-Comfort-Access-Functional-limitations-V3vOA?language=en_US"
       }
+    ],
+    "info": [
+      "Rolls-Royce (BMW-owned) uses BMW's \"Comfort Access\" keyless entry on a BMW iDrive-based infotainment.",
+      "Keyless entry is standard across the range (Phantom, Ghost, Cullinan, Spectre)."
     ]
   },
   {

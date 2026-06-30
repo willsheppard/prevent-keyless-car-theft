@@ -34,9 +34,7 @@ ASSET_DIRS = ["css", "js", "img", "data"]
 
 TYPE_LABEL = {"temp": "Temporary", "auto": "Automatic", "perm": "Permanent", "info": "Note"}
 
-# Minimum body word count for a brand page to be indexable (DESIGN.md §6).
-# Set to 1 so every brand with any content still publishes; raise later to gate
-# out genuinely thin pages.
+# Min body words for a brand page to be indexable (DESIGN.md §6).
 MIN_BODY_WORDS = 20
 
 

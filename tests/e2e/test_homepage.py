@@ -73,3 +73,27 @@ def test_unknown_brand_shows_help_needed_body(page: Page):
     expect(card).to_have_count(1)
     expect(card.locator(".tag.none")).to_have_text("Help needed")
     expect(card.locator(".unknown-body")).to_contain_text("Ferrari")
+
+
+def test_copy_link_targets(page: Page):
+    # Indexable brand copies its own page URL; card-only brand copies a homepage anchor.
+    expect(page.locator("#brand-ford .card-link")).to_have_attribute(
+        "data-link", "https://stopkeyless.com/disable-keyless-entry/ford/")
+    expect(page.locator("#brand-ferrari .card-link")).to_have_attribute(
+        "data-link", "https://stopkeyless.com/#brand-ferrari")
+
+
+def test_copy_link_click_copies_without_expanding(page: Page):
+    page.context.grant_permissions(["clipboard-read", "clipboard-write"])
+    card = page.locator("#brand-ford")
+    btn = card.locator(".card-link")
+    btn.click()
+    expect(card).not_to_have_class(re.compile(r"\bopen\b"))   # copy must not expand
+    expect(btn).to_have_class(re.compile(r"\bcopied\b"))
+    assert page.evaluate("navigator.clipboard.readText()") == \
+        "https://stopkeyless.com/disable-keyless-entry/ford/"
+
+
+def test_brand_hash_deep_link_opens_card(page: Page):
+    page.goto("/#brand-ferrari")
+    expect(page.locator("#brand-ferrari")).to_have_class(re.compile(r"\bopen\b"))

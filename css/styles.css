@@ -140,6 +140,9 @@ main { padding: 20px 0 20px; }
 }
 .card.open { grid-column: 1 / -1; border-color: var(--green); }
 
+.card-top { position: relative; }
+.card-top:hover { background: var(--green-light); }
+
 .card-head {
   width: 100%;
   border: 0;
@@ -153,7 +156,30 @@ main { padding: 20px 0 20px; }
   font: inherit;
   color: inherit;
 }
-.card-head:hover { background: var(--green-light); }
+
+/* Copy-link button: sits in the card's top-right corner (above the tag line and
+   clear of the centred chevron). Copies the brand page URL, or a #brand-<slug>
+   anchor for card-only brands. */
+.card-link {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 8px;
+  line-height: 0;
+}
+.card-link:hover { color: var(--green-dark); background: rgba(15, 23, 42, .05); }
+.card-link:focus-visible { outline: 2px solid var(--green); outline-offset: 0; }
+.card-link .ico-check { display: none; }
+.card-link.copied { color: var(--green); }
+.card-link.copied .ico-link { display: none; }
+.card-link.copied .ico-check { display: block; }
 
 .brand-logo {
   flex: 0 0 auto;

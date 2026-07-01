@@ -36,7 +36,8 @@
    pre-rendered cards (no client-side rendering). `card` is a dict prepared in
    build.py: idx, name, initials, search, unknown, tag_types, instructions, info. #}
 {% macro render_card(card) %}
-<div class="card" data-idx="{{ card.idx }}" data-search="{{ card.search }}">
+<div class="card" id="brand-{{ card.slug }}" data-idx="{{ card.idx }}" data-search="{{ card.search }}">
+  <div class="card-top">
   <button class="card-head" aria-expanded="false" aria-controls="body-{{ card.idx }}">
     <span class="brand-logo" aria-hidden="true">{{ card.initials }}</span>
     <span class="brand-meta">
@@ -48,6 +49,11 @@
     </span>
     <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
   </button>
+  <button type="button" class="card-link" data-link="{{ card.link }}" aria-label="Copy link to {{ card.name }}" title="Copy link to {{ card.name }}">
+    <svg class="ico ico-link" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+    <svg class="ico ico-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+  </button>
+  </div>
   <div class="card-body" id="body-{{ card.idx }}">
     {% if card.unknown %}
     <p class="unknown-body">We don't yet have confirmed instructions for {{ card.name }}. Many {{ card.name }} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="#contribute">Know how? Help us add {{ card.name }} →</a></p>

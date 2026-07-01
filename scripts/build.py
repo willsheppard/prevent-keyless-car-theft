@@ -165,9 +165,14 @@ def build_index(env, cars, faqs):
     for idx, car in sorted(enumerate(cars), key=lambda pair: pair[1]["name"].lower()):
         name = car["name"]
         instructions = car.get("instructions", [])
+        slug = slugify(name)
+        # Copy-link target: the indexable brand page, else an anchor to this card.
+        link = brand_url(car) if is_indexable(car) else f"{SITE_URL}/#brand-{slug}"
         cards.append({
             "idx": idx,
             "name": name,
+            "slug": slug,
+            "link": link,
             "initials": initials(name),
             "search": " ".join([name, *car.get("aliases", [])]).lower(),
             "unknown": bool(car.get("unknown")),

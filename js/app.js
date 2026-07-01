@@ -26,6 +26,37 @@ function setOpen(card, open) {
   card.querySelector(".card-head").setAttribute("aria-expanded", open ? "true" : "false");
 }
 
+async function copyLink(btn) {
+  const url = btn.dataset.link;
+  try {
+    await navigator.clipboard.writeText(url);
+  } catch {
+    // Fallback for non-secure contexts / older browsers.
+    const ta = document.createElement("textarea");
+    ta.value = url;
+    ta.setAttribute("readonly", "");
+    ta.style.cssText = "position:absolute;left:-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch { /* ignore */ }
+    document.body.removeChild(ta);
+  }
+  btn.classList.add("copied");
+  clearTimeout(btn._copyTimer);
+  btn._copyTimer = setTimeout(() => btn.classList.remove("copied"), 1400);
+}
+
+// Deep link: /#brand-<slug> scrolls to and opens that card.
+function openFromHash() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (!id.startsWith("brand-")) return;
+  const card = document.getElementById(id);
+  if (!card || !card.classList.contains("card")) return;
+  card.hidden = false;
+  setOpen(card, true);
+  card.scrollIntoView({ block: "center" });
+}
+
 function render(q = "") {
   q = q.trim().toLowerCase();
   let visible = 0;
@@ -54,6 +85,8 @@ function render(q = "") {
 }
 
 grid.addEventListener("click", (e) => {
+  const linkBtn = e.target.closest(".card-link");
+  if (linkBtn) { copyLink(linkBtn); return; }
   const head = e.target.closest(".card-head");
   if (!head) return;
   const card = head.closest(".card");
@@ -75,6 +108,8 @@ clearBtn.addEventListener("click", () => {
 });
 
 render("");
+openFromHash();
+window.addEventListener("hashchange", openFromHash);
 
 /* ---------- Contribute form (Formspree, native fetch) ---------- */
 const cform = document.getElementById("contribute-form");

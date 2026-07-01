@@ -2,7 +2,7 @@ name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, staging]
   workflow_dispatch:
 
 permissions:
@@ -19,14 +19,39 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out main (production, site root)
+        uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Build site
+      - name: Build production site (root)
         run: python scripts/build.py
+
+      # Hidden staging preview. The `staging` branch is rendered into dist/stage so
+      # it is served at stopkeyless.com/stage/, noindex + unlinked so search ignores
+      # it. continue-on-error keeps a missing/broken staging branch from ever
+      # blocking the production deploy.
+      - name: Check out staging branch
+        id: staging_checkout
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: staging
+          path: _staging
+      - name: Build staging into /stage
+        if: steps.staging_checkout.outcome == 'success'
+        continue-on-error: true
+        working-directory: _staging
+        run: python scripts/build.py
+        env:
+          SITE_URL: https://stopkeyless.com/stage
+          DIST_DIR: ${{ github.workspace }}/dist/stage
+          NOINDEX: "1"
+
       - name: Configure Pages
         # enablement flips this repo's Pages from the legacy "deploy from branch"
         # mode to "GitHub Actions" on the first run, so dist/ is what goes live.

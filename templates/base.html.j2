@@ -6,6 +6,9 @@
 <title>{{ title }}</title>
 <meta name="description" content="{{ meta_description }}">
 <link rel="canonical" href="{{ canonical }}">
+{% if NOINDEX %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
 <meta name="theme-color" content="#0b5d4a">
 
 <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
@@ -29,13 +32,13 @@
 <footer>
   <div class="wrap">
     <h2>Was this helpful?</h2>
-    <p>This is a free, independent project. If it helped protect your car, a small donation keeps it going — and please share it with anyone who drives.</p>
+    <p>This is a free, independent project. If it helped protect your car, a small donation keeps it going, and please share it with anyone who drives.</p>
     <div class="footer-actions">
       <a class="btn" href="https://www.paypal.com/donate/?hosted_button_id=LRE8FY2BEMXUE" target="_blank" rel="noopener">❤ Donate via PayPal</a>
       {% block footer_secondary_action %}<a class="btn outline" href="/#contribute">Add or fix a car</a>{% endblock %}
     </div>
     <p class="footer-fine">
-      Instructions are gathered from owner's manuals and car owner communities. Some are marked unverified — always check your own manual.<br>
+      Instructions are gathered from owner's manuals and car owner communities. Some are marked unverified, so always check your own manual.<br>
       <a href="https://github.com/willsheppard/prevent-keyless-car-theft" target="_blank" rel="noopener">Open source</a>{% block footer_extra %}{% endblock %}
     </p>
   </div>

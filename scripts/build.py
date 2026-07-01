@@ -15,6 +15,7 @@ Usage:
     .venv/bin/python scripts/build.py Ford   # build only the homepage + the Ford page
 """
 import json
+import os
 import re
 import shutil
 import sys
@@ -23,9 +24,17 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "dist"
-SITE_URL = "https://stopkeyless.com"
 SITE_NAME = "StopKeyless"
+
+# Staging knobs (all default to production; the staging build in deploy.yml sets
+# them so the same generator can render a hidden /stage/ copy). Kept together here
+# so staging behaviour lives in one place, not scattered through the code.
+#   SITE_URL  absolute base for canonicals/links (staging: .../stage)
+#   DIST_DIR  output dir, relative to repo root or absolute (staging: dist/stage)
+#   NOINDEX   emit <meta name="robots" content="noindex"> so search ignores staging
+SITE_URL = os.environ.get("SITE_URL", "https://stopkeyless.com")
+OUT = ROOT / os.environ.get("DIST_DIR", "dist")
+NOINDEX = bool(os.environ.get("NOINDEX"))
 
 # Static asset directories copied verbatim into dist/. `data/` keeps the public
 # dataset (and faqs) reachable at its existing URL; the homepage no longer fetches
@@ -221,8 +230,10 @@ def copy_assets():
         src = ROOT / name
         if src.is_dir():
             shutil.copytree(src, OUT / name, dirs_exist_ok=True)
+    # CNAME only belongs at the site root (Pages ignores it in subdirs), so skip it
+    # for the staging /stage/ build.
     cname = ROOT / "CNAME"
-    if cname.is_file():
+    if cname.is_file() and OUT.resolve() == (ROOT / "dist").resolve():
         shutil.copy2(cname, OUT / "CNAME")
 
 
@@ -235,6 +246,7 @@ def make_env():
     )
     env.globals["TYPE_LABEL"] = TYPE_LABEL
     env.globals["SITE_NAME"] = SITE_NAME
+    env.globals["NOINDEX"] = NOINDEX
     return env
 
 

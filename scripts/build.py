@@ -35,7 +35,7 @@ ASSET_DIRS = ["css", "js", "img", "data"]
 TYPE_LABEL = {"temp": "Temporary", "auto": "Automatic", "perm": "Permanent", "info": "Note"}
 
 # Min body words for a brand page to be indexable (DESIGN.md §6).
-MIN_BODY_WORDS = 20
+MIN_BODY_WORDS = 50
 
 
 def load_faqs():

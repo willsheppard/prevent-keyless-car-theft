@@ -82,7 +82,7 @@ header.hero p.subtitle {
   box-shadow: 0 10px 30px rgba(0,0,0,.18);
   padding: 6px 6px 6px 20px;
 }
-.search-box svg { flex: 0 0 auto; color: var(--muted); }
+.search-box > svg { flex: 0 0 auto; color: var(--muted); }
 .search-box input {
   flex: 1;
   border: 0;
@@ -101,12 +101,15 @@ header.hero p.subtitle {
   color: var(--green-dark);
   width: 40px; height: 40px;
   border-radius: 999px;
-  font-size: 20px;
+  padding: 0;
   cursor: pointer;
   display: none;
+  align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
 }
 .search-clear:hover { background: #d4e9e2; }
+.search-clear svg { display: block; }
 .search-hint {
   margin-top: 8px;
   font-size: 14px;

@@ -26,12 +26,32 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
+        "type": "perm",
+        "models": "A4/A5, Q5 and above (where the menu option exists)",
+        "text": "Switch off convenience-key unlocking in the MMI.",
         "steps": [
-          "Press the \"lock\" button once."
-        ]
+          "In the MMI, go to Vehicle (or Settings) > Central locking.",
+          "Turn off \"Open with convenience key\" (also shown under Doors & Keys)."
+        ],
+        "notes": [
+          "On some models the car can still be locked by touching the handle pad; the temp method below also blocks unlocking.",
+          "Not all model years or trims expose this menu option."
+        ],
+        "source": "https://www.audiusa.com/us/web/en/support/help/audi-advanced-key-video-tutorial.html"
+      },
+      {
+        "type": "temp",
+        "text": "Switch off keyless unlocking for the current lock cycle from the door handle.",
+        "steps": [
+          "Press the lock button on the Advanced Key.",
+          "Within 5 seconds, touch the sensor on a door handle. Keyless unlocking is now off until you unlock with the key button."
+        ],
+        "source": "https://www.audiusa.com/us/web/en/support/help/audi-advanced-key-video-tutorial.html"
       }
+    ],
+    "info": [
+      "Audi calls its keyless entry the \"Advanced Key\" (VW Group KESSY). Its infotainment is \"MMI\" (Multi Media Interface).",
+      "Advanced Key is an option across the Audi range."
     ]
   },
   {
@@ -46,14 +66,18 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "models": "Bentayga (shares Audi's Advanced Key)",
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle (do not grip it). Keyless unlocking is now off until you unlock with the key button."
         ],
-        "models": "Bentayga"
+        "source": "https://www.audiusa.com/us/web/en/support/help/audi-advanced-key-video-tutorial.html"
       }
+    ],
+    "info": [
+      "Bentley uses the VW Group keyless system (Audi's \"Advanced Key\"/KESSY). Its infotainment is based on Audi's MMI.",
+      "Keyless entry is standard on the Bentayga, Continental GT and Flying Spur."
     ]
   },
   {
@@ -91,16 +115,28 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
+        "type": "perm",
+        "text": "Comfort Access (keyless entry) can be switched off in iDrive to stop the car locking/unlocking as you approach.",
         "steps": [
-          "Press the \"lock\" button on the digital key or remote control key fob."
+          "In iDrive, open the vehicle settings and find Comfort Access (menu path varies by iDrive version).",
+          "Switch Comfort Access off."
         ],
         "notes": [
-          "If the vehicle was locked with the remote control, it cannot be unlocked touchless.",
-          "If the vehicle has been idle for several days, touchless unlocking and locking is not possible until after the vehicle has been driven again."
-        ]
+          "You can also deactivate Comfort Access from the My BMW app.",
+          "The fob lock/unlock buttons keep working."
+        ],
+        "source": "https://faq.bmwusa.com/s/article/Vehicle-Vehicle-access-Comfort-Access-Functional-limitations-V3vOA?language=en_US"
+      },
+      {
+        "type": "auto",
+        "models": "Comfort Access keys on many models",
+        "text": "BMW's Comfort Access key has a motion sensor: it goes to sleep after about 2 minutes without movement, so a still key cannot be picked up by relay thieves. The Digital Key Plus (ultra-wideband) is also relay-resistant.",
+        "source": "https://www.fleetnews.co.uk/news/manufacturer-news/2019/11/06/carmakers-introduce-sleeping-fobs-to-tackle-keyless-thieves"
       }
+    ],
+    "info": [
+      "BMW calls its keyless entry \"Comfort Access\". Its infotainment is \"iDrive\"; the phone-as-key is the \"BMW Digital Key\".",
+      "Comfort Access is an option across the BMW range."
     ]
   },
   {
@@ -115,7 +151,11 @@
       "purosangue"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Ferrari fits keyless entry to its front-engined GTs and SUV (Roma, Portofino, Purosangue); mid-engined models use a conventional key.",
+      "No owner setting to disable keyless entry is documented; a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Ford",
@@ -146,22 +186,28 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "Lock the car by pressing the button on the remote control key."
-        ]
-      },
-      {
         "type": "auto",
-        "models": "Fiesta / Focus, 2019 onwards",
-        "text": "The \"sleeping key fob\" feature automatically deactivates the transmitter when the key fob has not moved for 40 seconds."
+        "models": "Fiesta/Focus 2019 on; later Kuga, Puma and others",
+        "text": "Ford's motion-sensor \"sleeping\" key fob deactivates the transmitter after the fob has been still for 40 seconds, so it cannot be picked up by a relay attack. It wakes the moment it is moved.",
+        "source": "https://media.ford.com/content/fordmedia/feu/gb/en/news/2021/03/03/most-popular-ford-models-add-protection-for-owners-in-fight-agai.html"
       },
       {
         "type": "perm",
-        "models": "Fiesta 2016, Focus 2017 onwards",
-        "text": "Disable \"Passive entry\" in the car's menu."
+        "text": "Switch off Intelligent Access (keyless entry) in the vehicle settings.",
+        "steps": [
+          "On the information/message display (or SYNC touchscreen), open Settings, then Vehicle.",
+          "Select Intelligent Access and switch it off."
+        ],
+        "notes": [
+          "You can still lock and unlock with the fob buttons.",
+          "Some model years and regional software do not offer this toggle; on those, rely on the sleeping key fob above."
+        ],
+        "source": "https://owner.ford.com/support/how-tos/vehicle-features/locks-and-security/intelligent-access-with-push-button-start.html"
       }
+    ],
+    "info": [
+      "Ford calls its keyless entry and push-button start \"Intelligent Access\". Its infotainment is \"SYNC\" (connected services: \"FordPass\").",
+      "Intelligent Access is available across much of the range on higher trims; the sleeping key fob was introduced partly to defeat relay theft."
     ]
   },
   {
@@ -188,24 +234,22 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "Hyundai's owner's manual gives this as a way to prevent unintentional locking/unlocking (e.g. at a car wash). It stops the door-handle touch sensor responding.",
         "steps": [
-          "Lock the car.",
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds.",
-          "The hazard lights flash 4 times and the fob stops responding to the door handle."
+          "Press the lock button on the smart key.",
+          "Immediately press and hold the lock and unlock buttons together for more than 4 seconds.",
+          "The hazard warning lights blink 4 times and the door-handle touch sensor stops responding."
         ],
         "notes": [
-          "Press any button on the fob to switch keyless entry back on."
-        ]
-      },
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "On the infotainment screen, go to Settings | Vehicle | Door.",
-          "Turn \"Approach unlock\" off."
-        ]
+          "Press the lock or unlock button on the fob to switch keyless entry back on.",
+          "There is no documented menu setting that fully disables smart-key touch entry; the \"Welcome\"/\"Approach unlock\" toggles only affect the welcome lights and mirrors."
+        ],
+        "source": "https://ownersmanual.hyundai.com/docview/webhelp/doc/8bf31204-4eb5-48f8-a3be-f1c555de698f/id3276ff2952d.html"
       }
+    ],
+    "info": [
+      "Hyundai calls its keyless entry and push-button start the \"Smart Key\" system. Its latest infotainment is \"ccNC\" (connected car Navigation Cockpit); connected services are \"Bluelink\".",
+      "Smart Key is standard or optional across most current Hyundai models; the touch sensor works when the fob is within about 1 m of the handle."
     ]
   },
   {
@@ -223,22 +267,26 @@
     "instructions": [
       {
         "type": "perm",
-        "models": "2013 F-Type, Discovery Sport",
+        "text": "Jaguar Land Rover lets you deactivate keyless entry from the key fob.",
         "steps": [
-          "Open the driver's door (using the fob).",
-          "Place the key fob inside the car.",
-          "Press the headlamp button on the key fob 3 times.",
-          "Press the unlock button on the key fob once.",
-          "Take the keys outside the car.",
-          "Close the driver's door.",
-          "Lock the car using the fob.",
-          "Unlock the car using the fob."
+          "On the key fob, press the headlamp (lights) button 3 times, then press the unlock button once. Keyless entry is now disabled.",
+          "To re-enable it, press the headlamp button 3 times, then the lock button once."
         ],
         "notes": [
-          "To re-enable it, follow the same procedure but press the lock button at step 4.",
-          "You must first unlock and then re-lock the car with the fob -- not the keyless button on the door handle."
-        ]
+          "After disabling, lock and unlock using the fob buttons rather than the door handle."
+        ],
+        "source": "https://www.landroverusa.com/ownership/infotainment-systems/emergency-and-security-features.html"
+      },
+      {
+        "type": "auto",
+        "models": "2018 on; UWB keys on the latest models",
+        "text": "Newer JLR keys go to sleep when left still, and the latest models use ultra-wideband (UWB) keys that JLR says are not vulnerable to relay attacks.",
+        "source": "https://media.jaguarlandrover.com/news/2023/11/jlr-invests-vehicle-security-reduce-thefts"
       }
+    ],
+    "info": [
+      "Jaguar calls it simply \"keyless entry\" (passive entry). Its infotainment is \"Pivi Pro\" (older cars: \"InControl Touch Pro\").",
+      "Keyless entry is an option across the range; JLR was a major relay-theft target, which drove its move to UWB keys."
     ]
   },
   {
@@ -265,24 +313,22 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "Kia's owner's manual gives this as a way to prevent unintentional locking/unlocking. It stops the door-handle touch sensor responding.",
         "steps": [
-          "Lock the car using the button on the door handle.",
-          "On the key fob, press and hold the lock and unlock buttons together.",
-          "The indicators flash once, pause, then flash 4 times. The fob no longer opens the car from the door handle."
+          "Press the lock button on the smart key.",
+          "Immediately press and hold the lock and unlock buttons together for more than 4 seconds.",
+          "The hazard warning lights blink 4 times and the door-handle touch sensor stops responding."
         ],
         "notes": [
-          "Press any button on the fob to switch keyless entry back on."
-        ]
-      },
-      {
-        "type": "perm",
-        "unverified": true,
-        "steps": [
-          "On the infotainment screen, go to Settings | Vehicle | Door.",
-          "Turn \"Approach unlock\" off."
-        ]
+          "Press the lock or unlock button on the fob to switch keyless entry back on.",
+          "There is no documented menu setting that fully disables smart-key touch entry; the fob method above is the way to switch it off."
+        ],
+        "source": "https://ownersmanual.kia.com/docview/webhelp/doc/948b7d97-b6fe-417d-ae9b-0c50cdc49184/topics/chapter5_1_1.html"
       }
+    ],
+    "info": [
+      "Kia calls its keyless entry and push-button start the \"Smart Key\" system. Its latest infotainment is \"ccNC\" (connected car Navigation Cockpit); connected services are \"Kia Connect\".",
+      "Smart Key is standard or optional across most current Kia models; the touch sensor works when the fob is within about 1 m of the handle."
     ]
   },
   {
@@ -304,6 +350,7 @@
     "instructions": [
       {
         "type": "temp",
+        "text": "Lexus uses Toyota's \"battery-saving function\": it stops the key receiving radio waves, which also defeats relay theft.",
         "steps": [
           "Press and hold the \"lock\" button.",
           "While still holding it, press the \"unlock\" button twice.",
@@ -311,8 +358,13 @@
         ],
         "notes": [
           "To turn keyless entry back on, press any button on the fob."
-        ]
+        ],
+        "source": "https://www.lexus.com/My-Lexus/resources/manual"
       }
+    ],
+    "info": [
+      "Lexus calls its keyless entry and push-button start the \"Smart Key System\". The infotainment is \"Lexus Interface\" (2022 on; older models: \"Lexus Enform\").",
+      "Keyless entry is standard across the Lexus range, and the fob uses the same battery-saving procedure as Toyota."
     ]
   },
   {
@@ -333,18 +385,23 @@
     "instructions": [
       {
         "type": "perm",
-        "models": "2021 onwards",
-        "text": "Turning on the \"transmitter power saving function\" switches off the advanced keyless entry and push-button start, and limits the fob's battery use.",
+        "models": "Models with Advanced Keyless Entry",
+        "text": "Turning on the \"key transmitter power saving function\" switches off the advanced keyless entry and restricts the fob's battery use.",
         "steps": [
-          "Press the lock button on the fob 4 times within 3 seconds -- the indicator light turns on.",
-          "While the indicator light is on, press and hold the lock button for 2 seconds or longer.",
-          "Press any button on the fob to check the indicator light does not turn on or flash -- this confirms keyless entry is off."
+          "Press the lock button on the transmitter 4 times within 3 seconds -- the operation indicator light turns on.",
+          "While the indicator light is on, press and hold the lock button for 1.5 seconds or longer.",
+          "Press any button on the transmitter to check the indicator light does not turn on or flash -- this confirms keyless entry is off."
         ],
         "notes": [
           "Repeat the same steps to switch keyless entry back on.",
-          "Once this is on, the car won't start with the key until you either turn power-save mode off, or hold the key against the start/stop button while pressing it."
-        ]
+          "While power saving is on, start the engine by touching the key to the start/stop button (as you would with a flat key battery)."
+        ],
+        "source": "https://owners-manual.mazda.com/gen/en/mazda3/mazda3_8jr6ee20e/contents/04010201.html"
       }
+    ],
+    "info": [
+      "Mazda calls its keyless entry the \"Advanced Keyless Entry System\". Its infotainment is \"Mazda Connect\".",
+      "Advanced Keyless is fitted to higher trims across the range; lower trims use a conventional remote."
     ]
   },
   {
@@ -374,11 +431,22 @@
     "instructions": [
       {
         "type": "temp",
+        "text": "KEYLESS-GO can be switched off from the SmartKey (e.g. to stop the car being opened while parked).",
         "steps": [
           "Lock the car as usual.",
-          "Press the lock button again twice, quickly."
-        ]
+          "Press the lock button on the SmartKey twice in quick succession.",
+          "The key's indicator flashes twice then lights once to confirm KEYLESS-GO is off."
+        ],
+        "notes": [
+          "Press any button on the key to switch keyless entry back on.",
+          "This resets each time you unlock with the key, so repeat each time you park. With two keys nearby, deactivate both."
+        ],
+        "source": "https://www.mersag.com/cmer-3922.html"
       }
+    ],
+    "info": [
+      "Mercedes calls its keyless entry \"KEYLESS-GO\" (the key is the \"SmartKey\"; the kick-to-open tailgate is \"HANDS-FREE ACCESS\"). Its infotainment is \"MBUX\" (older cars: \"COMAND\").",
+      "KEYLESS-GO is an option across the range; newer SmartKeys also have a motion sensor that sleeps when still, blocking relay attacks."
     ]
   },
   {
@@ -394,15 +462,26 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
+        "type": "perm",
+        "text": "Mini shares BMW's Comfort Access. Switch it off in the infotainment to stop the car locking/unlocking as you approach.",
         "steps": [
-          "Lock the car using the button on the key fob."
+          "In the MINI operating system, open the vehicle settings and find Comfort Access.",
+          "Switch Comfort Access off."
         ],
         "notes": [
-          "Once locked with the fob, the car cannot be opened by touching the handle until you unlock it with the fob again."
-        ]
+          "You can also deactivate it from the MINI app. The fob lock/unlock buttons keep working."
+        ],
+        "source": "https://faq.bmwusa.com/s/article/Vehicle-Vehicle-access-Comfort-Access-Functional-limitations-V3vOA?language=en_US"
+      },
+      {
+        "type": "auto",
+        "models": "Comfort Access keys on newer models",
+        "text": "Like BMW, the Comfort Access key has a motion sensor and goes to sleep after a couple of minutes without movement, blocking relay attacks."
       }
+    ],
+    "info": [
+      "Mini (BMW-owned) calls its keyless entry \"Comfort Access\". Its infotainment is the \"MINI Operating System\" (iDrive-based); connected services are \"MINI Connected\".",
+      "Comfort Access is an option across the range (Cooper, Countryman, Aceman)."
     ]
   },
   {
@@ -418,7 +497,11 @@
       "zt"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "MG's keyless entry is a \"smart key\"/passive entry system. Its infotainment is \"MG iSMART\".",
+      "No owner setting to disable keyless entry is documented; a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Nissan",
@@ -443,20 +526,25 @@
     "instructions": [
       {
         "type": "perm",
-        "models": "Qashqai",
+        "models": "Qashqai and most current models",
+        "text": "Turning off the door request switch disables touch-the-handle keyless entry; you can still lock and unlock with the fob buttons.",
         "steps": [
-          "Go to Settings | Vehicle | Locking.",
-          "Change the i-key setting to \"off\"."
-        ]
+          "On the vehicle information display, open Settings.",
+          "Go to Locking | I-Key Door Lock.",
+          "Turn it off to deactivate the request switch on the door handles."
+        ],
+        "source": "https://www.nissan.co.uk/owners/car-repair/car-owner-manual/manuals/iom/qashqai/0j12/e1/2024/vehicle-settings-1.shtml"
       },
       {
         "type": "auto",
-        "models": "J12 onwards?",
-        "text": "The latest key fobs turn themselves off after a period of inactivity."
+        "models": "Current Intelligent Key fobs",
+        "text": "The Intelligent Key has a sleep function: if it is not physically moved for 2 minutes or more it stops transmitting, so a still key cannot be picked up by relay thieves.",
+        "source": "https://www.nissan.co.uk/owners/car-repair/car-owner-manual/manuals/iom/qashqaiepower/hj12/e1/2024/intelligent-key-sleep-function-where-fitted-1.shtml"
       }
     ],
     "info": [
-      "Nissan calls this feature \"i-key\" (intelligent key)."
+      "Nissan calls its keyless system the \"Intelligent Key\" (sometimes \"i-Key\"). Its infotainment is \"NissanConnect\".",
+      "Intelligent Key is available across most of the current Nissan range; the door handles carry a request switch that unlocks the car when the key is nearby."
     ]
   },
   {
@@ -475,8 +563,37 @@
       "e-2008",
       "partner"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "models": "Models with the i-Connect touchscreen",
+        "text": "Switch off hands-free (keyless) access in the vehicle settings.",
+        "steps": [
+          "Press the car-settings button (car symbol) to open the vehicle menu.",
+          "Open Comfort.",
+          "Set \"Automatic hands-free access\" (keyless entry) to Off."
+        ],
+        "source": "https://public.servicebox.peugeot.com/APddb/modeles/2008.p2/eGuide_p24_ed01-20/pdfs/9999_9999_402_en-GB.pdf"
+      },
+      {
+        "type": "perm",
+        "models": "Models without the menu option",
+        "text": "On cars without the menu toggle, deactivate hands-free access using the key and the centre console.",
+        "steps": [
+          "Press and hold the lock button on the key.",
+          "After about 3 seconds, also press the lock button on the centre console while still holding the key button.",
+          "After about 3 seconds, release the console button, then the key button. A beep confirms keyless entry is disabled."
+        ],
+        "notes": [
+          "Repeat the same procedure to switch keyless entry back on."
+        ],
+        "source": "https://public.servicebox.peugeot.com/APddb/modeles/2008.p2/eGuide_p24_ed01-20/pdfs/9999_9999_402_en-GB.pdf"
+      }
+    ],
+    "info": [
+      "Peugeot calls its keyless system \"Keyless Entry and Start\" (hands-free access). Its infotainment is \"Peugeot i-Connect\" within the i-Cockpit.",
+      "Hands-free access is an option on most current Peugeots (208, 2008, 308, 3008, 5008, 408)."
+    ]
   },
   {
     "name": "Porsche",
@@ -493,12 +610,21 @@
     "instructions": [
       {
         "type": "temp",
+        "text": "Porsche calls its keyless system \"Entry & Drive\". You can deactivate it on the key (per Porsche's Good to Know guide).",
         "steps": [
-          "Press and hold the lock button.",
-          "At the same time, press the unlock button within 1 second.",
-          "Keep both buttons pressed until the indicator light on the key lights up continuously."
-        ]
+          "Press and hold one button on the key while pressing the unlock button within 1 second.",
+          "Keep both buttons pressed until the indicator light on the key lights up continuously - this confirms Entry & Drive is deactivated."
+        ],
+        "notes": [
+          "Pressing the key buttons again reactivates Entry & Drive.",
+          "Passive entry for the doors, front compartment and tailgate can also be de-selected in the PCM settings."
+        ],
+        "source": "https://contentful-assets.porsche.com/u1ih0u5p8hpf/1el5P5zHGlNgZ0S9nxgxFL/92a3c4f0165ea30007733db3a79d06e8/Porsche_MY21_Cayenne_QSG.pdf"
       }
+    ],
+    "info": [
+      "Porsche calls its keyless entry and start \"Entry & Drive\". Its infotainment is \"PCM\" (Porsche Communication Management).",
+      "Entry & Drive is an option across the range (911, Cayenne, Macan, Panamera, Taycan)."
     ]
   },
   {
@@ -516,13 +642,27 @@
     ],
     "instructions": [
       {
-        "type": "temp",
+        "type": "perm",
+        "text": "Land Rover / Range Rover lets you deactivate keyless entry from the key fob.",
         "steps": [
-          "With the key inside the car and the door open,",
-          "press the headlight button 3 times, then the unlock button.",
-          "Then lock the car with the fob as normal."
-        ]
+          "On the key fob, press the headlight (lights) button 3 times, then press the unlock button once. Keyless entry is now disabled.",
+          "To re-enable it, press the lights button 3 times, then the lock button once."
+        ],
+        "notes": [
+          "After disabling, lock and unlock using the fob buttons rather than the door handle."
+        ],
+        "source": "https://www.landroverusa.com/ownership/infotainment-systems/emergency-and-security-features.html"
+      },
+      {
+        "type": "auto",
+        "models": "2018 on; UWB keys on the latest models",
+        "text": "Newer keys go to sleep when left still, and the latest Range Rover, Defender and Discovery use ultra-wideband (UWB) keys that JLR says resist relay attacks.",
+        "source": "https://media.jaguarlandrover.com/news/2023/11/jlr-invests-vehicle-security-reduce-thefts"
       }
+    ],
+    "info": [
+      "Land Rover/Range Rover calls it \"keyless entry\" (passive entry). Its infotainment is \"Pivi Pro\" (older cars: \"InControl Touch Pro\").",
+      "Keyless entry is an option across the range (Evoque, Velar, Sport, Discovery, Defender)."
     ]
   },
   {
@@ -542,13 +682,21 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
-        ]
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle with a finger (do not grip it). The indicators flash once to confirm.",
+          "Keyless unlocking is now off; to get in you must press the unlock button on the key."
+        ],
+        "notes": [
+          "This resets the next time you unlock with the key, so repeat each time you park."
+        ],
+        "source": "https://www.manualslib.com/manual/1985337/Skoda-Karoq.html?page=28"
       }
+    ],
+    "info": [
+      "Skoda calls its keyless system \"KESSY\". Its infotainment is Skoda's system (\"Columbus\", \"Amundsen\" or \"Bolero\").",
+      "KESSY is an option across the range (Octavia, Superb, Kodiaq, Karoq, Enyaq)."
     ]
   },
   {
@@ -569,19 +717,28 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "models": "Models with Keyless Access and push-button start",
+        "text": "Subaru lets you fully disable the keyless access function (proximity entry and push-button start) using the driver's door and power door lock switch. The fob buttons still lock and unlock the car.",
         "steps": [
           "Sit in the driver's seat and close the door.",
-          "Press the unlock side of the power door lock switch.",
-          "Open the driver's door within 5 seconds.",
-          "Press the unlock side of the switch twice within 5 seconds.",
-          "Close and open the driver's door twice within 10 seconds. Keyless access is now disabled."
+          "Push the rear (unlock) side of the power door lock switch.",
+          "Within 5 seconds, open the driver's door.",
+          "Within 5 seconds, push the unlock side of the switch twice while the door is open.",
+          "Within 30 seconds, close and open the driver's door twice.",
+          "Within 30 seconds, push the unlock side of the switch twice while the door is open.",
+          "Within 30 seconds, close and open the driver's door once.",
+          "Within 5 seconds, close the door. A chirp confirms the functions are disabled."
         ],
         "notes": [
-          "Press the switch slowly -- pressing too quickly can stop it working.",
-          "Repeat the same procedure to switch keyless access back on."
-        ]
+          "In the two-press steps, press the switch slowly -- pressing too quickly can stop it working.",
+          "Perform the same procedure again to switch keyless access back on."
+        ],
+        "source": "https://www.subsuv.com/subco-95.html"
       }
+    ],
+    "info": [
+      "Subaru calls its keyless system \"Keyless Access with push-button start\". Its infotainment is \"Subaru Starlink\".",
+      "Keyless Access is fitted to higher trims; unlike most rivals it can be switched off completely using the procedure above."
     ]
   },
   {
@@ -595,21 +752,23 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "Press the \"lock\" button once."
-        ]
-      },
-      {
         "type": "perm",
-        "models": "Model S",
+        "text": "Tesla lets you switch off Passive Entry (walk-up unlock). Tesla's own manual recommends this to reduce relay theft.",
         "steps": [
-          "On the centre touchscreen, go to the Settings tab.",
-          "Open the Doors & Locks menu.",
-          "Switch 'Passive Entry' OFF (you must press the brake pedal)."
-        ]
+          "On the central touchscreen, tap Controls.",
+          "Go to Locks (on Model S/X: Safety/Locks).",
+          "Switch Passive Entry off."
+        ],
+        "notes": [
+          "With Passive Entry off, press the fob, key card or phone key to unlock.",
+          "Menu wording varies by model and software version."
+        ],
+        "source": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-7A32EC01-A17E-42CC-A15B-2E0A39FD07AB.html"
       }
+    ],
+    "info": [
+      "Tesla's keyless entry is \"Passive Entry\" (walk-up unlock) using the phone key, key card or key fob. The central touchscreen has no separate brand name.",
+      "Passive Entry can be switched off on all current models (3, Y, S, X, Cybertruck)."
     ]
   },
   {
@@ -641,6 +800,7 @@
       {
         "type": "temp",
         "models": "Most models with Smart Key (push-button start)",
+        "text": "Toyota's owner's manual calls this the \"battery-saving function\": it stops the key receiving radio waves, which also defeats relay theft.",
         "steps": [
           "Press and hold the lock button on the key fob.",
           "While still holding lock, press the unlock button twice.",
@@ -649,8 +809,13 @@
         "notes": [
           "To turn keyless entry back on, press any button on the fob.",
           "Touching the door handle or pressing start will not work until you wake the fob."
-        ]
+        ],
+        "source": "https://www.toyota.com/owners/warranty-owners-manuals/digital/article/tundra-hv/2022/om0c031u/ch03se020405/"
       }
+    ],
+    "info": [
+      "Toyota calls its keyless entry and push-button start the \"Smart Key System\". The infotainment is \"Toyota Audio Multimedia\" (older models: \"Entune\").",
+      "Smart Key is standard or optional on most current Toyota models; entry-level trims often have a conventional remote without proximity unlocking."
     ]
   },
   {
@@ -669,8 +834,26 @@
       "zafira",
       "adam"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "models": "Corsa, Mokka, Astra, Grandland (Stellantis platform)",
+        "text": "On current (Stellantis-platform) Vauxhalls, switch off hands-free (keyless) access in the vehicle settings.",
+        "steps": [
+          "Open the vehicle/car settings menu on the touchscreen.",
+          "Open Comfort.",
+          "Set \"Automatic hands-free access\" (keyless entry) to Off."
+        ],
+        "notes": [
+          "Older GM-based models (Insignia, Astra K) instead have a keyless setting in the on-screen Settings menu."
+        ],
+        "source": "https://www.vauxhall.co.uk/owners/information-and-safety/owners-manuals.html"
+      }
+    ],
+    "info": [
+      "Vauxhall (Opel) calls its keyless system \"Keyless Open & Start\". Its infotainment is the Vauxhall Multimedia/Navi system (connected services: \"Vauxhall Connect\").",
+      "Keyless Open is an option on most current models (Corsa, Mokka, Astra, Grandland)."
+    ]
   },
   {
     "name": "Volkswagen",
@@ -700,21 +883,37 @@
     "instructions": [
       {
         "type": "temp",
-        "models": "T-Roc 7 onwards?",
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the little indented area on the door handle.",
-          "Keyless entry is now disabled until you next unlock the car."
-        ]
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor surface on a door handle with a finger (do not grip the handle). The indicators flash once to confirm.",
+          "Keyless unlocking is now off; to get in you must press the unlock button on the key."
+        ],
+        "notes": [
+          "This resets the next time you unlock with the key, so repeat each time you park."
+        ],
+        "source": "https://www.vw-id4.com/unlocking-or-locking-using-keyless-access-56.html"
+      },
+      {
+        "type": "perm",
+        "models": "ID.3, ID.4 and other infotainment-equipped models",
+        "text": "Keyless Access can be turned off permanently in the infotainment.",
+        "steps": [
+          "On the infotainment screen, open the Vehicle menu.",
+          "Open the Keyless Access (door/locking) settings.",
+          "Turn Keyless Access off."
+        ],
+        "source": "https://www.vw-id4.com/unlocking-or-locking-using-keyless-access-56.html"
       },
       {
         "type": "auto",
-        "models": "T-Cross",
-        "text": "The key fob goes to sleep after 15 minutes of inactivity."
+        "models": "Newer keys (e.g. T-Cross)",
+        "text": "The key goes to sleep after about 15 minutes of inactivity, which also blocks relay attacks."
       }
     ],
     "info": [
-      "Volkswagen calls its keyless entry feature \"KESSY\"."
+      "Volkswagen calls its keyless system \"KESSY\" (Keyless Entry, Start and exit System), marketed as \"Keyless Access\". Its infotainment is the Volkswagen infotainment system (\"Discover Media/Pro\" on older cars).",
+      "Keyless Access is an option across most of the range."
     ]
   },
   {
@@ -740,21 +939,18 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off passive (keyless) entry in the infotainment settings; the fob buttons still lock and unlock.",
         "steps": [
-          "On the centre touchscreen, go to Settings | Vehicle.",
-          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
-          "Turn Passive Unlocking and Passive Locking off."
-        ]
-      },
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
-          "Repeat to switch it back on."
-        ]
+          "On the infotainment screen, go to Settings | Vehicle | Remote Lock, Unlock, Start.",
+          "Turn Passive Door Unlock off so the handles no longer unlock when the fob is nearby.",
+          "Optionally turn Passive Locking off too (the walk-away auto-lock)."
+        ],
+        "source": "https://www.chevrolet.com/support/vehicle/security/keyless-open-start"
       }
+    ],
+    "info": [
+      "Chevrolet calls its keyless entry \"Keyless Open and Start\" (passive entry/start, PEPS). Its infotainment is the \"Chevrolet Infotainment System\" (formerly MyLink); connected services are \"OnStar\".",
+      "Keyless Open is available on most current Chevrolet models on higher trims."
     ]
   },
   {
@@ -771,21 +967,18 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off passive (keyless) entry in the infotainment settings; the fob buttons still lock and unlock.",
         "steps": [
-          "On the centre touchscreen, go to Settings | Vehicle.",
-          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
-          "Turn Passive Unlocking and Passive Locking off."
-        ]
-      },
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
-          "Repeat to switch it back on."
-        ]
+          "On the infotainment screen, go to Settings | Vehicle | Remote Lock, Unlock, Start.",
+          "Turn Passive Door Unlock off so the handles no longer unlock when the fob is nearby.",
+          "Optionally turn Passive Locking off too (the walk-away auto-lock)."
+        ],
+        "source": "https://www.gmc.com/support/vehicle/security/keyless-open-start"
       }
+    ],
+    "info": [
+      "GMC calls its keyless entry \"Keyless Open and Start\" (passive entry/start). Its infotainment is the \"GMC Infotainment System\"; connected services are \"OnStar\".",
+      "Keyless Open is standard or optional across the GMC range."
     ]
   },
   {
@@ -805,21 +998,18 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off passive (keyless) entry in the infotainment settings; the fob buttons still lock and unlock.",
         "steps": [
-          "On the centre touchscreen, go to Settings | Vehicle.",
-          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
-          "Turn Passive Unlocking and Passive Locking off."
-        ]
-      },
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
-          "Repeat to switch it back on."
-        ]
+          "On the infotainment screen, go to Settings | Vehicle | Remote Lock, Unlock, Start.",
+          "Turn Passive Door Unlock off so the handles no longer unlock when the fob is nearby.",
+          "Optionally turn Passive Locking off too (the walk-away auto-lock)."
+        ],
+        "source": "https://www.cadillac.com/support/vehicle/security/keyless-open-start"
       }
+    ],
+    "info": [
+      "Cadillac calls its keyless entry \"Keyless Open and Start\" (passive entry/start). Its infotainment is the Cadillac user experience system (formerly \"CUE\"); connected services are \"OnStar\".",
+      "Keyless Open is standard across the Cadillac range."
     ]
   },
   {
@@ -834,21 +1024,18 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off passive (keyless) entry in the infotainment settings; the fob buttons still lock and unlock.",
         "steps": [
-          "On the centre touchscreen, go to Settings | Vehicle.",
-          "Open Power Door Locks (or Remote Lock/Unlock/Start).",
-          "Turn Passive Unlocking and Passive Locking off."
-        ]
-      },
-      {
-        "type": "temp",
-        "unverified": true,
-        "steps": [
-          "On the key fob, press and hold the lock and unlock buttons together for about 4 seconds to switch keyless entry off.",
-          "Repeat to switch it back on."
-        ]
+          "On the infotainment screen, go to Settings | Vehicle | Remote Lock, Unlock, Start.",
+          "Turn Passive Door Unlock off so the handles no longer unlock when the fob is nearby.",
+          "Optionally turn Passive Locking off too (the walk-away auto-lock)."
+        ],
+        "source": "https://www.buick.com/support/vehicle/security/keyless-open-start"
       }
+    ],
+    "info": [
+      "Buick calls its keyless entry \"Keyless Open and Start\" (passive entry/start). Its infotainment is the \"Buick Infotainment System\"; connected services are \"OnStar\".",
+      "Keyless Open is available across the Buick range on higher trims."
     ]
   },
   {
@@ -867,16 +1054,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (the touch-the-handle part of Keyless Enter-N-Go) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Jeep uses Stellantis \"Keyless Enter-N-Go\" (with Passive Entry). Its infotainment is \"Uconnect\".",
+      "Passive Entry is available across the Jeep range on higher trims."
     ]
   },
   {
@@ -891,16 +1083,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (the touch-the-handle part of Keyless Enter-N-Go) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Dodge uses Stellantis \"Keyless Enter-N-Go\" (with Passive Entry). Its infotainment is \"Uconnect\".",
+      "Passive Entry is available on Charger, Challenger, Durango and Hornet on higher trims."
     ]
   },
   {
@@ -914,16 +1111,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (the touch-the-handle part of Keyless Enter-N-Go) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Chrysler uses Stellantis \"Keyless Enter-N-Go\" (with Passive Entry). Its infotainment is \"Uconnect\".",
+      "Passive Entry is available on the 300, Pacifica and Voyager on higher trims."
     ]
   },
   {
@@ -938,16 +1140,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (the touch-the-handle part of Keyless Enter-N-Go) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Ram uses Stellantis \"Keyless Enter-N-Go\" (with Passive Entry). Its infotainment is \"Uconnect\".",
+      "Passive Entry is available on 1500/2500/3500 on higher trims."
     ]
   },
   {
@@ -965,13 +1172,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "Switch off Intelligent Access (keyless entry) in the vehicle settings; the fob buttons still lock and unlock.",
         "steps": [
           "On the SYNC touchscreen, go to Settings | Vehicle | Locks.",
           "Set Intelligent Access (keyless entry) to off.",
-          "On cars without a touchscreen, use the steering-wheel menu: Settings | Vehicle | Locks | Intelligent Access."
-        ]
+          "On cars without a touchscreen, use the steering-wheel information display: Settings | Vehicle | Locks | Intelligent Access."
+        ],
+        "notes": [
+          "Some model years and regional software do not offer this toggle."
+        ],
+        "source": "https://owner.lincoln.com/how-tos/vehicle-features/locks-and-security/how-to-program-your-intelligent-access-key.html"
       }
+    ],
+    "info": [
+      "Lincoln calls its keyless entry and push-button start \"Intelligent Access\". It shares Ford's \"SYNC\" infotainment (connected services: \"Lincoln Connect\").",
+      "Intelligent Access is standard across the Lincoln range."
     ]
   },
   {
@@ -982,8 +1197,22 @@
       "r2",
       "r3"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Rivian lets you turn proximity (keyless) unlocking off so the car doesn't unlock as you approach with the phone key or fob.",
+        "steps": [
+          "On the centre display, open Settings.",
+          "Go to Vehicle | Access (or Locks).",
+          "Set proximity unlock to \"Lock only\" or \"Off\"."
+        ],
+        "source": "https://rivian.com/support"
+      }
+    ],
+    "info": [
+      "Rivian's keyless entry uses a phone-as-key with proximity (Bluetooth) unlocking, plus an optional key fob and key band. Its central display has no separate brand name.",
+      "Proximity locking/unlocking is standard on the R1T and R1S and can be set to Lock only or Off."
+    ]
   },
   {
     "name": "Lucid",
@@ -992,8 +1221,22 @@
       "gravity",
       "lucid air"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Lucid lets you switch off passive unlock (and passive lock) so the car doesn't unlock as you approach.",
+        "steps": [
+          "On the touchscreen, tap Settings.",
+          "Go to Vehicle | Doors & Seats.",
+          "Turn Passive Unlock (and Passive Lock) off."
+        ],
+        "source": "https://lucidmotors.com/media/document/OM_Air_enUS_v35.pdf"
+      }
+    ],
+    "info": [
+      "Lucid's keyless entry is \"Passive Unlock\"/\"Passive Lock\" using the phone key, key fob or key card. Its infotainment is \"Lucid UX\" (Pilot Panel and Glass Cockpit displays).",
+      "Passive entry is standard on the Air and Gravity and can be switched off in the menu."
+    ]
   },
   {
     "name": "Honda",
@@ -1016,7 +1259,11 @@
       "prologue"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Honda calls its keyless entry and push-button start \"Smart Entry\" (with Walk Away Auto Lock). Its infotainment and connected services are \"HondaLink\".",
+      "Honda's owner's manuals do not document a setting to fully switch off Smart Entry; the only related options are Walk Away Auto Lock and which doors unlock."
+    ]
   },
   {
     "name": "Acura",
@@ -1030,7 +1277,11 @@
       "zdx"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Acura calls its keyless entry the \"Keyless Access System\" (with Walk Away Auto Lock). Its infotainment is the \"True Touchpad Interface\"; connected services are \"AcuraLink\".",
+      "Like Honda, Acura does not document a setting to fully switch off keyless entry; the related options are Walk Away Auto Lock and auto door lock/unlock."
+    ]
   },
   {
     "name": "Infiniti",
@@ -1044,8 +1295,24 @@
       "q70",
       "qx30"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Infiniti shares Nissan's Intelligent Key. Turning off lock/unlock by the door-handle request switch disables touch-the-handle entry; the fob buttons still lock and unlock.",
+        "steps": [
+          "In the vehicle settings menu (on the InTouch screen), open the door lock / Intelligent Key settings.",
+          "Turn off lock and unlock by the door-handle request switch."
+        ],
+        "notes": [
+          "Like Nissan, the Intelligent Key fob also stops transmitting after about 2 minutes without movement."
+        ],
+        "source": "https://www-europe.infiniti-cdn.net/content/dam/Infiniti/ownership/owner-manuals/Q50-Owner-Manual-EN.pdf"
+      }
+    ],
+    "info": [
+      "Infiniti calls its keyless system the \"Intelligent Key\". Its infotainment and connected services are \"INFINITI InTouch\".",
+      "Intelligent Key is standard across the Infiniti range (Q50, Q60, QX50/55/60/80)."
+    ]
   },
   {
     "name": "Genesis",
@@ -1060,13 +1327,22 @@
     ],
     "instructions": [
       {
-        "type": "perm",
-        "unverified": true,
+        "type": "temp",
+        "text": "Genesis shares Hyundai's smart key. The owner's manual gives this as a way to prevent unintentional locking/unlocking.",
         "steps": [
-          "On the screen, go to Setup | Vehicle | Door.",
-          "Turn the Smart Key walk-up unlock off."
-        ]
+          "Press the lock button on the smart key.",
+          "Immediately press and hold the lock and unlock buttons together for more than 4 seconds.",
+          "The hazard warning lights blink 4 times and the door-handle touch sensor stops responding."
+        ],
+        "notes": [
+          "Press the lock or unlock button on the fob to switch keyless entry back on."
+        ],
+        "source": "https://ownersmanual.genesis.com/full_webhelp/JK/2025/en_AU/id7684733bc70.html"
       }
+    ],
+    "info": [
+      "Genesis uses Hyundai's \"Smart Key\" system. Its infotainment has no separate brand name (referred to as the Genesis Display Audio / AVN system); connected services are \"Genesis Connected Services\".",
+      "Keyless entry is standard across the Genesis range."
     ]
   },
   {
@@ -1081,8 +1357,23 @@
       "shogun",
       "colt"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Mitsubishi's \"Keyless Operation System\" can be limited or switched off, but it is a dealer setting.",
+        "steps": [
+          "Ask a Mitsubishi service point to limit the keyless operation system to lock/unlock only, to start only, or to disable it."
+        ],
+        "notes": [
+          "For everyday use, lock the car with the key's buttons rather than touching the handle, and keep the key in a signal-blocking pouch."
+        ],
+        "source": "https://www.mitshelp.com/micont-1282.html"
+      }
+    ],
+    "info": [
+      "Mitsubishi calls its keyless system the \"Keyless Operation System\" (KOS). Its infotainment is the \"Smartphone-link Display Audio\" (SDA); connected services are \"Mitsubishi Connect\".",
+      "KOS is an option on higher trims (Outlander, Eclipse Cross, ASX)."
+    ]
   },
   {
     "name": "Suzuki",
@@ -1098,7 +1389,11 @@
       "celerio"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Suzuki calls its keyless system the \"Keyless Push Start System\" (smart key). Its infotainment is the \"SLDA\" display with \"Suzuki Connect\".",
+      "Suzuki does not document a simple owner setting to switch off the smart key; a Suzuki dealer can disable it, and a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Volvo",
@@ -1115,8 +1410,25 @@
       "ex90",
       "v40"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Keyless unlocking is configured in the centre display; you can limit or turn off the doors unlocking as you approach.",
+        "steps": [
+          "In the centre display, open Settings (top view).",
+          "Go to My Car | Locking.",
+          "Open the Keyless entry settings and turn keyless unlocking off (or limit which doors respond)."
+        ],
+        "notes": [
+          "On some models keyless unlocking can only be limited, not fully switched off. On EX30 and newer digital-key cars you can also turn off proximity unlock in the centre display."
+        ],
+        "source": "https://www.volvocars.com/uk/support/manuals/xc90/2017w46/key-locks-and-alarm/keyless-locking-and-unlocking/settings-for-keyless-entry"
+      }
+    ],
+    "info": [
+      "Volvo calls its keyless system \"Keyless drive\" (passive entry and start). Its infotainment is \"Google built-in\" (Android Automotive) on newer cars, \"Sensus\" on older.",
+      "Keyless drive is an option across the range (XC40/60/90, EX30, EX90, S60/90, V60/90)."
+    ]
   },
   {
     "name": "Polestar",
@@ -1128,8 +1440,21 @@
       "3",
       "4"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Polestar shares Volvo's passive entry. Keyless unlocking is configured in the centre display; for the phone digital key, passive entry is turned off in the wallet app.",
+        "steps": [
+          "On Polestar 2/3, open Settings in the centre display and go to the keyless/locking settings to limit or turn off keyless unlocking.",
+          "For the digital key (Polestar 3), turn off passive entry in the phone's wallet app so the car does not unlock as you approach."
+        ],
+        "source": "https://www.polestar.com/us/manual/polestar-2/2023/article/0500c0935429ad42c0a8015111e87238/"
+      }
+    ],
+    "info": [
+      "Polestar (Volvo-derived) keyless entry uses the same passive entry and start as Volvo. Its infotainment is \"Android Automotive\" (Google built-in).",
+      "Keyless entry is standard across the range (Polestar 2, 3, 4)."
+    ]
   },
   {
     "name": "Fiat",
@@ -1147,16 +1472,22 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "models": "Models with the Uconnect touchscreen",
+        "text": "\"Passive Entry\" (touch-the-handle keyless entry) can be switched off in Uconnect on models that have it.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Fiat uses Stellantis \"Keyless Entry/Go\" (with Passive Entry) on Uconnect-equipped models such as the 500e, 600 and Tipo. Its infotainment is \"Uconnect\".",
+      "Small models without a Uconnect touchscreen may not offer the disable toggle."
     ]
   },
   {
@@ -1170,16 +1501,22 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "models": "Models with the Uconnect touchscreen",
+        "text": "\"Passive Entry\" (touch-the-handle keyless entry) can be switched off in Uconnect on models that have it.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Abarth (Fiat's performance brand) uses Stellantis \"Keyless Entry/Go\" with Passive Entry on Uconnect-equipped models such as the 500e-based 595/695. Its infotainment is \"Uconnect\".",
+      "Older 500-based models without a Uconnect touchscreen may not offer the disable toggle."
     ]
   },
   {
@@ -1195,16 +1532,21 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
+        "text": "\"Passive Entry\" (touch-the-handle keyless entry) can be switched off in Uconnect.",
         "steps": [
           "On the Uconnect touchscreen, open Settings.",
-          "Go to Doors & Locks.",
-          "Turn Passive Entry (Keyless Enter-N-Go) off."
+          "Go to Doors & Locks (menu wording varies by Uconnect version).",
+          "Turn Passive Entry off."
         ],
         "notes": [
-          "You can still lock and unlock with the fob buttons; only touch-the-handle entry is switched off."
-        ]
+          "Only touch-the-handle entry is switched off; the fob lock/unlock buttons keep working."
+        ],
+        "source": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2022/2500_3500/om_html/GUID-7B9B97F9-8615-40CD-8CE9-DC8EC92E7A38.html"
       }
+    ],
+    "info": [
+      "Alfa Romeo uses Stellantis \"Keyless Entry/Go\" with Passive Entry. Its infotainment is \"Uconnect\".",
+      "Passive Entry can be switched off in Uconnect on Giulia, Stelvio, Tonale and Junior."
     ]
   },
   {
@@ -1217,8 +1559,24 @@
       "mc20",
       "granturismo"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "Maserati's Passive Entry (touch-the-handle keyless entry) can be set on or off from the settings menu on models with the MIA system.",
+        "steps": [
+          "On the Maserati Intelligent Assistant (MIA) screen, open the settings menu.",
+          "Find Passive Entry and set it to Off."
+        ],
+        "notes": [
+          "On older Ghibli, Levante and Quattroporte the toggle was in the Uconnect menu; Maserati removed the disable option on some model years over lock-out concerns."
+        ],
+        "source": "https://www.maserati.com/us/en/ownership/maserati-manuals"
+      }
+    ],
+    "info": [
+      "Maserati calls its keyless entry \"Passive Entry\". Its infotainment is the \"Maserati Intelligent Assistant\" (MIA, Android Automotive); older cars used \"Maserati Touch Control Plus\".",
+      "Keyless entry is standard across the Maserati range (Ghibli, Quattroporte, Levante, Grecale, MC20, GranTurismo)."
+    ]
   },
   {
     "name": "Citroen",
@@ -1238,14 +1596,33 @@
     "instructions": [
       {
         "type": "perm",
-        "unverified": true,
-        "models": "C5 Aircross",
+        "models": "Models with touchscreen",
+        "text": "Switch off hands-free (keyless) access in the vehicle settings.",
+        "steps": [
+          "Press the car-settings button to open the vehicle menu.",
+          "Open Comfort.",
+          "Set \"Automatic hands-free access\" (keyless entry) to Off."
+        ],
+        "source": "https://www.citroen.co.uk/about-citroen/technology/keyless-entry-and-start"
+      },
+      {
+        "type": "perm",
+        "models": "C5 Aircross and similar without the menu option",
+        "text": "On cars without the menu toggle, deactivate hands-free access using the key and the centre console.",
         "steps": [
           "Press and hold the lock button on the key fob.",
           "After about 3 seconds, also press the lock button on the centre console while still holding the fob button.",
           "After about 3 seconds, release the console button, then the fob button. A beep confirms keyless entry is disabled."
-        ]
+        ],
+        "notes": [
+          "Repeat the same procedure to switch keyless entry back on."
+        ],
+        "source": "https://www.citroen.co.uk/about-citroen/technology/keyless-entry-and-start"
       }
+    ],
+    "info": [
+      "Citroën calls its keyless system \"Keyless Entry and Start\" (hands-free access). Its infotainment is the \"Citroën Connect\" system.",
+      "Hands-free access is an option across the range (C3, C4, C5 Aircross, C5 X, ë-C4)."
     ]
   },
   {
@@ -1258,8 +1635,25 @@
       "ds 3 crossback",
       "ds 7 crossback"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "perm",
+        "text": "DS shares Peugeot/Citroën's hands-free access. Switch off hands-free (keyless) access in the vehicle settings.",
+        "steps": [
+          "Open the vehicle/car settings menu on the touchscreen.",
+          "Open Comfort.",
+          "Set \"Automatic hands-free access\" (keyless entry) to Off."
+        ],
+        "notes": [
+          "On models without the menu toggle, hold the key lock button and the centre-console lock button together for a few seconds until a beep confirms keyless entry is off; repeat to re-enable."
+        ],
+        "source": "https://www.dsautomobiles.co.uk/owners/my-ds/manuals-tutorials.html"
+      }
+    ],
+    "info": [
+      "DS Automobiles calls its keyless system \"Keyless Entry and Start\" (hands-free access). Its infotainment is the \"DS IRIS\" system.",
+      "Hands-free access is available across the DS range (DS 3, DS 4, DS 7, DS 9)."
+    ]
   },
   {
     "name": "SEAT",
@@ -1276,13 +1670,21 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
-        ]
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle with a finger (do not grip it). The indicators flash once to confirm.",
+          "Keyless unlocking is now off; to get in you must press the unlock button on the key."
+        ],
+        "notes": [
+          "This resets the next time you unlock with the key. The procedure is shared across the VW Group (KESSY)."
+        ],
+        "source": "https://www.manualslib.com/manual/1985337/Skoda-Karoq.html?page=28"
       }
+    ],
+    "info": [
+      "SEAT calls its keyless system \"Kessy\". Its infotainment is the \"SEAT Media System\".",
+      "Kessy is an option across the range (Ibiza, Leon, Arona, Ateca, Tarraco)."
     ]
   },
   {
@@ -1299,13 +1701,21 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
-        ]
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle with a finger (do not grip it). The indicators flash once to confirm.",
+          "Keyless unlocking is now off; to get in you must press the unlock button on the key."
+        ],
+        "notes": [
+          "This resets the next time you unlock with the key. The procedure is shared across the VW Group (KESSY)."
+        ],
+        "source": "https://www.manualslib.com/manual/1985337/Skoda-Karoq.html?page=28"
       }
+    ],
+    "info": [
+      "Cupra (SEAT's performance brand) uses the VW Group \"Kessy\" keyless system. Its infotainment is the Cupra/SEAT Media System.",
+      "Kessy is fitted across the range (Formentor, Born, Leon, Ateca, Tavascan)."
     ]
   },
   {
@@ -1324,8 +1734,34 @@
       "koleos",
       "megane e-tech"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "temp",
+        "text": "Locking with the buttons on the RENAULT card (instead of walking away) deactivates hands-free locking and unlocking.",
+        "steps": [
+          "Lock the car using the lock button on the RENAULT card or key.",
+          "Hands-free (walk-up) locking and unlocking is now off until you next start the car."
+        ],
+        "notes": [
+          "Restart the vehicle to reactivate hands-free mode."
+        ],
+        "source": "https://gb.e-guide.renault.com/eng/Captur-2/HANDS-FREE-CARD-use"
+      },
+      {
+        "type": "perm",
+        "models": "Models with a touchscreen",
+        "text": "Hands-free access can be switched off in the multimedia settings.",
+        "steps": [
+          "On the multimedia screen, open Settings | Vehicle (or User settings).",
+          "Turn \"Hands-free access\" (keyless entry) off."
+        ],
+        "source": "https://gb.e-guide.renault.com/eng/Captur-2/HANDS-FREE-CARD-use"
+      }
+    ],
+    "info": [
+      "Renault calls its keyless system the \"hands-free card\" (hands-free access). Its infotainment is \"OpenR Link\" (Google built-in) on newer cars, \"Easy Link\" before that.",
+      "Hands-free access is an option across the range (Clio, Captur, Megane, Austral, Scenic, Espace)."
+    ]
   },
   {
     "name": "Dacia",
@@ -1337,8 +1773,24 @@
       "logan",
       "stepway"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "temp",
+        "text": "Dacia shares Renault's hands-free card. Locking with the card/key buttons deactivates hands-free locking and unlocking.",
+        "steps": [
+          "Lock the car using the lock button on the card or key.",
+          "Hands-free (walk-up) locking and unlocking is now off until you next start the car."
+        ],
+        "notes": [
+          "On models with a touchscreen, hands-free access can also be switched off in the multimedia settings."
+        ],
+        "source": "https://gb.e-guide.renault.com/eng/Captur-2/HANDS-FREE-CARD-use"
+      }
+    ],
+    "info": [
+      "Dacia uses Renault's \"hands-free card\" keyless system. Its infotainment is the Dacia \"Media Nav\"/\"Media Display\" system.",
+      "Hands-free access is an option on higher trims (Sandero, Duster, Jogger)."
+    ]
   },
   {
     "name": "Smart",
@@ -1349,8 +1801,22 @@
       "smart #3",
       "eq fortwo"
     ],
-    "instructions": [],
-    "unknown": true
+    "instructions": [
+      {
+        "type": "temp",
+        "models": "fortwo/forfour with KEYLESS-GO (Mercedes era)",
+        "text": "On Mercedes-era Smarts with KEYLESS-GO, deactivate it from the key like a Mercedes SmartKey.",
+        "steps": [
+          "Lock the car, then press the lock button on the key twice in quick succession.",
+          "The key's indicator confirms; keyless entry is off until you press any button or unlock with the key."
+        ],
+        "source": "https://www.mersag.com/cmer-3922.html"
+      }
+    ],
+    "info": [
+      "Smart is now a Mercedes-Benz/Geely joint venture. Older fortwo/forfour used Mercedes \"KEYLESS-GO\"; the current Smart #1 and #3 use the Smart OS infotainment.",
+      "On the Smart #1/#3, keyless (passive) entry is managed in the vehicle settings; no separate disable procedure is documented here."
+    ]
   },
   {
     "name": "Lotus",
@@ -1363,7 +1829,11 @@
       "elise"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Lotus keyless entry: the Eletre and Emeya (Geely-based EVs) use the touchscreen; the Emira sports car uses a key fob.",
+      "On the Eletre/Emeya, passive entry is managed in the vehicle settings; the Emira has no documented disable. A signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Aston Martin",
@@ -1377,7 +1847,11 @@
       "rapide"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "Aston Martin fits keyless entry to the DBX and current models; older cars use Mercedes-Benz electronics (KEYLESS-GO-style).",
+      "No owner setting to disable keyless entry is documented; a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "McLaren",
@@ -1390,7 +1864,11 @@
       "765lt"
     ],
     "instructions": [],
-    "unknown": true
+    "unknown": true,
+    "info": [
+      "McLaren fits keyless entry (passive entry) to its sports and GT cars.",
+      "No owner setting to disable keyless entry is documented; a signal-blocking pouch blocks relay attacks."
+    ]
   },
   {
     "name": "Rolls-Royce",
@@ -1405,15 +1883,21 @@
     ],
     "instructions": [
       {
-        "type": "temp",
-        "unverified": true,
+        "type": "perm",
+        "text": "Rolls-Royce uses BMW's Comfort Access. Switch it off in the infotainment to stop the car unlocking as you approach.",
         "steps": [
-          "Lock the car using the button on the key fob."
+          "In the infotainment (BMW iDrive-based), open the vehicle settings and find Comfort Access.",
+          "Switch Comfort Access off."
         ],
         "notes": [
-          "Once locked with the fob, the car cannot be opened by touching the handle until you unlock it with the fob again."
-        ]
+          "The fob lock/unlock buttons keep working."
+        ],
+        "source": "https://faq.bmwusa.com/s/article/Vehicle-Vehicle-access-Comfort-Access-Functional-limitations-V3vOA?language=en_US"
       }
+    ],
+    "info": [
+      "Rolls-Royce (BMW-owned) uses BMW's \"Comfort Access\" keyless entry on a BMW iDrive-based infotainment.",
+      "Keyless entry is standard across the range (Phantom, Ghost, Cullinan, Spectre)."
     ]
   },
   {
@@ -1427,14 +1911,18 @@
     "instructions": [
       {
         "type": "temp",
-        "unverified": true,
+        "models": "Urus (shares Audi's Advanced Key)",
+        "text": "KESSY keyless unlocking can be switched off for the current lock cycle from the door handle.",
         "steps": [
-          "Lock the car with the key fob.",
-          "Then press the indented area on the door handle.",
-          "Keyless entry stays off until you next unlock the car with the fob."
+          "Lock the car by pressing the lock button on the key.",
+          "Within 5 seconds, touch the sensor on a door handle (do not grip it). Keyless unlocking is now off until you unlock with the key button."
         ],
-        "models": "Urus"
+        "source": "https://www.audiusa.com/us/web/en/support/help/audi-advanced-key-video-tutorial.html"
       }
+    ],
+    "info": [
+      "The Lamborghini Urus shares the VW Group keyless system (Audi's \"Advanced Key\"/KESSY) and Audi's MMI infotainment.",
+      "Keyless entry applies to the Urus; the Huracan and Revuelto supercars use a conventional remote."
     ]
   }
 ]

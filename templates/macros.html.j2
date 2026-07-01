@@ -51,6 +51,7 @@
   <div class="card-body" id="body-{{ card.idx }}">
     {% if card.unknown %}
     <p class="unknown-body">We don't yet have confirmed instructions for {{ card.name }}. Many {{ card.name }} models do support disabling keyless entry -- check your owner's manual under "keyless" or "passive entry".<br><a class="contribute-link" href="#contribute">Know how? Help us add {{ card.name }} →</a></p>
+    {% for note in card.info %}<p class="note">{{ note|safe }}</p>{% endfor %}
     {% else %}
     {% for instruction in card.instructions %}{{ render_instruction(instruction) }}{% endfor %}
     {% for note in card.info %}<p class="note">{{ note|safe }}</p>{% endfor %}

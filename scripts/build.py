@@ -36,6 +36,16 @@ SITE_URL = os.environ.get("SITE_URL", "https://stopkeyless.com")
 OUT = ROOT / os.environ.get("DIST_DIR", "dist")
 NOINDEX = bool(os.environ.get("NOINDEX"))
 
+
+def _rel(path):
+    """Path for logging: relative to ROOT when possible, else as-is. The staging
+    build writes into the main checkout's dist/ (an absolute DIST_DIR outside this
+    ROOT), so relative_to() would raise."""
+    try:
+        return path.relative_to(ROOT)
+    except ValueError:
+        return path
+
 # Static asset directories copied verbatim into dist/. `data/` keeps the public
 # dataset (and faqs) reachable at its existing URL; the homepage no longer fetches
 # it (cards are pre-rendered), but external links and consumers still resolve.
@@ -262,12 +272,12 @@ def build_site(only_brand=None):
     OUT.mkdir(parents=True)
 
     idx_path, idx_size = build_index(env, cars, faqs)
-    print(f"Wrote {idx_path.relative_to(ROOT)} ({idx_size:,} bytes)")
+    print(f"Wrote {_rel(idx_path)} ({idx_size:,} bytes)")
 
     if only_brand:
         car = find_brand(cars, only_brand)
         path, size = build_brand(env, car, faqs)
-        print(f"Wrote {path.relative_to(ROOT)} ({size:,} bytes)")
+        print(f"Wrote {_rel(path)} ({size:,} bytes)")
         return
 
     indexable = [car for car in cars if is_indexable(car)]
